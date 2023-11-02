@@ -27,8 +27,8 @@ class PlanningMeetPage(BasePage):
 
     # Приглашение на запланированную встречу
     TOPIC_NAME = ("xpath", '//*[@id="content"]/div/div/div/p[2]' )
-    PASSWORD_SCHEDULE = ("xpath", '//*[@id="content"]/div/div/div/p[7]/text()')
-    DESCRIPTION_SCHEDULE = ("xpath", '//*[@id="content"]/div/div/div/p[5]/text()')
+    PASSWORD_MEET_FIELD = ("xpath", '//*[@id="content"]/div/div/div/p[7]')
+    DESCRIPTION_MEET_FIELD = ("xpath", '//*[@id="content"]/div/div/div/p[5]')
 
 
     @allure.step("Add topic name")
@@ -49,11 +49,37 @@ class PlanningMeetPage(BasePage):
             self.topic = change_topic
 
 
+    @allure.step("Add meet password")
+    def add_meet_password(self, meet_password):
+        with allure.step(f"Add meet password '{meet_password}'"):
+            meet_password_field = self.wait.until(EC.element_to_be_clickable(self.PASSWORD_FIELD))
+            meet_password_field.send_keys(meet_password)
+            self.password = meet_password
+
+    @allure.step("Add meet description")
+    def add_meet_description(self, meet_description):
+        with allure.step(f"Add meet description '{meet_description}'"):
+            meet_description_field = self.wait.until(EC.element_to_be_clickable(self.DESCRIPTION_FIELD))
+            meet_description_field.send_keys(meet_description)
+            self.description = meet_description
+
     @allure.step("Save schedule")
     def save_schedule(self):
         self.wait.until(EC.element_to_be_clickable(self.SAVE_BUTTON)).click()
 
-    @allure.step("Changes has been saved successfuly")
-    def is_saved(self):
+    @allure.step("Changes topic name has been saved successfuly")
+    def topic_name_is_saved(self):
         self.wait.until(EC.visibility_of_element_located(self.TOPIC_NAME))
         self.wait.until(EC.text_to_be_present_in_element(self.TOPIC_NAME, self.topic))
+
+
+    @allure.step("Changes password meet has been saved successfuly")
+    def meet_password_is_saved(self):
+        self.wait.until(EC.visibility_of_element_located(self.PASSWORD_MEET_FIELD))
+        self.wait.until(EC.text_to_be_present_in_element(self.PASSWORD_MEET_FIELD, self.password))
+
+
+    @allure.step("Changes description has been saved successfuly")
+    def meet_description_is_saved(self):
+        self.wait.until(EC.visibility_of_element_located(self.DESCRIPTION_MEET_FIELD))
+        self.wait.until(EC.text_to_be_present_in_element(self.DESCRIPTION_MEET_FIELD, self.description))

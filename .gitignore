@@ -2,5 +2,6 @@
 .idea
 *.iml
 .env
+Debug.py
 report
 allure-results

@@ -5,6 +5,12 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 class BasePage:
+    # Buttons
+    CONFIRM_ACTION = ("xpath", "//span[text()='Да']")
+    DISMISS_ACTION = ("xpath", "//span[text()='Нет']")
+
+    # Push notification
+    PUSH_MEET_DELETED = ("xpath", "//div[text()='Встреча удалена']")
 
     def __init__(self, driver):
         self.driver = driver
@@ -24,3 +30,17 @@ class BasePage:
             name=screenshot_name,
             attachment_type=AttachmentType.PNG
         )
+
+    @allure.step("Click on confirm action button")
+    def click_on_confirm_action_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.CONFIRM_ACTION)).click()
+
+    @allure.step("Click on dismiss action button")
+    def click_on_dismiss_action_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.DISMISS_ACTION)).click()
+
+    @allure.step("Changes description has been saved successfuly")
+    def check_push_meet_deleted(self):
+        self.wait.until(EC.visibility_of_element_located(self.PUSH_MEET_DELETED))
+        self.wait.until(EC.text_to_be_present_in_element(self.PUSH_MEET_DELETED, "Встреча удалена"))
+

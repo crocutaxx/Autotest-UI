@@ -25,16 +25,16 @@ class PlanningMeetPage(BasePage):
     DOCUMENTS_TAB = ("xpath", "//div[text()='Документы']")
 
     # Приглашение на запланированную встречу
-    TOPIC_NAME = ("xpath", '//*[@id="content"]/div/div/div/p[2]' )
-    PASSWORD_MEET_FIELD = ("xpath", '//*[@id="content"]/div/div/div/p[7]')
-    DESCRIPTION_MEET_FIELD = ("xpath", '//*[@id="content"]/div/div/div/p[5]')
+    TOPIC_NAME = ("xpath", "//*[strong[text()='Тема встречи']]" )
+    PASSWORD_MEET_FIELD = ("xpath", "//*[strong[text()='Пароль встречи']]")
+    DESCRIPTION_MEET_FIELD = ("xpath", "//*[strong[text()='Описание встречи']]")
 
 
 
     @allure.step("Add topic name")
     def add_topic(self):
         schedule_topic_field = self.wait.until(EC.element_to_be_clickable(self.SCHEDULE_TOPIC_FIELD))
-        new_topic = "TestConf"
+        new_topic = f"Test topic{random.randint(1, 100)}"
         schedule_topic_field.send_keys(new_topic)
         self.topic = new_topic
 
@@ -52,14 +52,14 @@ class PlanningMeetPage(BasePage):
     @allure.step("Add meet password")
     def add_meet_password(self):
         meet_password_field = self.wait.until(EC.element_to_be_clickable(self.PASSWORD_FIELD))
-        meet_password = f"password {random.randint(1, 100)}"
+        meet_password = f"password{random.randint(1, 100)}"
         meet_password_field.send_keys(meet_password)
         self.password = meet_password
 
     @allure.step("Add meet description")
     def add_meet_description(self):
         meet_description_field = self.wait.until(EC.element_to_be_clickable(self.DESCRIPTION_FIELD))
-        meet_description = f"description {random.randint(1, 100)}"
+        meet_description = f"description{random.randint(1, 100)}"
         meet_description_field.send_keys(meet_description)
         self.description = meet_description
 

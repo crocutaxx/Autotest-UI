@@ -9,7 +9,6 @@ class TestDeleteMeetFeature(BaseTest):
 
     @allure.title("Create schedule")
     @allure.severity("Critical")
-    @pytest.mark.debug
     def test_create_schedule(self):
         self.login_page.open()
         self.login_page.enter_login(self.data.LOGIN)

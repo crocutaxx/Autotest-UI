@@ -12,6 +12,9 @@ class MainPage(BasePage):
     NEW_MEET_BUTTON = ("xpath", "//div[text()='Новая конференция']")
     CALENDAR_BUTTON = ("xpath", "//div[text()='Календарь']")
     MESSAGES_BUTTON = ("xpath", "//div[text()='Сообщения']")
+    # Главное окно доп кнопки
+    USER_AVATAR_BUTTON = ("xpath", "//div[@class='user-image avatar-dropdown']")
+    LOG_OUT_BUTTON = ("xpath", "//span[text()='Выход']")
     # Взаимодействие с запланированными конференциями
     MEET_NAME_BUTTON = ("xpath", "//p[@class='Home_planned__IUwj9']")
     CONNECT_TO_MEET_BUTTON = ("xpath", "//span[text()='Присоединиться']")
@@ -55,3 +58,11 @@ class MainPage(BasePage):
     @allure.step("Click on copy invate meet button")
     def click_on_copy_in_meet_button(self):
         self.wait.until(EC.element_to_be_clickable(self.COPY_INVATE_BUTTON)).click()
+
+    @allure.step("Click on user avatar button")
+    def click_on_user_avatar_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.USER_AVATAR_BUTTON)).click()
+
+    @allure.step("Click on log out button")
+    def click_on_log_out_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.LOG_OUT_BUTTON)).click()

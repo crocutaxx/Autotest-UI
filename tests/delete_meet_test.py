@@ -1,4 +1,3 @@
-import random
 import allure
 import pytest
 from base.base_test import BaseTest
@@ -7,9 +6,9 @@ from base.base_test import BaseTest
 @allure.feature("Schedule Functionality")
 class TestDeleteMeetFeature(BaseTest):
 
-    @allure.title("Create schedule")
+    @allure.title("Delete schedule")
     @allure.severity("Critical")
-    def test_create_schedule(self):
+    def test_delete_schedule(self):
         self.login_page.open()
         self.login_page.enter_login(self.data.LOGIN)
         self.login_page.enter_password(self.data.PASSWORD)
@@ -24,5 +23,6 @@ class TestDeleteMeetFeature(BaseTest):
         self.main_page.click_on_delete_meet_button()
         self.main_page.click_on_confirm_action_button()
         self.main_page.check_push_meet_deleted()
+        self.planning_meet_page.make_screenshot("test_delete_schedule")
 
 

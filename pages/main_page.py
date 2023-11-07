@@ -13,17 +13,15 @@ class MainPage(BasePage):
     CALENDAR_BUTTON = ("xpath", "//div[text()='Календарь']")
     MESSAGES_BUTTON = ("xpath", "//div[text()='Сообщения']")
     # Главное окно доп кнопки
-    USER_AVATAR_BUTTON = ("xpath", "//div[@class='user-image avatar-dropdown']")
-    LOG_OUT_BUTTON = ("xpath", "//span[text()='Выход']")
-    CANNCELED_MEET_NAME_BUTTON = ("xpath", "//p[starts-with(@class, 'Home_canceled')]")
-    PLANNED_MEET_NAME_BUTTON = ("xpath", "//p[starts-with(@class, 'Home_planned')]")
+    CANNCELED_MEET_NAME_BUTTON = ("xpath", "//p[contains(@class, 'Home_canceled')]")
+    PLANNED_MEET_NAME_BUTTON = ("xpath", "//p[contains(@class, 'Home_planned')]")
     # Взаимодействие с запланированными конференциями
     CONNECT_TO_MEET_BUTTON = ("xpath", "//span[text()='Присоединиться']")
     COPY_INVATE_BUTTON = ("xpath", "//span[text()='Скопировать приглашение']")
     EDIT_MEET_BUTTON = ("xpath", "//span[text()='Изменить']")
     CANCELL_MEET_BUTTON = ("xpath", "//span[text()='Отменить']")
     DELETE_MEET_BUTTON = ("xpath", "//span[text()='Удалить']")
-    STATUS_MEET_FIELD = ("xpath", "//span[starts-with(@class, 'ViewSchedule_canceled')]")
+    STATUS_MEET_FIELD = ("xpath", "//span[contains(@class, 'ViewSchedule_canceled')]")
 
 
     @allure.step("Click on planning meet button")
@@ -65,14 +63,6 @@ class MainPage(BasePage):
     @allure.step("Click on copy invate meet button")
     def click_on_copy_in_meet_button(self):
         self.wait.until(EC.element_to_be_clickable(self.COPY_INVATE_BUTTON)).click()
-
-    @allure.step("Click on user avatar button")
-    def click_on_user_avatar_button(self):
-        self.wait.until(EC.element_to_be_clickable(self.USER_AVATAR_BUTTON)).click()
-
-    @allure.step("Click on log out button")
-    def click_on_log_out_button(self):
-        self.wait.until(EC.element_to_be_clickable(self.LOG_OUT_BUTTON)).click()
 
     @allure.step("Click is canceled")
     def meet_is_canceled(self):

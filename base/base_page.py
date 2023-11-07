@@ -13,6 +13,10 @@ class BasePage:
     PUSH_MEET_DELETED = ("xpath", "//div[text()='Встреча удалена']")
     PUSH_MEET_CANCEL = ("xpath", "//div[text()='Встреча отменена']")
 
+    # Base button
+    USER_AVATAR_BUTTON = ("xpath", "//div[@class='user-image avatar-dropdown']")
+    LOG_OUT_BUTTON = ("xpath", "//span[text()='Выход']")
+
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(driver, 10, poll_frequency=1)
@@ -50,3 +54,10 @@ class BasePage:
         self.wait.until(EC.visibility_of_element_located(self.PUSH_MEET_CANCEL))
         self.wait.until(EC.text_to_be_present_in_element(self.PUSH_MEET_CANCEL, "Встреча отменена"))
 
+    @allure.step("Click on user avatar button")
+    def click_on_user_avatar_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.USER_AVATAR_BUTTON)).click()
+
+    @allure.step("Click on log out button")
+    def click_on_log_out_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.LOG_OUT_BUTTON)).click()

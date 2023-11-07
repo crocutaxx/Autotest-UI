@@ -12,7 +12,7 @@ class LoginPage(BasePage):
     SUBMIT_BUTTON = ("xpath", "//button[@type='submit']")
     ENTER_MEET_BUTTON = ("xpath", "//button[@type='button']")
     # Push notification
-    INCORECT_DATA = ("xpath", "//div[@class='ant-notification-notice ant-notification-notice-closable']")
+    INCORECT_DATA = ("xpath", "//div[contains(@class, 'ant-notification-notice-closable')]")
 
     @allure.step("Enter login")
     def enter_login(self, login):
@@ -33,3 +33,11 @@ class LoginPage(BasePage):
     def check_push_incorect_data(self):
         self.wait.until(EC.visibility_of_element_located(self.INCORECT_DATA))
         self.wait.until(EC.text_to_be_present_in_element(self.INCORECT_DATA, "EMAIL_OR_PASSWORD_INCORRECT"))
+
+    @allure.step("Clear login")
+    def clear_login(self):
+        self.wait.until(EC.element_to_be_clickable(self.USERNAME_FIELD)).clear()
+
+    @allure.step("Clear password")
+    def clear_password(self):
+        self.wait.until(EC.element_to_be_clickable(self.PASSWORD_FIELD)).clear()

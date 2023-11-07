@@ -17,7 +17,7 @@ class MessagesPage(BasePage):
     USER_DIALOG = ("xpath", "//div[contains(@class, 'Dialog_dialog')][1]")
     RESULT_OF_SEARCH = ("xpath", "//p[contains(@class, 'Dialog_name')][1]")
     USER_CHAT = ("xpath", "//div[@class='user-name']")
-    COUNTER_UNREAD_MESSAGES = ("xpath", "//span[starts-with(@class, 'Dialog_unreadMessage__')]")
+    COUNTER_UNREAD_MESSAGES = ("xpath", "//span[contains(@class, 'Dialog_unreadMessage__')]")
     LAST_MESSAGE = ("xpath", "(//span[@class='message-text'])[last()]")
 
     @allure.step("Search users by name")

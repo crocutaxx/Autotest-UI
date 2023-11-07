@@ -4,11 +4,11 @@ from base.base_test import BaseTest
 
 
 @allure.feature("Messages Functionality")
-class TestSearchUsers(BaseTest):
-    @pytest.mark.debug
+class TestSendMessage(BaseTest):
+
     @allure.title("Search users")
     @allure.severity("Normal")
-    def test_search_users(self):
+    def test_send_message(self):
         self.login_page.open()
         self.login_page.enter_login(self.data.LOGIN)
         self.login_page.enter_password(self.data.PASSWORD)

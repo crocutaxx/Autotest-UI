@@ -4,7 +4,6 @@ from base.base_test import BaseTest
 
 @allure.feature("Schedule Functionality")
 class TestScheduleFeature(BaseTest):
-
     @allure.title("Create schedule")
     @allure.severity("Critical")
     def test_create_schedule(self):

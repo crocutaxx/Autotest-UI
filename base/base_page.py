@@ -11,6 +11,7 @@ class BasePage:
 
     # Push notification
     PUSH_MEET_DELETED = ("xpath", "//div[text()='Встреча удалена']")
+    PUSH_MEET_CANCEL = ("xpath", "//div[text()='Встреча отменена']")
 
     def __init__(self, driver):
         self.driver = driver
@@ -39,8 +40,13 @@ class BasePage:
     def click_on_dismiss_action_button(self):
         self.wait.until(EC.element_to_be_clickable(self.DISMISS_ACTION)).click()
 
-    @allure.step("Changes description has been saved successfuly")
+    @allure.step("Check push meet has been delete")
     def check_push_meet_deleted(self):
         self.wait.until(EC.visibility_of_element_located(self.PUSH_MEET_DELETED))
         self.wait.until(EC.text_to_be_present_in_element(self.PUSH_MEET_DELETED, "Встреча удалена"))
+
+    @allure.step("Check push meet has been cancel")
+    def check_push_meet_cancel(self):
+        self.wait.until(EC.visibility_of_element_located(self.PUSH_MEET_CANCEL))
+        self.wait.until(EC.text_to_be_present_in_element(self.PUSH_MEET_CANCEL, "Встреча отменена"))
 

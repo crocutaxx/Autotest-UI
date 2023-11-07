@@ -17,3 +17,4 @@ class TestLogOut(BaseTest):
         self.main_page.click_on_user_avatar_button()
         self.main_page.click_on_log_out_button()
         self.login_page.open()
+        self.login_page.make_screenshot("log_out_sucsessful")

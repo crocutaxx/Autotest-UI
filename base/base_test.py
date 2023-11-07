@@ -6,6 +6,7 @@ from pages.planning_meet_page import PlanningMeetPage
 from pages.calendar_page import CalendarPage
 from pages.messages_page import MessagesPage
 from pages.users_page import UsersPage
+from pages.meet_page import MeetPage
 
 class BaseTest:
 
@@ -17,6 +18,7 @@ class BaseTest:
     calendar_page: CalendarPage
     users_page: UsersPage
     messages_page: MessagesPage
+    meet_page: MeetPage
 
     @pytest.fixture(autouse=True)
     def setup(self, request, driver):
@@ -29,3 +31,4 @@ class BaseTest:
         request.cls.calendar_page = CalendarPage(driver)
         request.cls.users_page = UsersPage(driver)
         request.cls.messages_page = MessagesPage(driver)
+        request.cls.meet_page = MeetPage(driver)

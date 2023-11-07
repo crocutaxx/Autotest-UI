@@ -7,7 +7,7 @@ from base.base_test import BaseTest
 class TestDeleteMeetFeature(BaseTest):
 
     @allure.title("Delete schedule")
-    @allure.severity("Critical")
+    @allure.severity("Normal")
     def test_delete_schedule(self):
         self.login_page.open()
         self.login_page.enter_login(self.data.LOGIN)
@@ -19,10 +19,10 @@ class TestDeleteMeetFeature(BaseTest):
         self.planning_meet_page.add_topic()
         self.planning_meet_page.save_schedule()
         self.main_page.open()
-        self.main_page.click_on_name_meet()
+        self.main_page.click_on_planned_name_meet()
         self.main_page.click_on_delete_meet_button()
         self.main_page.click_on_confirm_action_button()
         self.main_page.check_push_meet_deleted()
-        self.planning_meet_page.make_screenshot("test_delete_schedule")
+        self.main_page.make_screenshot("test_delete_schedule")
 
 

@@ -5,3 +5,4 @@
 Debug.py
 report
 allure-results
+conftest.py

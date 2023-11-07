@@ -15,33 +15,40 @@ class MainPage(BasePage):
     # Главное окно доп кнопки
     USER_AVATAR_BUTTON = ("xpath", "//div[@class='user-image avatar-dropdown']")
     LOG_OUT_BUTTON = ("xpath", "//span[text()='Выход']")
+    CANNCELED_MEET_NAME_BUTTON = ("xpath", "//p[starts-with(@class, 'Home_canceled')]")
+    PLANNED_MEET_NAME_BUTTON = ("xpath", "//p[starts-with(@class, 'Home_planned')]")
     # Взаимодействие с запланированными конференциями
-    MEET_NAME_BUTTON = ("xpath", "//p[@class='Home_planned__IUwj9']")
     CONNECT_TO_MEET_BUTTON = ("xpath", "//span[text()='Присоединиться']")
     COPY_INVATE_BUTTON = ("xpath", "//span[text()='Скопировать приглашение']")
     EDIT_MEET_BUTTON = ("xpath", "//span[text()='Изменить']")
     CANCELL_MEET_BUTTON = ("xpath", "//span[text()='Отменить']")
     DELETE_MEET_BUTTON = ("xpath", "//span[text()='Удалить']")
+    STATUS_MEET_FIELD = ("xpath", "//span[starts-with(@class, 'ViewSchedule_canceled')]")
+
 
     @allure.step("Click on planning meet button")
     def click_on_planning_meet_button(self):
         self.wait.until(EC.element_to_be_clickable(self.PLANNING_MEET_BUTTON)).click()
 
-    @allure.step("Click on planning meet button")
+    @allure.step("Click on new meet button")
     def click_on_new_meet_button(self):
         self.wait.until(EC.element_to_be_clickable(self.NEW_MEET_BUTTON)).click()
 
-    @allure.step("Click on planning meet button")
+    @allure.step("Click on calendar button")
     def click_on_calendar_button(self):
         self.wait.until(EC.element_to_be_clickable(self.CALENDAR_BUTTON)).click()
 
-    @allure.step("Click on planning meet button")
+    @allure.step("Click on messages button")
     def click_on_messages_button(self):
         self.wait.until(EC.element_to_be_clickable(self.MESSAGES_BUTTON)).click()
 
-    @allure.step("Click on name meet")
-    def click_on_name_meet(self):
-        self.wait.until(EC.visibility_of_element_located(self.MEET_NAME_BUTTON)).click()
+    @allure.step("Click on planned name meet")
+    def click_on_planned_name_meet(self):
+        self.wait.until(EC.visibility_of_element_located(self.PLANNED_MEET_NAME_BUTTON)).click()
+
+    @allure.step("Click on canceled name meet")
+    def click_on_canceled_name_meet(self):
+        self.wait.until(EC.visibility_of_element_located(self.CANNCELED_MEET_NAME_BUTTON)).click()
 
     @allure.step("Click on delete meet button")
     def click_on_delete_meet_button(self):
@@ -66,3 +73,8 @@ class MainPage(BasePage):
     @allure.step("Click on log out button")
     def click_on_log_out_button(self):
         self.wait.until(EC.element_to_be_clickable(self.LOG_OUT_BUTTON)).click()
+
+    @allure.step("Click is canceled")
+    def meet_is_canceled(self):
+        self.wait.until(EC.visibility_of_element_located(self.STATUS_MEET_FIELD))
+        self.wait.until(EC.text_to_be_present_in_element(self.STATUS_MEET_FIELD, "Отменена"))

@@ -1,6 +1,7 @@
+from selenium import webdriver
 
+class Links():
 
-class Links:
 
     HOST = "https://dev.qosyl.kz"
     LOGIN_PAGE = f"{HOST}/login"
@@ -9,3 +10,4 @@ class Links:
     CALENDAR_PAGE = f"{HOST}/calendar"
     USERS_PAGE = f"{HOST}/users"
     MESSAGES_PAGE = f"{HOST}/messages"
+    MEET_PAGE = f"{HOST}/meeting/?room="

@@ -1,8 +1,0 @@
-.pytest_cache
-.idea
-*.iml
-.env
-Debug.py
-report
-allure-results
-conftest.py

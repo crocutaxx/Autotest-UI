@@ -1,0 +1,168 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Schedule Functionality",
+    "children" : [ {
+      "name" : "Create schedule",
+      "uid" : "5c86692ef04df1d2",
+      "parentUid" : "499722a728f81fd5cb772cb7834ea1ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700041760611,
+        "stop" : 1700041770460,
+        "duration" : 9849
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Blok schedule",
+      "uid" : "6010b1af88797b5a",
+      "parentUid" : "499722a728f81fd5cb772cb7834ea1ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700041776848,
+        "stop" : 1700041789460,
+        "duration" : 12612
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Connect to meeting with id and auth user",
+      "uid" : "edbf0479c8f8df37",
+      "parentUid" : "499722a728f81fd5cb772cb7834ea1ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700041790332,
+        "stop" : 1700041797570,
+        "duration" : 7238
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Connect to meeting with id and not auth user",
+      "uid" : "68923048d77df39a",
+      "parentUid" : "499722a728f81fd5cb772cb7834ea1ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700041798443,
+        "stop" : 1700041803601,
+        "duration" : 5158
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Delete schedule",
+      "uid" : "1a2f1f7728d79ccb",
+      "parentUid" : "499722a728f81fd5cb772cb7834ea1ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700041804478,
+        "stop" : 1700041814859,
+        "duration" : 10381
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Create schedule",
+      "uid" : "1aed596b8274b7fc",
+      "parentUid" : "499722a728f81fd5cb772cb7834ea1ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700041822730,
+        "stop" : 1700041829755,
+        "duration" : 7025
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "499722a728f81fd5cb772cb7834ea1ae"
+  }, {
+    "name" : "Authorization Functionality",
+    "children" : [ {
+      "name" : "Invalid authorization",
+      "uid" : "18390050a3fca387",
+      "parentUid" : "2d2f2f61e84d3164c3270f559ecdc52e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700041771368,
+        "stop" : 1700041775976,
+        "duration" : 4608
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2d2f2f61e84d3164c3270f559ecdc52e"
+  }, {
+    "name" : "Log out Functionality",
+    "children" : [ {
+      "name" : "Log Out",
+      "uid" : "a71dd7bda68ed34",
+      "parentUid" : "2313fd1e51e7f0b8b5ac1f29e27cd20e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700041815735,
+        "stop" : 1700041821857,
+        "duration" : 6122
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2313fd1e51e7f0b8b5ac1f29e27cd20e"
+  }, {
+    "name" : "Messages Functionality",
+    "children" : [ {
+      "name" : "Search users",
+      "uid" : "4c3faeba51245454",
+      "parentUid" : "1ac03779b4c547165fd957204b489374",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700041830627,
+        "stop" : 1700041836406,
+        "duration" : 5779
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Search users",
+      "uid" : "3fc83e8c5b0d5bb9",
+      "parentUid" : "1ac03779b4c547165fd957204b489374",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700041837281,
+        "stop" : 1700041849260,
+        "duration" : 11979
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1ac03779b4c547165fd957204b489374"
+  }, {
+    "name" : "Meet Functionality",
+    "children" : [ {
+      "name" : "Start new meet",
+      "uid" : "fb95f38c8aa69bfe",
+      "parentUid" : "0ba43e73eb745172b9cbece956dc8229",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700041850138,
+        "stop" : 1700041861440,
+        "duration" : 11302
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0ba43e73eb745172b9cbece956dc8229"
+  } ],
+  "name" : "behaviors"
+}

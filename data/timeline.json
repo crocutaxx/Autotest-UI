@@ -1,0 +1,156 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "242e4a60e406",
+    "children" : [ {
+      "name" : "8-MainThread",
+      "children" : [ {
+        "name" : "Log Out",
+        "uid" : "a71dd7bda68ed34",
+        "parentUid" : "b93203ece140509c04cb0b04f7a13641",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700041815735,
+          "stop" : 1700041821857,
+          "duration" : 6122
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Search users",
+        "uid" : "4c3faeba51245454",
+        "parentUid" : "b93203ece140509c04cb0b04f7a13641",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700041830627,
+          "stop" : 1700041836406,
+          "duration" : 5779
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Delete schedule",
+        "uid" : "1a2f1f7728d79ccb",
+        "parentUid" : "b93203ece140509c04cb0b04f7a13641",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700041804478,
+          "stop" : 1700041814859,
+          "duration" : 10381
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid authorization",
+        "uid" : "18390050a3fca387",
+        "parentUid" : "b93203ece140509c04cb0b04f7a13641",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700041771368,
+          "stop" : 1700041775976,
+          "duration" : 4608
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create schedule",
+        "uid" : "5c86692ef04df1d2",
+        "parentUid" : "b93203ece140509c04cb0b04f7a13641",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700041760611,
+          "stop" : 1700041770460,
+          "duration" : 9849
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Connect to meeting with id and auth user",
+        "uid" : "edbf0479c8f8df37",
+        "parentUid" : "b93203ece140509c04cb0b04f7a13641",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700041790332,
+          "stop" : 1700041797570,
+          "duration" : 7238
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create schedule",
+        "uid" : "1aed596b8274b7fc",
+        "parentUid" : "b93203ece140509c04cb0b04f7a13641",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700041822730,
+          "stop" : 1700041829755,
+          "duration" : 7025
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Blok schedule",
+        "uid" : "6010b1af88797b5a",
+        "parentUid" : "b93203ece140509c04cb0b04f7a13641",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700041776848,
+          "stop" : 1700041789460,
+          "duration" : 12612
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Start new meet",
+        "uid" : "fb95f38c8aa69bfe",
+        "parentUid" : "b93203ece140509c04cb0b04f7a13641",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700041850138,
+          "stop" : 1700041861440,
+          "duration" : 11302
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Search users",
+        "uid" : "3fc83e8c5b0d5bb9",
+        "parentUid" : "b93203ece140509c04cb0b04f7a13641",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700041837281,
+          "stop" : 1700041849260,
+          "duration" : 11979
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Connect to meeting with id and not auth user",
+        "uid" : "68923048d77df39a",
+        "parentUid" : "b93203ece140509c04cb0b04f7a13641",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700041798443,
+          "stop" : 1700041803601,
+          "duration" : 5158
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b93203ece140509c04cb0b04f7a13641"
+    } ],
+    "uid" : "1b7753bd4648a9009d22f47ee814d3a4"
+  } ],
+  "name" : "timeline"
+}

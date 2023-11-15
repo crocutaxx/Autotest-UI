@@ -14,12 +14,15 @@ class LoginPage(BasePage):
     # Push notification
     INCORECT_DATA = ("xpath", "//div[contains(@class, 'ant-notification-notice-closable')]")
 
-    @allure.step("Enter login")
+    @pytest.mark.parametrize("login", [("login")])
     def enter_login(self, login):
-        self.wait.until(EC.element_to_be_clickable(self.USERNAME_FIELD)).send_keys(login)
-    @allure.step("Enter password")
+        with allure.step("Enter login"):
+            self.wait.until(EC.element_to_be_clickable(self.USERNAME_FIELD)).send_keys(login)
+
+    @pytest.mark.parametrize("password", [("password")])
     def enter_password(self, password):
-        self.wait.until(EC.element_to_be_clickable(self.PASSWORD_FIELD)).send_keys(password)
+        with allure.step("Enter password"):
+            self.wait.until(EC.element_to_be_clickable(self.PASSWORD_FIELD)).send_keys(password)
 
     @allure.step("Confir login and pass - Click submit button")
     def click_submit_button(self):

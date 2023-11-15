@@ -3,7 +3,6 @@ from base.base_test import BaseTest
 
 @allure.feature("Schedule Functionality")
 class TestConnectToMeetingWithIDAuthUser(BaseTest):
-
     @allure.title("Connect to meeting with id and auth user")
     @allure.severity("Critical")
     def test_connect_to_meeting_wtih_id_auth_user(self,setup_1):

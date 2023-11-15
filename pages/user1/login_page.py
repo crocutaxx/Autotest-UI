@@ -14,10 +14,11 @@ class LoginPage(BasePage):
     # Push notification
     INCORECT_DATA = ("xpath", "//div[contains(@class, 'ant-notification-notice-closable')]")
 
-
+    @allure.secret
     def enter_login(self, login):
         self.wait.until(EC.element_to_be_clickable(self.USERNAME_FIELD)).send_keys(login)
 
+    @allure.secret
     def enter_password(self, password):
         self.wait.until(EC.element_to_be_clickable(self.PASSWORD_FIELD)).send_keys(password)
 

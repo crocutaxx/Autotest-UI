@@ -11,3 +11,4 @@ class Links():
     USERS_PAGE = f"{HOST}/users"
     MESSAGES_PAGE = f"{HOST}/messages"
     MEET_PAGE = f"{HOST}/meeting/?room="
+    CONNECT_TO_MEETING_PAGE = f"{HOST}/meeting/"

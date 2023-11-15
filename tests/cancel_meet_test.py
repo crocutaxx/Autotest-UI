@@ -1,5 +1,4 @@
 import allure
-import pytest
 from base.base_test import BaseTest
 
 
@@ -8,7 +7,7 @@ class TestScheduleBlok(BaseTest):
 
     @allure.title("Blok schedule")
     @allure.severity("Normal")
-    def test_blok_schedule(self):
+    def test_blok_schedule(self, setup_1):
         self.login_page.open()
         self.login_page.enter_login(self.data.LOGIN)
         self.login_page.enter_password(self.data.PASSWORD)
@@ -25,7 +24,7 @@ class TestScheduleBlok(BaseTest):
         self.main_page.check_push_meet_cancel()
         self.main_page.click_on_canceled_name_meet()
         self.main_page.meet_is_canceled()
-        self.main_page.make_screenshot("test_cancel_schedule")
+        self.main_page.make_screenshot("test_cancel_meet")
         self.main_page.click_on_delete_meet_button()
         self.main_page.click_on_confirm_action_button()
 

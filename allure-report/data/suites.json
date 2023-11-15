@@ -1,0 +1,240 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "add_users_in_schedule_test",
+      "children" : [ {
+        "name" : "TestAddUserInSchedule",
+        "children" : [ {
+          "name" : "Create schedule",
+          "uid" : "81de21e5da974936",
+          "parentUid" : "da131b2bd3e644b28f704f80a23e3141",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700035295926,
+            "stop" : 1700035302125,
+            "duration" : 6199
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "da131b2bd3e644b28f704f80a23e3141"
+      } ],
+      "uid" : "eabc223669e0179394bc045a85d5e86c"
+    }, {
+      "name" : "authorization_with_invalid_data_test",
+      "children" : [ {
+        "name" : "TestInvalidAuthorization",
+        "children" : [ {
+          "name" : "Invalid authorization",
+          "uid" : "88b736cd354a3322",
+          "parentUid" : "2f9ba13ecf35bbc1781fe68dbb12a78f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700035303024,
+            "stop" : 1700035304998,
+            "duration" : 1974
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "2f9ba13ecf35bbc1781fe68dbb12a78f"
+      } ],
+      "uid" : "61fe88a7f5e9001a093a0154ed76f708"
+    }, {
+      "name" : "cancel_meet_test",
+      "children" : [ {
+        "name" : "TestScheduleBlok",
+        "children" : [ {
+          "name" : "Blok schedule",
+          "uid" : "9f05f8c787a2a581",
+          "parentUid" : "c206ff7f68fd2380ece9c499b89f35c2",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700035305978,
+            "stop" : 1700035315267,
+            "duration" : 9289
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "c206ff7f68fd2380ece9c499b89f35c2"
+      } ],
+      "uid" : "727bd2b37a1b802859c9c32590d3ad17"
+    }, {
+      "name" : "connect_with_id_and_auth_user_test",
+      "children" : [ {
+        "name" : "TestConnectToMeetingWithIDAuthUser",
+        "children" : [ {
+          "name" : "Connect to meeting with id and auth user",
+          "uid" : "f8e062a23b59f0e7",
+          "parentUid" : "90b0ee2326ad22d2956ead1fdfdbb05f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700035316245,
+            "stop" : 1700035319493,
+            "duration" : 3248
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "90b0ee2326ad22d2956ead1fdfdbb05f"
+      } ],
+      "uid" : "963658eda5348734bfb9495897d9d1a5"
+    }, {
+      "name" : "connect_with_id_not_auth_test",
+      "children" : [ {
+        "name" : "TestConnectToMeetingWithIDNotAuthUser",
+        "children" : [ {
+          "name" : "Connect to meeting with id and not auth user",
+          "uid" : "d77e038b7e2a9747",
+          "parentUid" : "181b5c9528e0f704f54beae38da74213",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700035320461,
+            "stop" : 1700035322296,
+            "duration" : 1835
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "181b5c9528e0f704f54beae38da74213"
+      } ],
+      "uid" : "3258fb48c0dd51a47c995a5026cefef1"
+    }, {
+      "name" : "delete_meet_test",
+      "children" : [ {
+        "name" : "TestDeleteMeetFeature",
+        "children" : [ {
+          "name" : "Delete schedule",
+          "uid" : "7da3585957d667a6",
+          "parentUid" : "1f92922279a28f63b572da6a56f99fd8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700035323184,
+            "stop" : 1700035331096,
+            "duration" : 7912
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "1f92922279a28f63b572da6a56f99fd8"
+      } ],
+      "uid" : "db0cd623df7d9ef7fe6c862e7e9d7692"
+    }, {
+      "name" : "log_out_test",
+      "children" : [ {
+        "name" : "TestLogOut",
+        "children" : [ {
+          "name" : "Log Out",
+          "uid" : "4e0e0f0d6665cac1",
+          "parentUid" : "23e83addac4bf7898f7cf681007044a3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700035332001,
+            "stop" : 1700035335345,
+            "duration" : 3344
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "23e83addac4bf7898f7cf681007044a3"
+      } ],
+      "uid" : "f95420f906b1123e70120dea85e5f4d3"
+    }, {
+      "name" : "schedule_meet_test",
+      "children" : [ {
+        "name" : "TestScheduleFeature",
+        "children" : [ {
+          "name" : "Create schedule",
+          "uid" : "722dcfb9db4addd6",
+          "parentUid" : "b1c4311c585bf30898745e72b366bfc7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700035336276,
+            "stop" : 1700035341023,
+            "duration" : 4747
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "b1c4311c585bf30898745e72b366bfc7"
+      } ],
+      "uid" : "83f5d4543c366bffbe930ef43d893704"
+    }, {
+      "name" : "search_for_registrate_users_test",
+      "children" : [ {
+        "name" : "TestSearchUsers",
+        "children" : [ {
+          "name" : "Search users",
+          "uid" : "6e6f96707bb12339",
+          "parentUid" : "2a3c39af49a6dbe33e9c15b5c2f2ef06",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700035341983,
+            "stop" : 1700035344329,
+            "duration" : 2346
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "2a3c39af49a6dbe33e9c15b5c2f2ef06"
+      } ],
+      "uid" : "5b79d63543565c283b6833a8eb44bcbd"
+    }, {
+      "name" : "send_message_test",
+      "children" : [ {
+        "name" : "TestSendMessage",
+        "children" : [ {
+          "name" : "Search users",
+          "uid" : "5915f0ef45abaa5a",
+          "parentUid" : "963008b862106546691d6733593f29a9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700035345314,
+            "stop" : 1700035354083,
+            "duration" : 8769
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "963008b862106546691d6733593f29a9"
+      } ],
+      "uid" : "9deb311ea6205fec0ac3ec9c7e465e76"
+    }, {
+      "name" : "start_new_meet_test",
+      "children" : [ {
+        "name" : "TestNewMeet",
+        "children" : [ {
+          "name" : "Start new meet",
+          "uid" : "de947f44817d10fd",
+          "parentUid" : "76e2b89d2a6b1e3246b7daf67f982165",
+          "status" : "passed",
+          "time" : {
+            "start" : 1700035355000,
+            "stop" : 1700035360962,
+            "duration" : 5962
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "76e2b89d2a6b1e3246b7daf67f982165"
+      } ],
+      "uid" : "1f199a892195d4ccdad63d30260a39e4"
+    } ],
+    "uid" : "e387fa4bb326b54ea8c19c2822aba374"
+  } ],
+  "name" : "suites"
+}

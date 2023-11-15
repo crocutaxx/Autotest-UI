@@ -1,5 +1,4 @@
 import allure
-import pytest
 from base.base_test import BaseTest
 
 
@@ -7,7 +6,7 @@ from base.base_test import BaseTest
 class TestSearchUsers(BaseTest):
     @allure.title("Search users")
     @allure.severity("Normal")
-    def test_search_users(self):
+    def test_search_users(self, setup_1):
         self.login_page.open()
         self.login_page.enter_login(self.data.LOGIN)
         self.login_page.enter_password(self.data.PASSWORD)

@@ -1,5 +1,4 @@
 import allure
-import pytest
 from base.base_test import BaseTest
 
 
@@ -8,7 +7,7 @@ class TestSendMessage(BaseTest):
 
     @allure.title("Search users")
     @allure.severity("Normal")
-    def test_send_message(self):
+    def test_send_message(self, setup_1):
         self.login_page.open()
         self.login_page.enter_login(self.data.LOGIN)
         self.login_page.enter_password(self.data.PASSWORD)

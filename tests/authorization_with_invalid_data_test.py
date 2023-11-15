@@ -1,12 +1,11 @@
 import allure
-import pytest
 from base.base_test import BaseTest
 
 @allure.feature("Authorization Functionality")
 class TestInvalidAuthorization(BaseTest):
     @allure.title("Invalid authorization")
     @allure.severity("Normal")
-    def test_invalid_authorization(self):
+    def test_invalid_authorization(self, setup_1):
         self.login_page.open()
         self.login_page.enter_login("mail@mail.com")
         self.login_page.enter_password("PASSWORD")

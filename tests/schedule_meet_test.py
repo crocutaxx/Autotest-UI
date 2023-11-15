@@ -1,12 +1,11 @@
 import allure
-import pytest
 from base.base_test import BaseTest
 
 @allure.feature("Schedule Functionality")
 class TestScheduleFeature(BaseTest):
     @allure.title("Create schedule")
     @allure.severity("Critical")
-    def test_create_schedule(self):
+    def test_create_schedule(self, setup_1):
         self.login_page.open()
         self.login_page.enter_login(self.data.LOGIN)
         self.login_page.enter_password(self.data.PASSWORD)

@@ -1,5 +1,4 @@
 import allure
-import pytest
 from base.base_test import BaseTest
 
 
@@ -8,7 +7,7 @@ class TestDeleteMeetFeature(BaseTest):
 
     @allure.title("Delete schedule")
     @allure.severity("Normal")
-    def test_delete_schedule(self):
+    def test_delete_schedule(self,setup_1):
         self.login_page.open()
         self.login_page.enter_login(self.data.LOGIN)
         self.login_page.enter_password(self.data.PASSWORD)

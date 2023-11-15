@@ -1,5 +1,4 @@
 import allure
-import pytest
 from base.base_test import BaseTest
 
 
@@ -8,7 +7,7 @@ class TestLogOut(BaseTest):
 
     @allure.title("Log Out")
     @allure.severity("Normal")
-    def test_log_out(self):
+    def test_log_out(self, setup_1):
         self.login_page.open()
         self.login_page.enter_login(self.data.LOGIN)
         self.login_page.enter_password(self.data.PASSWORD)

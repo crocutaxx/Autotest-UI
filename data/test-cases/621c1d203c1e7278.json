@@ -1,12 +1,12 @@
 {
-  "uid" : "18390050a3fca387",
-  "name" : "Invalid authorization",
-  "fullName" : "tests.authorization_with_invalid_data_test.TestInvalidAuthorization#test_invalid_authorization",
-  "historyId" : "8d0ec23909e4f597b7be863c42ba397f",
+  "uid" : "621c1d203c1e7278",
+  "name" : "Log Out",
+  "fullName" : "tests.log_out_test.TestLogOut#test_log_out",
+  "historyId" : "d6f9662fdf9406323cdc53ccc0b75991",
   "time" : {
-    "start" : 1700041771368,
-    "stop" : 1700041775976,
-    "duration" : 4608
+    "start" : 1700044735504,
+    "stop" : 1700044739937,
+    "duration" : 4433
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,32 +14,32 @@
   "beforeStages" : [ {
     "name" : "setup_1",
     "time" : {
-      "start" : 1700041771367,
-      "stop" : 1700041771367,
+      "start" : 1700044735503,
+      "stop" : 1700044735503,
       "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 0,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
     "hasContent" : false
   }, {
     "name" : "driver_1",
     "time" : {
-      "start" : 1700041770549,
-      "stop" : 1700041771367,
-      "duration" : 818
+      "start" : 1700044734684,
+      "stop" : 1700044735503,
+      "duration" : 819
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 0,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
     "hasContent" : false
   } ],
   "testStage" : {
@@ -47,127 +47,157 @@
     "steps" : [ {
       "name" : "Open https://dev.qosyl.kz/login page",
       "time" : {
-        "start" : 1700041771368,
-        "stop" : 1700041773541,
-        "duration" : 2173
+        "start" : 1700044735504,
+        "stop" : 1700044737073,
+        "duration" : 1569
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
       "hasContent" : false
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1700041773542,
-        "stop" : 1700041773658,
-        "duration" : 116
+        "start" : 1700044737074,
+        "stop" : 1700044737200,
+        "duration" : 126
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "login",
-        "value" : "'mail@mail.com'"
+        "value" : "'geeeglom@yandex.by'"
       } ],
+      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
       "hasContent" : true
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1700041773659,
-        "stop" : 1700041773737,
-        "duration" : 78
+        "start" : 1700044737200,
+        "stop" : 1700044737274,
+        "duration" : 74
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "password",
-        "value" : "'PASSWORD'"
+        "value" : "'123456'"
       } ],
+      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
       "hasContent" : true
     }, {
-      "name" : "Click submit button",
+      "name" : "Confir login and pass - Click submit button",
       "time" : {
-        "start" : 1700041773737,
-        "stop" : 1700041773800,
-        "duration" : 63
+        "start" : 1700044737274,
+        "stop" : 1700044737339,
+        "duration" : 65
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Check push incorect data",
+      "name" : "Page https://dev.qosyl.kz/ is opened",
       "time" : {
-        "start" : 1700041773800,
-        "stop" : 1700041775845,
-        "duration" : 2045
+        "start" : 1700044737339,
+        "stop" : 1700044738361,
+        "duration" : 1022
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Page https://dev.qosyl.kz/login is opened",
+      "name" : "Click on user avatar button",
       "time" : {
-        "start" : 1700041775845,
-        "stop" : 1700041775848,
-        "duration" : 3
+        "start" : 1700044738361,
+        "stop" : 1700044738417,
+        "duration" : 56
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click on log out button",
+      "time" : {
+        "start" : 1700044738417,
+        "stop" : 1700044739483,
+        "duration" : 1066
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
       "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Open https://dev.qosyl.kz/login page",
+      "time" : {
+        "start" : 1700044739483,
+        "stop" : 1700044739788,
+        "duration" : 305
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "2c2901cc706325dd",
-      "name" : "test_invalid_authorization",
-      "source" : "2c2901cc706325dd.png",
+      "uid" : "36933d5a5a7dcc7c",
+      "name" : "log_out_sucsessful",
+      "source" : "36933d5a5a7dcc7c.png",
       "type" : "image/png",
-      "size" : 73226
+      "size" : 70465
     } ],
     "parameters" : [ ],
+    "stepsCount" : 8,
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 6,
     "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "driver_1::0",
     "time" : {
-      "start" : 1700041775976,
-      "stop" : 1700041776031,
-      "duration" : 55
+      "start" : 1700044739938,
+      "stop" : 1700044739994,
+      "duration" : 56
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 0,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
     "hasContent" : false
   } ],
   "labels" : [ {
@@ -175,19 +205,19 @@
     "value" : "Normal"
   }, {
     "name" : "feature",
-    "value" : "Authorization Functionality"
+    "value" : "Log out Functionality"
   }, {
     "name" : "parentSuite",
     "value" : "tests"
   }, {
     "name" : "suite",
-    "value" : "authorization_with_invalid_data_test"
+    "value" : "log_out_test"
   }, {
     "name" : "subSuite",
-    "value" : "TestInvalidAuthorization"
+    "value" : "TestLogOut"
   }, {
     "name" : "host",
-    "value" : "242e4a60e406"
+    "value" : "1b2bf0cb8e17"
   }, {
     "name" : "thread",
     "value" : "8-MainThread"
@@ -199,7 +229,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "tests.authorization_with_invalid_data_test"
+    "value" : "tests.log_out_test"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -217,22 +247,30 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 2,
+        "passed" : 3,
         "unknown" : 0,
-        "total" : 2
+        "total" : 3
       },
       "items" : [ {
-        "uid" : "88b736cd354a3322",
+        "uid" : "a71dd7bda68ed34",
         "status" : "passed",
         "time" : {
-          "start" : 1700035303024,
-          "stop" : 1700035304998,
-          "duration" : 1974
+          "start" : 1700041815735,
+          "stop" : 1700041821857,
+          "duration" : 6122
+        }
+      }, {
+        "uid" : "4e0e0f0d6665cac1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700035332001,
+          "stop" : 1700035335345,
+          "duration" : 3344
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "18390050a3fca387.json",
+  "source" : "621c1d203c1e7278.json",
   "parameterValues" : [ ]
 }

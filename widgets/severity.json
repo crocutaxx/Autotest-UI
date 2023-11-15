@@ -1,111 +1,111 @@
 [ {
-  "uid" : "1a2f1f7728d79ccb",
-  "name" : "Delete schedule",
-  "time" : {
-    "start" : 1700041804478,
-    "stop" : 1700041814859,
-    "duration" : 10381
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5c86692ef04df1d2",
-  "name" : "Create schedule",
-  "time" : {
-    "start" : 1700041760611,
-    "stop" : 1700041770460,
-    "duration" : 9849
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "a71dd7bda68ed34",
-  "name" : "Log Out",
-  "time" : {
-    "start" : 1700041815735,
-    "stop" : 1700041821857,
-    "duration" : 6122
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1aed596b8274b7fc",
-  "name" : "Create schedule",
-  "time" : {
-    "start" : 1700041822730,
-    "stop" : 1700041829755,
-    "duration" : 7025
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "18390050a3fca387",
+  "uid" : "290e025f2702b379",
   "name" : "Invalid authorization",
   "time" : {
-    "start" : 1700041771368,
-    "stop" : 1700041775976,
-    "duration" : 4608
+    "start" : 1700044697266,
+    "stop" : 1700044700361,
+    "duration" : 3095
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "edbf0479c8f8df37",
-  "name" : "Connect to meeting with id and auth user",
+  "uid" : "656f50f1fb408737",
+  "name" : "Create schedule",
   "time" : {
-    "start" : 1700041790332,
-    "stop" : 1700041797570,
-    "duration" : 7238
+    "start" : 1700044740819,
+    "stop" : 1700044746319,
+    "duration" : 5500
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "6010b1af88797b5a",
-  "name" : "Blok schedule",
-  "time" : {
-    "start" : 1700041776848,
-    "stop" : 1700041789460,
-    "duration" : 12612
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "68923048d77df39a",
-  "name" : "Connect to meeting with id and not auth user",
-  "time" : {
-    "start" : 1700041798443,
-    "stop" : 1700041803601,
-    "duration" : 5158
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "4c3faeba51245454",
-  "name" : "Search users",
-  "time" : {
-    "start" : 1700041830627,
-    "stop" : 1700041836406,
-    "duration" : 5779
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "fb95f38c8aa69bfe",
+  "uid" : "dc41e26836b3cfc2",
   "name" : "Start new meet",
   "time" : {
-    "start" : 1700041850138,
-    "stop" : 1700041861440,
-    "duration" : 11302
+    "start" : 1700044763688,
+    "stop" : 1700044773437,
+    "duration" : 9749
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3fc83e8c5b0d5bb9",
-  "name" : "Search users",
+  "uid" : "de6d8dce35244103",
+  "name" : "Delete schedule",
   "time" : {
-    "start" : 1700041837281,
-    "stop" : 1700041849260,
-    "duration" : 11979
+    "start" : 1700044725846,
+    "stop" : 1700044734622,
+    "duration" : 8776
   },
   "status" : "passed",
   "severity" : "normal"
+}, {
+  "uid" : "8c3cdc4525306fba",
+  "name" : "Blok schedule",
+  "time" : {
+    "start" : 1700044701237,
+    "stop" : 1700044712184,
+    "duration" : 10947
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c47dae34b80ad2fe",
+  "name" : "Connect to meeting with id and auth user",
+  "time" : {
+    "start" : 1700044713067,
+    "stop" : 1700044718903,
+    "duration" : 5836
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "81800b744ca031d7",
+  "name" : "Search users",
+  "time" : {
+    "start" : 1700044747200,
+    "stop" : 1700044751371,
+    "duration" : 4171
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dae1f27d7d236dfd",
+  "name" : "Connect to meeting with id and not auth user",
+  "time" : {
+    "start" : 1700044719789,
+    "stop" : 1700044724961,
+    "duration" : 5172
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "621c1d203c1e7278",
+  "name" : "Log Out",
+  "time" : {
+    "start" : 1700044735504,
+    "stop" : 1700044739937,
+    "duration" : 4433
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "820a3761090adb19",
+  "name" : "Search users",
+  "time" : {
+    "start" : 1700044752254,
+    "stop" : 1700044762804,
+    "duration" : 10550
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6157abadeb5828d5",
+  "name" : "Create schedule",
+  "time" : {
+    "start" : 1700044687400,
+    "stop" : 1700044696355,
+    "duration" : 8955
+  },
+  "status" : "passed",
+  "severity" : "critical"
 } ]

@@ -35,3 +35,4 @@ class TestSendMessage(BaseTest):
         self.messages_page.check_unread_message()
         self.messages_page.click_on_user_dialog()
         self.messages_page.check_last_message()
+        self.messages_page.make_screenshot("sended_message")

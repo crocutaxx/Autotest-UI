@@ -21,7 +21,7 @@ class LoginPage(BasePage):
     def enter_password(self, password):
         self.wait.until(EC.element_to_be_clickable(self.PASSWORD_FIELD)).send_keys(password)
 
-    @allure.step("Click submit button")
+    @allure.step("Confir login and pass - Click submit button")
     def click_submit_button(self):
         self.wait.until(EC.element_to_be_clickable(self.SUBMIT_BUTTON)).click()
 

@@ -21,3 +21,4 @@ class TestConnectToMeetingWithIDAuthUser(BaseTest):
         #self.meet_page.click_on_dismiss_alert_button() #Нужен для локального запуска
         self.meet_page.click_on_enter_without_cheking_button()
         self.meet_page.check_enter_meet_push
+        self.meet_page.make_screenshot("connect_to_meet_auth")

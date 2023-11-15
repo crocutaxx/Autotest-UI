@@ -1,22 +1,22 @@
 {
-  "uid" : "e1e628d54aa4ed9",
+  "uid" : "c54392165846e02",
   "name" : "Invalid authorization",
   "fullName" : "tests.authorization_with_invalid_data_test.TestInvalidAuthorization#test_invalid_authorization",
   "historyId" : "8d0ec23909e4f597b7be863c42ba397f",
   "time" : {
-    "start" : 1700046734365,
-    "stop" : 1700046737420,
-    "duration" : 3055
+    "start" : 1700047297019,
+    "stop" : 1700047300628,
+    "duration" : 3609
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "driver_1",
+    "name" : "setup_1",
     "time" : {
-      "start" : 1700046733554,
-      "stop" : 1700046734365,
-      "duration" : 811
+      "start" : 1700047297019,
+      "stop" : 1700047297019,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -27,11 +27,11 @@
     "stepsCount" : 0,
     "hasContent" : false
   }, {
-    "name" : "setup_1",
+    "name" : "driver_1",
     "time" : {
-      "start" : 1700046734365,
-      "stop" : 1700046734365,
-      "duration" : 0
+      "start" : 1700047296196,
+      "stop" : 1700047297019,
+      "duration" : 823
     },
     "status" : "passed",
     "steps" : [ ],
@@ -47,9 +47,9 @@
     "steps" : [ {
       "name" : "Open https://dev.qosyl.kz/login page",
       "time" : {
-        "start" : 1700046734365,
-        "stop" : 1700046735986,
-        "duration" : 1621
+        "start" : 1700047297019,
+        "stop" : 1700047299185,
+        "duration" : 2166
       },
       "status" : "passed",
       "steps" : [ ],
@@ -62,9 +62,9 @@
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1700046735986,
-        "stop" : 1700046736093,
-        "duration" : 107
+        "start" : 1700047299185,
+        "stop" : 1700047299305,
+        "duration" : 120
       },
       "status" : "passed",
       "steps" : [ ],
@@ -77,9 +77,9 @@
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1700046736093,
-        "stop" : 1700046736175,
-        "duration" : 82
+        "start" : 1700047299305,
+        "stop" : 1700047299383,
+        "duration" : 78
       },
       "status" : "passed",
       "steps" : [ ],
@@ -92,9 +92,9 @@
     }, {
       "name" : "Confir login and pass - Click submit button",
       "time" : {
-        "start" : 1700046736175,
-        "stop" : 1700046736232,
-        "duration" : 57
+        "start" : 1700047299383,
+        "stop" : 1700047299439,
+        "duration" : 56
       },
       "status" : "passed",
       "steps" : [ ],
@@ -107,9 +107,9 @@
     }, {
       "name" : "Check push incorect data",
       "time" : {
-        "start" : 1700046736232,
-        "stop" : 1700046737273,
-        "duration" : 1041
+        "start" : 1700047299439,
+        "stop" : 1700047300478,
+        "duration" : 1039
       },
       "status" : "passed",
       "steps" : [ ],
@@ -122,9 +122,9 @@
     }, {
       "name" : "Page https://dev.qosyl.kz/login is opened",
       "time" : {
-        "start" : 1700046737273,
-        "stop" : 1700046737276,
-        "duration" : 3
+        "start" : 1700047300478,
+        "stop" : 1700047300480,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -136,11 +136,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "8e30cde7fd99df51",
+      "uid" : "5f41761480782f36",
       "name" : "test_invalid_authorization",
-      "source" : "8e30cde7fd99df51.png",
+      "source" : "5f41761480782f36.png",
       "type" : "image/png",
-      "size" : 73404
+      "size" : 69536
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -151,9 +151,9 @@
   "afterStages" : [ {
     "name" : "driver_1::0",
     "time" : {
-      "start" : 1700046737421,
-      "stop" : 1700046737475,
-      "duration" : 54
+      "start" : 1700047300628,
+      "stop" : 1700047300683,
+      "duration" : 55
     },
     "status" : "passed",
     "steps" : [ ],
@@ -181,7 +181,7 @@
     "value" : "TestInvalidAuthorization"
   }, {
     "name" : "host",
-    "value" : "e5bc2173f669"
+    "value" : "c62d946d6d5a"
   }, {
     "name" : "thread",
     "value" : "8-MainThread"
@@ -211,11 +211,19 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 4,
+        "passed" : 5,
         "unknown" : 0,
-        "total" : 4
+        "total" : 5
       },
       "items" : [ {
+        "uid" : "e1e628d54aa4ed9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700046734365,
+          "stop" : 1700046737420,
+          "duration" : 3055
+        }
+      }, {
         "uid" : "290e025f2702b379",
         "status" : "passed",
         "time" : {
@@ -243,6 +251,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "e1e628d54aa4ed9.json",
+  "source" : "c54392165846e02.json",
   "parameterValues" : [ ]
 }

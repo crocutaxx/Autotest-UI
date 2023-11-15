@@ -1,22 +1,22 @@
 {
-  "uid" : "f6ab5237f82db9aa",
-  "name" : "Log Out",
-  "fullName" : "tests.log_out_test.TestLogOut#test_log_out",
-  "historyId" : "d6f9662fdf9406323cdc53ccc0b75991",
+  "uid" : "e8a36507bb9e9782",
+  "name" : "Connect to meeting with id and not auth user",
+  "fullName" : "tests.connect_with_id_not_auth_test.TestConnectToMeetingWithIDNotAuthUser#test_connect_to_meeting_wtih_id_not_auth_user",
+  "historyId" : "ad52fc71d86738a495c97ebe28a0b43a",
   "time" : {
-    "start" : 1700046775492,
-    "stop" : 1700046780980,
-    "duration" : 5488
+    "start" : 1700047323301,
+    "stop" : 1700047328529,
+    "duration" : 5228
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "setup_1",
+    "name" : "driver_1",
     "time" : {
-      "start" : 1700046775491,
-      "stop" : 1700046775491,
-      "duration" : 0
+      "start" : 1700047322487,
+      "stop" : 1700047323300,
+      "duration" : 813
     },
     "status" : "passed",
     "steps" : [ ],
@@ -27,11 +27,11 @@
     "stepsCount" : 0,
     "hasContent" : false
   }, {
-    "name" : "driver_1",
+    "name" : "setup_1",
     "time" : {
-      "start" : 1700046774675,
-      "stop" : 1700046775491,
-      "duration" : 816
+      "start" : 1700047323300,
+      "stop" : 1700047323300,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -47,9 +47,9 @@
     "steps" : [ {
       "name" : "Open https://dev.qosyl.kz/login page",
       "time" : {
-        "start" : 1700046775492,
-        "stop" : 1700046777110,
-        "duration" : 1618
+        "start" : 1700047323301,
+        "stop" : 1700047325457,
+        "duration" : 2156
       },
       "status" : "passed",
       "steps" : [ ],
@@ -60,11 +60,11 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Enter login",
+      "name" : "Click enter meet button",
       "time" : {
-        "start" : 1700046777110,
-        "stop" : 1700046777241,
-        "duration" : 131
+        "start" : 1700047325457,
+        "stop" : 1700047327193,
+        "duration" : 1736
       },
       "status" : "passed",
       "steps" : [ ],
@@ -75,11 +75,11 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Enter password",
+      "name" : "Page https://dev.qosyl.kz/meeting/ is opened",
       "time" : {
-        "start" : 1700046777241,
-        "stop" : 1700046777313,
-        "duration" : 72
+        "start" : 1700047327193,
+        "stop" : 1700047327196,
+        "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
@@ -90,11 +90,11 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Confir login and pass - Click submit button",
+      "name" : "Enter meet identificator",
       "time" : {
-        "start" : 1700046777313,
-        "stop" : 1700046777373,
-        "duration" : 60
+        "start" : 1700047327196,
+        "stop" : 1700047327266,
+        "duration" : 70
       },
       "status" : "passed",
       "steps" : [ ],
@@ -105,11 +105,11 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Page https://dev.qosyl.kz/ is opened",
+      "name" : "Enter user name",
       "time" : {
-        "start" : 1700046777373,
-        "stop" : 1700046779385,
-        "duration" : 2012
+        "start" : 1700047327266,
+        "stop" : 1700047327386,
+        "duration" : 120
       },
       "status" : "passed",
       "steps" : [ ],
@@ -120,11 +120,11 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Click on user avatar button",
+      "name" : "Click enter button",
       "time" : {
-        "start" : 1700046779385,
-        "stop" : 1700046779438,
-        "duration" : 53
+        "start" : 1700047327386,
+        "stop" : 1700047327461,
+        "duration" : 75
       },
       "status" : "passed",
       "steps" : [ ],
@@ -135,11 +135,11 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Click on log out button",
+      "name" : "Enter without cheking",
       "time" : {
-        "start" : 1700046779438,
-        "stop" : 1700046780505,
-        "duration" : 1067
+        "start" : 1700047327461,
+        "stop" : 1700047327985,
+        "duration" : 524
       },
       "status" : "passed",
       "steps" : [ ],
@@ -150,11 +150,11 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Open https://dev.qosyl.kz/login page",
+      "name" : "Enter without cheking",
       "time" : {
-        "start" : 1700046780505,
-        "stop" : 1700046780815,
-        "duration" : 310
+        "start" : 1700047327985,
+        "stop" : 1700047328361,
+        "duration" : 376
       },
       "status" : "passed",
       "steps" : [ ],
@@ -166,11 +166,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "92f3b2a30bdecabc",
-      "name" : "log_out_sucsessful",
-      "source" : "92f3b2a30bdecabc.png",
+      "uid" : "59ab7454fe14850c",
+      "name" : "connect_to_meet_not_auth",
+      "source" : "59ab7454fe14850c.png",
       "type" : "image/png",
-      "size" : 70465
+      "size" : 13102
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -181,8 +181,8 @@
   "afterStages" : [ {
     "name" : "driver_1::0",
     "time" : {
-      "start" : 1700046780981,
-      "stop" : 1700046781037,
+      "start" : 1700047328530,
+      "stop" : 1700047328586,
       "duration" : 56
     },
     "status" : "passed",
@@ -195,23 +195,23 @@
     "hasContent" : false
   } ],
   "labels" : [ {
-    "name" : "severity",
-    "value" : "Normal"
-  }, {
     "name" : "feature",
-    "value" : "Log out Functionality"
+    "value" : "Schedule Functionality"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
   }, {
     "name" : "parentSuite",
     "value" : "tests"
   }, {
     "name" : "suite",
-    "value" : "log_out_test"
+    "value" : "connect_with_id_not_auth_test"
   }, {
     "name" : "subSuite",
-    "value" : "TestLogOut"
+    "value" : "TestConnectToMeetingWithIDNotAuthUser"
   }, {
     "name" : "host",
-    "value" : "e5bc2173f669"
+    "value" : "c62d946d6d5a"
   }, {
     "name" : "thread",
     "value" : "8-MainThread"
@@ -223,7 +223,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "tests.log_out_test"
+    "value" : "tests.connect_with_id_not_auth_test"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -233,7 +233,7 @@
   "hidden" : false,
   "retry" : false,
   "extra" : {
-    "severity" : "normal",
+    "severity" : "critical",
     "retries" : [ ],
     "categories" : [ ],
     "history" : {
@@ -241,38 +241,46 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 4,
+        "passed" : 5,
         "unknown" : 0,
-        "total" : 4
+        "total" : 5
       },
       "items" : [ {
-        "uid" : "621c1d203c1e7278",
+        "uid" : "51bca70601fb7f45",
         "status" : "passed",
         "time" : {
-          "start" : 1700044735504,
-          "stop" : 1700044739937,
-          "duration" : 4433
+          "start" : 1700046757447,
+          "stop" : 1700046763984,
+          "duration" : 6537
         }
       }, {
-        "uid" : "a71dd7bda68ed34",
+        "uid" : "dae1f27d7d236dfd",
         "status" : "passed",
         "time" : {
-          "start" : 1700041815735,
-          "stop" : 1700041821857,
-          "duration" : 6122
+          "start" : 1700044719789,
+          "stop" : 1700044724961,
+          "duration" : 5172
         }
       }, {
-        "uid" : "4e0e0f0d6665cac1",
+        "uid" : "68923048d77df39a",
         "status" : "passed",
         "time" : {
-          "start" : 1700035332001,
-          "stop" : 1700035335345,
-          "duration" : 3344
+          "start" : 1700041798443,
+          "stop" : 1700041803601,
+          "duration" : 5158
+        }
+      }, {
+        "uid" : "d77e038b7e2a9747",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700035320461,
+          "stop" : 1700035322296,
+          "duration" : 1835
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "f6ab5237f82db9aa.json",
+  "source" : "e8a36507bb9e9782.json",
   "parameterValues" : [ ]
 }

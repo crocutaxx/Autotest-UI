@@ -1,12 +1,12 @@
 {
-  "uid" : "e77810eb5f408c07",
+  "uid" : "bf6ee891fc122a4f",
   "name" : "Search users",
   "fullName" : "tests.search_for_registrate_users_test.TestSearchUsers#test_search_users",
   "historyId" : "5d77a610ec4602d51e73a3b3b01cb8a0",
   "time" : {
-    "start" : 1700046788219,
-    "stop" : 1700046792399,
-    "duration" : 4180
+    "start" : 1700047355544,
+    "stop" : 1700047361288,
+    "duration" : 5744
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,9 +14,9 @@
   "beforeStages" : [ {
     "name" : "driver_1",
     "time" : {
-      "start" : 1700046787405,
-      "stop" : 1700046788218,
-      "duration" : 813
+      "start" : 1700047354729,
+      "stop" : 1700047355543,
+      "duration" : 814
     },
     "status" : "passed",
     "steps" : [ ],
@@ -29,8 +29,8 @@
   }, {
     "name" : "setup_1",
     "time" : {
-      "start" : 1700046788218,
-      "stop" : 1700046788218,
+      "start" : 1700047355543,
+      "stop" : 1700047355543,
       "duration" : 0
     },
     "status" : "passed",
@@ -47,9 +47,9 @@
     "steps" : [ {
       "name" : "Open https://dev.qosyl.kz/login page",
       "time" : {
-        "start" : 1700046788219,
-        "stop" : 1700046789833,
-        "duration" : 1614
+        "start" : 1700047355544,
+        "stop" : 1700047357732,
+        "duration" : 2188
       },
       "status" : "passed",
       "steps" : [ ],
@@ -62,9 +62,9 @@
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1700046789833,
-        "stop" : 1700046789958,
-        "duration" : 125
+        "start" : 1700047357733,
+        "stop" : 1700047357861,
+        "duration" : 128
       },
       "status" : "passed",
       "steps" : [ ],
@@ -77,9 +77,9 @@
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1700046789959,
-        "stop" : 1700046790031,
-        "duration" : 72
+        "start" : 1700047357861,
+        "stop" : 1700047357927,
+        "duration" : 66
       },
       "status" : "passed",
       "steps" : [ ],
@@ -92,9 +92,9 @@
     }, {
       "name" : "Confir login and pass - Click submit button",
       "time" : {
-        "start" : 1700046790031,
-        "stop" : 1700046790090,
-        "duration" : 59
+        "start" : 1700047357927,
+        "stop" : 1700047357984,
+        "duration" : 57
       },
       "status" : "passed",
       "steps" : [ ],
@@ -107,9 +107,9 @@
     }, {
       "name" : "Page https://dev.qosyl.kz/ is opened",
       "time" : {
-        "start" : 1700046790090,
-        "stop" : 1700046791099,
-        "duration" : 1009
+        "start" : 1700047357984,
+        "stop" : 1700047359993,
+        "duration" : 2009
       },
       "status" : "passed",
       "steps" : [ ],
@@ -122,8 +122,8 @@
     }, {
       "name" : "Click on messages button",
       "time" : {
-        "start" : 1700046791099,
-        "stop" : 1700046791145,
+        "start" : 1700047359993,
+        "stop" : 1700047360039,
         "duration" : 46
       },
       "status" : "passed",
@@ -137,9 +137,9 @@
     }, {
       "name" : "Page https://dev.qosyl.kz/messages is opened",
       "time" : {
-        "start" : 1700046791145,
-        "stop" : 1700046791147,
-        "duration" : 2
+        "start" : 1700047360039,
+        "stop" : 1700047360043,
+        "duration" : 4
       },
       "status" : "passed",
       "steps" : [ ],
@@ -152,9 +152,9 @@
     }, {
       "name" : "Search users by name",
       "time" : {
-        "start" : 1700046791147,
-        "stop" : 1700046792231,
-        "duration" : 1084
+        "start" : 1700047360043,
+        "stop" : 1700047361126,
+        "duration" : 1083
       },
       "status" : "passed",
       "steps" : [ ],
@@ -167,9 +167,9 @@
     }, {
       "name" : "Check result of search",
       "time" : {
-        "start" : 1700046792231,
-        "stop" : 1700046792259,
-        "duration" : 28
+        "start" : 1700047361126,
+        "stop" : 1700047361153,
+        "duration" : 27
       },
       "status" : "passed",
       "steps" : [ ],
@@ -181,11 +181,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "f6a18fbe747fa8be",
+      "uid" : "faa85b2c42fb3cd2",
       "name" : "result_of_search_user",
-      "source" : "f6a18fbe747fa8be.png",
+      "source" : "faa85b2c42fb3cd2.png",
       "type" : "image/png",
-      "size" : 45464
+      "size" : 45127
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -196,8 +196,8 @@
   "afterStages" : [ {
     "name" : "driver_1::0",
     "time" : {
-      "start" : 1700046792399,
-      "stop" : 1700046792454,
+      "start" : 1700047361289,
+      "stop" : 1700047361344,
       "duration" : 55
     },
     "status" : "passed",
@@ -226,7 +226,7 @@
     "value" : "TestSearchUsers"
   }, {
     "name" : "host",
-    "value" : "e5bc2173f669"
+    "value" : "c62d946d6d5a"
   }, {
     "name" : "thread",
     "value" : "8-MainThread"
@@ -256,11 +256,19 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 4,
+        "passed" : 5,
         "unknown" : 0,
-        "total" : 4
+        "total" : 5
       },
       "items" : [ {
+        "uid" : "e77810eb5f408c07",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700046788219,
+          "stop" : 1700046792399,
+          "duration" : 4180
+        }
+      }, {
         "uid" : "81800b744ca031d7",
         "status" : "passed",
         "time" : {
@@ -288,6 +296,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "e77810eb5f408c07.json",
+  "source" : "bf6ee891fc122a4f.json",
   "parameterValues" : [ ]
 }

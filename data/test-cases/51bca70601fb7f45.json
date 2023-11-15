@@ -1,0 +1,278 @@
+{
+  "uid" : "51bca70601fb7f45",
+  "name" : "Connect to meeting with id and not auth user",
+  "fullName" : "tests.connect_with_id_not_auth_test.TestConnectToMeetingWithIDNotAuthUser#test_connect_to_meeting_wtih_id_not_auth_user",
+  "historyId" : "ad52fc71d86738a495c97ebe28a0b43a",
+  "time" : {
+    "start" : 1700046757447,
+    "stop" : 1700046763984,
+    "duration" : 6537
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver_1",
+    "time" : {
+      "start" : 1700046756632,
+      "stop" : 1700046757446,
+      "duration" : 814
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup_1",
+    "time" : {
+      "start" : 1700046757446,
+      "stop" : 1700046757446,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open https://dev.qosyl.kz/login page",
+      "time" : {
+        "start" : 1700046757447,
+        "stop" : 1700046759060,
+        "duration" : 1613
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click enter meet button",
+      "time" : {
+        "start" : 1700046759060,
+        "stop" : 1700046760701,
+        "duration" : 1641
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://dev.qosyl.kz/meeting/ is opened",
+      "time" : {
+        "start" : 1700046760701,
+        "stop" : 1700046760706,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter meet identificator",
+      "time" : {
+        "start" : 1700046760706,
+        "stop" : 1700046760775,
+        "duration" : 69
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter user name",
+      "time" : {
+        "start" : 1700046760775,
+        "stop" : 1700046760893,
+        "duration" : 118
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click enter button",
+      "time" : {
+        "start" : 1700046760893,
+        "stop" : 1700046760966,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter without cheking",
+      "time" : {
+        "start" : 1700046760966,
+        "stop" : 1700046762452,
+        "duration" : 1486
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter without cheking",
+      "time" : {
+        "start" : 1700046762452,
+        "stop" : 1700046763796,
+        "duration" : 1344
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "5b010200da6e110e",
+      "name" : "connect_to_meet_not_auth",
+      "source" : "5b010200da6e110e.png",
+      "type" : "image/png",
+      "size" : 13539
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 8,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver_1::0",
+    "time" : {
+      "start" : 1700046763985,
+      "stop" : 1700046764041,
+      "duration" : 56
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Schedule Functionality"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "connect_with_id_not_auth_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestConnectToMeetingWithIDNotAuthUser"
+  }, {
+    "name" : "host",
+    "value" : "e5bc2173f669"
+  }, {
+    "name" : "thread",
+    "value" : "8-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.connect_with_id_not_auth_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "dae1f27d7d236dfd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700044719789,
+          "stop" : 1700044724961,
+          "duration" : 5172
+        }
+      }, {
+        "uid" : "68923048d77df39a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700041798443,
+          "stop" : 1700041803601,
+          "duration" : 5158
+        }
+      }, {
+        "uid" : "d77e038b7e2a9747",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700035320461,
+          "stop" : 1700035322296,
+          "duration" : 1835
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "51bca70601fb7f45.json",
+  "parameterValues" : [ ]
+}

@@ -1,6 +1,9 @@
 name: UI Tests
 
-on: workflow_dispatch
+on: workflow_dispatch:
+    push:
+      branches:
+        - main
 
 jobs:
   ui-tests:

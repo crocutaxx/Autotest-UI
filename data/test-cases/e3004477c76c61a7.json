@@ -1,36 +1,21 @@
 {
-  "uid" : "bf6ee891fc122a4f",
-  "name" : "Search users",
-  "fullName" : "tests.search_for_registrate_users_test.TestSearchUsers#test_search_users",
-  "historyId" : "5d77a610ec4602d51e73a3b3b01cb8a0",
+  "uid" : "e3004477c76c61a7",
+  "name" : "Log Out",
+  "fullName" : "tests.log_out_test.TestLogOut#test_log_out",
+  "historyId" : "d6f9662fdf9406323cdc53ccc0b75991",
   "time" : {
-    "start" : 1700047355544,
-    "stop" : 1700047361288,
-    "duration" : 5744
+    "start" : 1700117224973,
+    "stop" : 1700117229404,
+    "duration" : 4431
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "driver_1",
-    "time" : {
-      "start" : 1700047354729,
-      "stop" : 1700047355543,
-      "duration" : 814
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
-  }, {
     "name" : "setup_1",
     "time" : {
-      "start" : 1700047355543,
-      "stop" : 1700047355543,
+      "start" : 1700117224973,
+      "stop" : 1700117224973,
       "duration" : 0
     },
     "status" : "passed",
@@ -38,166 +23,166 @@
     "attachments" : [ ],
     "parameters" : [ ],
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver_1",
+    "time" : {
+      "start" : 1700117224163,
+      "stop" : 1700117224973,
+      "duration" : 810
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false
   } ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
       "name" : "Open https://dev.qosyl.kz/login page",
       "time" : {
-        "start" : 1700047355544,
-        "stop" : 1700047357732,
-        "duration" : 2188
+        "start" : 1700117224973,
+        "stop" : 1700117226561,
+        "duration" : 1588
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1700047357733,
-        "stop" : 1700047357861,
-        "duration" : 128
+        "start" : 1700117226561,
+        "stop" : 1700117226690,
+        "duration" : 129
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1700047357861,
-        "stop" : 1700047357927,
-        "duration" : 66
+        "start" : 1700117226690,
+        "stop" : 1700117226760,
+        "duration" : 70
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Confir login and pass - Click submit button",
       "time" : {
-        "start" : 1700047357927,
-        "stop" : 1700047357984,
-        "duration" : 57
+        "start" : 1700117226760,
+        "stop" : 1700117226816,
+        "duration" : 56
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Page https://dev.qosyl.kz/ is opened",
       "time" : {
-        "start" : 1700047357984,
-        "stop" : 1700047359993,
-        "duration" : 2009
+        "start" : 1700117226816,
+        "stop" : 1700117227826,
+        "duration" : 1010
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
     }, {
-      "name" : "Click on messages button",
+      "name" : "Click on user avatar button",
       "time" : {
-        "start" : 1700047359993,
-        "stop" : 1700047360039,
-        "duration" : 46
+        "start" : 1700117227826,
+        "stop" : 1700117227878,
+        "duration" : 52
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
     }, {
-      "name" : "Page https://dev.qosyl.kz/messages is opened",
+      "name" : "Click on log out button",
       "time" : {
-        "start" : 1700047360039,
-        "stop" : 1700047360043,
-        "duration" : 4
+        "start" : 1700117227879,
+        "stop" : 1700117228946,
+        "duration" : 1067
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
     }, {
-      "name" : "Search users by name",
+      "name" : "Open https://dev.qosyl.kz/login page",
       "time" : {
-        "start" : 1700047360043,
-        "stop" : 1700047361126,
-        "duration" : 1083
+        "start" : 1700117228946,
+        "stop" : 1700117229256,
+        "duration" : 310
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check result of search",
-      "time" : {
-        "start" : 1700047361126,
-        "stop" : 1700047361153,
-        "duration" : 27
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ {
-      "uid" : "faa85b2c42fb3cd2",
-      "name" : "result_of_search_user",
-      "source" : "faa85b2c42fb3cd2.png",
+      "uid" : "3e58c5d67f7e4ea8",
+      "name" : "log_out_sucsessful",
+      "source" : "3e58c5d67f7e4ea8.png",
       "type" : "image/png",
-      "size" : 45127
+      "size" : 70465
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 9,
-    "hasContent" : true
+    "stepsCount" : 8,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ {
     "name" : "driver_1::0",
     "time" : {
-      "start" : 1700047361289,
-      "stop" : 1700047361344,
+      "start" : 1700117229405,
+      "stop" : 1700117229460,
       "duration" : 55
     },
     "status" : "passed",
@@ -205,28 +190,28 @@
     "attachments" : [ ],
     "parameters" : [ ],
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "shouldDisplayMessage" : false
   } ],
   "labels" : [ {
+    "name" : "feature",
+    "value" : "Log out Functionality"
+  }, {
     "name" : "severity",
     "value" : "Normal"
-  }, {
-    "name" : "feature",
-    "value" : "Messages Functionality"
   }, {
     "name" : "parentSuite",
     "value" : "tests"
   }, {
     "name" : "suite",
-    "value" : "search_for_registrate_users_test"
+    "value" : "log_out_test"
   }, {
     "name" : "subSuite",
-    "value" : "TestSearchUsers"
+    "value" : "TestLogOut"
   }, {
     "name" : "host",
-    "value" : "c62d946d6d5a"
+    "value" : "f3ccf6a3398b"
   }, {
     "name" : "thread",
     "value" : "8-MainThread"
@@ -238,7 +223,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "tests.search_for_registrate_users_test"
+    "value" : "tests.log_out_test"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -256,46 +241,54 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 5,
+        "passed" : 6,
         "unknown" : 0,
-        "total" : 5
+        "total" : 6
       },
       "items" : [ {
-        "uid" : "e77810eb5f408c07",
+        "uid" : "5f6bdb03e82fe65b",
         "status" : "passed",
         "time" : {
-          "start" : 1700046788219,
-          "stop" : 1700046792399,
-          "duration" : 4180
+          "start" : 1700047340679,
+          "stop" : 1700047346773,
+          "duration" : 6094
         }
       }, {
-        "uid" : "81800b744ca031d7",
+        "uid" : "f6ab5237f82db9aa",
         "status" : "passed",
         "time" : {
-          "start" : 1700044747200,
-          "stop" : 1700044751371,
-          "duration" : 4171
+          "start" : 1700046775492,
+          "stop" : 1700046780980,
+          "duration" : 5488
         }
       }, {
-        "uid" : "4c3faeba51245454",
+        "uid" : "621c1d203c1e7278",
         "status" : "passed",
         "time" : {
-          "start" : 1700041830627,
-          "stop" : 1700041836406,
-          "duration" : 5779
+          "start" : 1700044735504,
+          "stop" : 1700044739937,
+          "duration" : 4433
         }
       }, {
-        "uid" : "6e6f96707bb12339",
+        "uid" : "a71dd7bda68ed34",
         "status" : "passed",
         "time" : {
-          "start" : 1700035341983,
-          "stop" : 1700035344329,
-          "duration" : 2346
+          "start" : 1700041815735,
+          "stop" : 1700041821857,
+          "duration" : 6122
+        }
+      }, {
+        "uid" : "4e0e0f0d6665cac1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700035332001,
+          "stop" : 1700035335345,
+          "duration" : 3344
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "bf6ee891fc122a4f.json",
+  "source" : "e3004477c76c61a7.json",
   "parameterValues" : [ ]
 }

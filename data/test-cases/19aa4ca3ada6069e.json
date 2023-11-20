@@ -1,21 +1,36 @@
 {
-  "uid" : "7ff55be8eb46b30e",
+  "uid" : "19aa4ca3ada6069e",
   "name" : "Delete schedule",
   "fullName" : "tests.delete_meet_test.TestDeleteMeetFeature#test_delete_schedule",
   "historyId" : "bcd0d9107518041c9c04e2aa13b18952",
   "time" : {
-    "start" : 1700462247530,
-    "stop" : 1700462256258,
-    "duration" : 8728
+    "start" : 1700462897791,
+    "stop" : 1700462908026,
+    "duration" : 10235
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
+    "name" : "driver_1",
+    "time" : {
+      "start" : 1700462896969,
+      "stop" : 1700462897790,
+      "duration" : 821
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
     "name" : "setup_1",
     "time" : {
-      "start" : 1700462247530,
-      "stop" : 1700462247530,
+      "start" : 1700462897790,
+      "stop" : 1700462897790,
       "duration" : 0
     },
     "status" : "passed",
@@ -24,32 +39,17 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
-  }, {
-    "name" : "driver_1",
-    "time" : {
-      "start" : 1700462246713,
-      "stop" : 1700462247530,
-      "duration" : 817
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
       "name" : "Open https://dev.qosyl.kz/login page",
       "time" : {
-        "start" : 1700462247531,
-        "stop" : 1700462249128,
-        "duration" : 1597
+        "start" : 1700462897791,
+        "stop" : 1700462899810,
+        "duration" : 2019
       },
       "status" : "passed",
       "steps" : [ ],
@@ -57,14 +57,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1700462249128,
-        "stop" : 1700462249253,
-        "duration" : 125
+        "start" : 1700462899810,
+        "stop" : 1700462899943,
+        "duration" : 133
       },
       "status" : "passed",
       "steps" : [ ],
@@ -72,14 +72,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1700462249253,
-        "stop" : 1700462249326,
-        "duration" : 73
+        "start" : 1700462899943,
+        "stop" : 1700462900013,
+        "duration" : 70
       },
       "status" : "passed",
       "steps" : [ ],
@@ -87,14 +87,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Confir login and pass - Click submit button",
       "time" : {
-        "start" : 1700462249326,
-        "stop" : 1700462249386,
-        "duration" : 60
+        "start" : 1700462900013,
+        "stop" : 1700462900079,
+        "duration" : 66
       },
       "status" : "passed",
       "steps" : [ ],
@@ -102,14 +102,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Page https://dev.qosyl.kz/ is opened",
       "time" : {
-        "start" : 1700462249386,
-        "stop" : 1700462250397,
-        "duration" : 1011
+        "start" : 1700462900079,
+        "stop" : 1700462902088,
+        "duration" : 2009
       },
       "status" : "passed",
       "steps" : [ ],
@@ -117,14 +117,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Click on planning meet button",
       "time" : {
-        "start" : 1700462250397,
-        "stop" : 1700462250446,
-        "duration" : 49
+        "start" : 1700462902088,
+        "stop" : 1700462902136,
+        "duration" : 48
       },
       "status" : "passed",
       "steps" : [ ],
@@ -132,13 +132,13 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Page https://dev.qosyl.kz/schedule is opened",
       "time" : {
-        "start" : 1700462250446,
-        "stop" : 1700462250448,
+        "start" : 1700462902136,
+        "stop" : 1700462902138,
         "duration" : 2
       },
       "status" : "passed",
@@ -147,14 +147,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Add topic name",
       "time" : {
-        "start" : 1700462250448,
-        "stop" : 1700462251549,
-        "duration" : 1101
+        "start" : 1700462902138,
+        "stop" : 1700462903241,
+        "duration" : 1103
       },
       "status" : "passed",
       "steps" : [ ],
@@ -162,14 +162,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Save schedule",
       "time" : {
-        "start" : 1700462251550,
-        "stop" : 1700462251607,
-        "duration" : 57
+        "start" : 1700462903242,
+        "stop" : 1700462903303,
+        "duration" : 61
       },
       "status" : "passed",
       "steps" : [ ],
@@ -177,14 +177,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Open https://dev.qosyl.kz/ page",
       "time" : {
-        "start" : 1700462251607,
-        "stop" : 1700462251912,
-        "duration" : 305
+        "start" : 1700462903303,
+        "stop" : 1700462903672,
+        "duration" : 369
       },
       "status" : "passed",
       "steps" : [ ],
@@ -192,13 +192,13 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Click on planned name meet",
       "time" : {
-        "start" : 1700462251912,
-        "stop" : 1700462252975,
+        "start" : 1700462903672,
+        "stop" : 1700462904735,
         "duration" : 1063
       },
       "status" : "passed",
@@ -207,14 +207,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Click on delete meet button",
       "time" : {
-        "start" : 1700462252976,
-        "stop" : 1700462254032,
-        "duration" : 1056
+        "start" : 1700462904735,
+        "stop" : 1700462905796,
+        "duration" : 1061
       },
       "status" : "passed",
       "steps" : [ ],
@@ -222,14 +222,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Click on confirm action button",
       "time" : {
-        "start" : 1700462254032,
-        "stop" : 1700462255091,
-        "duration" : 1059
+        "start" : 1700462905796,
+        "stop" : 1700462906860,
+        "duration" : 1064
       },
       "status" : "passed",
       "steps" : [ ],
@@ -237,14 +237,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Check push meet has been delete",
       "time" : {
-        "start" : 1700462255092,
-        "stop" : 1700462256126,
-        "duration" : 1034
+        "start" : 1700462906860,
+        "stop" : 1700462907895,
+        "duration" : 1035
       },
       "status" : "passed",
       "steps" : [ ],
@@ -252,27 +252,27 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "9a4342df90179db6",
+      "uid" : "11678c48c1b98384",
       "name" : "test_delete_schedule",
-      "source" : "9a4342df90179db6.png",
+      "source" : "11678c48c1b98384.png",
       "type" : "image/png",
-      "size" : 75000
+      "size" : 61829
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 14
+    "stepsCount" : 14,
+    "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "driver_1::0",
     "time" : {
-      "start" : 1700462256258,
-      "stop" : 1700462256314,
+      "start" : 1700462908027,
+      "stop" : 1700462908083,
       "duration" : 56
     },
     "status" : "passed",
@@ -281,8 +281,8 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "labels" : [ {
     "name" : "severity",
@@ -301,7 +301,7 @@
     "value" : "TestDeleteMeetFeature"
   }, {
     "name" : "host",
-    "value" : "e1e1c5e1e246"
+    "value" : "1551d791c1d7"
   }, {
     "name" : "thread",
     "value" : "8-MainThread"
@@ -331,11 +331,19 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 7,
+        "passed" : 8,
         "unknown" : 0,
-        "total" : 7
+        "total" : 8
       },
       "items" : [ {
+        "uid" : "7ff55be8eb46b30e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700462247530,
+          "stop" : 1700462256258,
+          "duration" : 8728
+        }
+      }, {
         "uid" : "43dc966f9a26db18",
         "status" : "passed",
         "time" : {
@@ -387,6 +395,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "7ff55be8eb46b30e.json",
+  "source" : "19aa4ca3ada6069e.json",
   "parameterValues" : [ ]
 }

@@ -1,39 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "selenium.common.exceptions.TimeoutException: Message:",
-      "children" : [ {
-        "name" : "Blok schedule",
-        "uid" : "32bc491f095a93a1",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1700462194580,
-          "stop" : 1700462212191,
-          "duration" : 17611
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Create room in meet",
-        "uid" : "ba68312b884da2bc",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1700462226113,
-          "stop" : 1700462246648,
-          "duration" : 20535
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ],
+  "children" : [ ],
   "name" : "categories"
 }

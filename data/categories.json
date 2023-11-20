@@ -5,14 +5,27 @@
     "children" : [ {
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
-        "name" : "Create room in meet",
-        "uid" : "5cb7e47bb1c4cb93",
+        "name" : "Blok schedule",
+        "uid" : "32bc491f095a93a1",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1700462177559,
-          "stop" : 1700462198277,
-          "duration" : 20718
+          "start" : 1700462194580,
+          "stop" : 1700462212191,
+          "duration" : 17611
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create room in meet",
+        "uid" : "ba68312b884da2bc",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1700462226113,
+          "stop" : 1700462246648,
+          "duration" : 20535
         },
         "flaky" : false,
         "newFailed" : false,

@@ -30,6 +30,7 @@ class PlanningMeetPage(BasePage):
     PASSWORD_MEET_FIELD = ("xpath", "//*[strong[text()='Пароль встречи']]")
     DESCRIPTION_MEET_FIELD = ("xpath", "//*[strong[text()='Описание встречи']]")
     IDENTIFICATOR_MEET_FIELD = ("xpath", "//*[strong[text()='Идентификатор встречи']]")
+    CLOSE_BUTTON = ("xpath", "//span[text()='Закрыть']")
 
     # С главной страницы для проверки наличия запланированной встречи
     PLANNED_MEET_NAME_BUTTON = ("xpath", "//div[contains(@class, 'Home_content')]//div[contains(@class, 'Home_today')]//p")
@@ -113,3 +114,7 @@ class PlanningMeetPage(BasePage):
     def get_meet_identificator(self):
         meeting_id_text = self.wait.until(EC.visibility_of_element_located(self.IDENTIFICATOR_MEET_FIELD)).text
         meeting_id = meeting_id_text[22:]
+
+    @allure.step("Click on schedule meeting close button")
+    def click_on_close_schedule_meeting_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.CLOSE_BUTTON)).click()

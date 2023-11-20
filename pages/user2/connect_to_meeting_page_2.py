@@ -2,7 +2,7 @@ import allure
 from base.base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
-
+from selenium.webdriver import Keys
 class ConnectToMeetingPage(BasePage):
     # Решить вопрос как прокидывать идентификатор встречи в урл для использования is_opend
 
@@ -28,7 +28,3 @@ class ConnectToMeetingPage(BasePage):
     @allure.step("Click enter button")
     def click_enter_button(self):
         self.wait.until(EC.element_to_be_clickable(self.ENTER_BUTTON)).click()
-
-
-
-

@@ -10,5 +10,5 @@ class Links():
     CALENDAR_PAGE = f"{HOST}/calendar"
     USERS_PAGE = f"{HOST}/users"
     MESSAGES_PAGE = f"{HOST}/messages"
-    MEET_PAGE = f"{HOST}/meeting/?room="
+    MEET_PAGE = f"{HOST}/meeting/index.html"
     CONNECT_TO_MEETING_PAGE = f"{HOST}/meeting/"

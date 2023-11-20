@@ -4,6 +4,7 @@ import keyboard
 from base.base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 
 class MeetPage(BasePage):
     # Решить вопрос как прокидывать идентификатор встречи в урл для использования is_opend
@@ -32,6 +33,8 @@ class MeetPage(BasePage):
     INPUT_NAME_ROOM_FIELD = ("xpath", "//input[@id='outlined-basic']")
     CREATE_ROOM_MODAL_BUTTON = ("xpath", "(//button[text()='Создать комнату'])[2]")
     CREATED_ROOM = ("xpath", "//p[text()='auto room']")
+    CONNECT_TO_ROOM_BUTTON = ("xpath", "(//*[@class='btns'])[2]")
+    RETURN_IN_MAIN_ROOM = ("xpath", "//button[text()='Вернуться в основную комнату']")
 
     INFORMATION_BUTTON = ("xpath", "//li[text()='Информация']")
     MEETING_MANAGEMENT_BUTTON = ("xpath", "//li[text()='Управление встречей']")
@@ -49,19 +52,19 @@ class MeetPage(BasePage):
 
     ICON_RISE_HAND = ("xpath", "//*[@class='icon raise-hand']")
     ICON_RISE_HAND_IN_USERS = ("xpath", "//p[text()='Тестирование']/*[@class='raise']")
-
+    COUNT_PARTICIPANTS_ON_MEET = ("xpath", "//p[contains(text(), 'Участники')]")
     @allure.step("Enter without cheking")
     def click_on_enter_without_cheking_button(self):
         self.wait.until(EC.element_to_be_clickable(self.ENTER_WITHOUT_CHEKING)).click()
 
     @allure.step("Check push enter meet")
     def check_enter_meet_push(self):
-        self.wait.until(EC.visibility_of_element_located_of(self.PUSH_ENTER_MEET))
+        self.wait.until(EC.visibility_of_element_located(self.PUSH_ENTER_MEET))
         self.wait.until(EC.text_to_be_present_in_element(self.PUSH_ENTER_MEET, "Вы вошли в комнату!"))
 
     @allure.step("Click on dismiss alert button")
     def click_on_dismiss_alert_button(self):
-        time.sleep(2)
+        time.sleep(3)
         keyboard.press('enter')
 
     @allure.step("Click on More button")
@@ -86,7 +89,7 @@ class MeetPage(BasePage):
 
     @allure.step("Check created romm")
     def check_created_room(self):
-        self.wait.until(EC.visibility_of_element_located_of(self.CREATED_ROOM))
+        self.wait.until(EC.visibility_of_element_located(self.CREATED_ROOM))
         self.wait.until(EC.text_to_be_present_in_element(self.CREATED_ROOM, "auto room"))
 
     @allure.step("Click on raise hand button")
@@ -95,17 +98,17 @@ class MeetPage(BasePage):
 
     @allure.step("Check your rise hand push")
     def check_your_reise_hand_push(self):
-        self.wait.until(EC.visibility_of_element_located_of(self.PUSH_YOUR_RISE_HAND))
+        self.wait.until(EC.visibility_of_element_located(self.PUSH_YOUR_RISE_HAND))
         self.wait.until(EC.text_to_be_present_in_element(self.PUSH_YOUR_RISE_HAND, "Вы подняли руку"))
 
     @allure.step("Check someone rise hand push")
     def check_someone_reise_hand_push(self):
-        self.wait.until(EC.visibility_of_element_located_of(self.PUSH_SOMEONE_RISE_HAND))
+        self.wait.until(EC.visibility_of_element_located(self.PUSH_SOMEONE_RISE_HAND))
         self.wait.until(EC.text_to_be_present_in_element(self.PUSH_SOMEONE_RISE_HAND, "Тестирование поднял руку"))
 
     @allure.step("Check rise hand icon")
     def check_reise_hand_icon(self):
-        self.wait.until(EC.visibility_of_element_located_of(self.ICON_RISE_HAND))
+        self.wait.until(EC.visibility_of_element_located(self.ICON_RISE_HAND))
 
     @allure.step("Click on participans button")
     def click_on_participans_button(self):
@@ -113,4 +116,22 @@ class MeetPage(BasePage):
 
     @allure.step("Check rise hand icon in users")
     def check_reise_hand_icon_in_users(self):
-        self.wait.until(EC.visibility_of_element_located_of(self.ICON_RISE_HAND_IN_USERS))
+        self.wait.until(EC.visibility_of_element_located(self.ICON_RISE_HAND_IN_USERS))
+
+    @allure.step("Click on connect to room button")
+    def click_on_connect_to_toom_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.CONNECT_TO_ROOM_BUTTON)).click()
+
+    @allure.step("Check connect to room")
+    def check_return_to_main_room_button(self):
+        self.wait.until(EC.visibility_of_element_located(self.RETURN_IN_MAIN_ROOM))
+
+    @allure.step("Check count of participants")
+    def check_count_of_participants(self):
+        self.wait.until(EC.visibility_of_element_located(self.COUNT_PARTICIPANTS_ON_MEET))
+        self.wait.until(EC.text_to_be_present_in_element(self.COUNT_PARTICIPANTS_ON_MEET, "Участники (1)"))
+
+    @allure.step("Click on invitation link button")
+    def click_on_invitation_link_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.INVITATION_LINK_BUTTON)).click()
+

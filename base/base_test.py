@@ -67,3 +67,4 @@ class BaseTest:
         request.cls.messages_page_2 = MessagesPage(driver_2)
         request.cls.meet_page_2 = MeetPage(driver_2)
         request.cls.connect_to_meeting_page_2 = ConnectToMeetingPage(driver_2)
+

@@ -2,7 +2,7 @@ import allure
 from base.base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
-
+from selenium.webdriver import Keys
 class ConnectToMeetingPage(BasePage):
     # Решить вопрос как прокидывать идентификатор встречи в урл для использования is_opend
 

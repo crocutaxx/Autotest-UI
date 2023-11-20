@@ -3,7 +3,7 @@ import pytest
 from base.base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
-
+from selenium.webdriver import Keys
 class LoginPage(BasePage):
 
     PAGE_URL = Links.LOGIN_PAGE
@@ -45,4 +45,6 @@ class LoginPage(BasePage):
     @allure.step("Clear password")
     def clear_password(self):
         self.wait.until(EC.element_to_be_clickable(self.PASSWORD_FIELD)).clear()
+
+
 

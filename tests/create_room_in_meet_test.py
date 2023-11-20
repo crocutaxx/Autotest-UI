@@ -1,10 +1,8 @@
 import allure
 from base.base_test import BaseTest
 
-
 @allure.feature("Meet Functionality")
 class TestCreateRoomInMeet(BaseTest):
-
     @allure.title("Create room in meet")
     @allure.severity("Normal")
     def test_create_room_in_meet(self, setup_1):

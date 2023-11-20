@@ -3,7 +3,6 @@ import allure
 from base.base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver import Keys
 
 
 class PlanningMeetPage(BasePage):
@@ -42,17 +41,6 @@ class PlanningMeetPage(BasePage):
         new_topic = f"Test topic{random.randint(1, 100)}"
         schedule_topic_field.send_keys(new_topic)
         self.topic = new_topic
-
-
-    @allure.step("Change topic name")
-    def change_topic(self, change_topic):
-        with allure.step(f"Change topic on '{change_topic}'"):
-            schedule_topic_field = self.wait.until(EC.element_to_be_clickable(self.SCHEDULE_TOPIC_FIELD))
-            schedule_topic_field.send_keys(Keys.CTRL + "A")
-            schedule_topic_field.send_keys(Keys.BACKSPACE)
-            schedule_topic_field.send_keys(change_topic)
-            self.topic = change_topic
-
 
     @allure.step("Add meet password")
     def add_meet_password(self):

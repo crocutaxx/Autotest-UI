@@ -14,7 +14,7 @@ class MainPage(BasePage):
     MESSAGES_BUTTON = ("xpath", "//div[text()='Сообщения']")
     # Главное окно доп кнопки
     CANNCELED_MEET_NAME_BUTTON = ("xpath", "//p[contains(@class, 'Home_canceled')]")
-    PLANNED_MEET_NAME_BUTTON = ("xpath", "//p[contains(@class, 'Home_planned')]")
+    PLANNED_MEET_NAME_BUTTON = ("xpath", "//p[contains(@class, 'Home_planned') and contains(text(), 'Test ')]")
     # Взаимодействие с запланированными конференциями
     CONNECT_TO_MEET_BUTTON = ("xpath", "//span[text()='Присоединиться']")
     COPY_INVATE_BUTTON = ("xpath", "//span[text()='Скопировать приглашение']")

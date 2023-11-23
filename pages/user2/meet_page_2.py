@@ -1,6 +1,7 @@
 import allure
 import time
 import keyboard
+import random
 from base.base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
@@ -12,11 +13,19 @@ class MeetPage(BasePage):
     # Вход в конференцию
     ENTER_WITHOUT_CHEKING = ("xpath", "//button[text()='Войти без проверки']")
     ENTER_WITH_CHEKING = ("xpath", "//button[text()='Проверить устройства']")
+
     # Кнопки внутри конференции
     MICROPHONE_BUTTON = ("xpath", "//div[text()='Микрофон']")
     CAMERA_BUTTON = ("xpath", "//div[text()='Камера']")
     SHARE_BUTTON = ("xpath", "//div[text()='Демонстрация']")
+
+    # Чат и внутри чата
     CHAT_BUTTON = ("xpath", "//div[text()='Чат']")
+    COUNT_UNREAD_MESSAGES = ("xpath", "//div[text()='Чат']//span/span")
+    CHAT_VIDGET = ("xpath", "//div[@class='chat-container']")
+    MESSAGE_FIELD = ("xpath", "//input[@id='outlined-basic']")
+    SEND_MESSGE_BUTTON = ("xpath", "//button[@type='button']")
+    LAST_MESSAGE_IN_CHAT = ("xpath", "(//div[@class='message'])[last()]/p[@class='message-text']")
 
     # Кнопки внутри участников
     PARTICIPANTS_BUTTON = ("xpath", "//div[text()='Участники']")
@@ -73,8 +82,13 @@ class MeetPage(BasePage):
 
     @allure.step("Click on dismiss alert button")
     def click_on_dismiss_alert_button(self):
+        # alert = self.wait.until(EC.alert_is_present())
+        # alert.text == "Вас исключили из встречи"
+        # alert.accept()
         time.sleep(2)
         keyboard.press('enter')
+
+
 
     @allure.step("Click on More button")
     def click_on_more_button(self):
@@ -179,5 +193,32 @@ class MeetPage(BasePage):
     @allure.step("Accept alert kick")
     def check_and_accept_alert(self):
         alert = self.wait.until(EC.alert_is_present())
-        alert.text == "Вас исключили из встречи"
-        alert.accept()
+        if  alert.text == "Вас исключили из встречи":
+            alert.accept()
+
+    @allure.step("Click on chat button")
+    def click_on_chat_button(self):
+        self.wait.until(EC.visibility_of_element_located(self.CHAT_BUTTON))
+        self.wait.until(EC.element_to_be_clickable(self.CHAT_BUTTON)).click()
+        self.wait.until(EC.visibility_of_element_located(self.CHAT_VIDGET))
+
+    @allure.step("Enter messge")
+    def enter_message_in_field(self):
+        message_field = self.wait.until(EC.element_to_be_clickable(self.MESSAGE_FIELD))
+        new_message = "message123"
+        message_field.send_keys(new_message)
+
+    @allure.step("Click on send message button")
+    def click_on_send_message_button(self):
+        self.wait.until(EC.visibility_of_element_located(self.SEND_MESSGE_BUTTON))
+        self.wait.until(EC.element_to_be_clickable(self.SEND_MESSGE_BUTTON)).click()
+
+    @allure.step("Check count unread messages")
+    def check_count_of_unread_messages(self):
+        self.wait.until(EC.visibility_of_element_located(self.COUNT_UNREAD_MESSAGES))
+        self.wait.until(EC.text_to_be_present_in_element(self.COUNT_UNREAD_MESSAGES, "1"))
+
+    @allure.step("Check last message in chat")
+    def check_last_message_in_chat(self):
+        self.wait.until(EC.visibility_of_element_located(self.LAST_MESSAGE_IN_CHAT))
+        self.wait.until(EC.text_to_be_present_in_element(self.LAST_MESSAGE_IN_CHAT, "message123"))

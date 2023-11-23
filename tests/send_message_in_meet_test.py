@@ -3,12 +3,12 @@ from base.base_test import BaseTest
 import pytest
 
 @allure.feature("Meet Functionality")
-class TestKickUserFromMeet(BaseTest):
+class TestSendMessageInMeet(BaseTest):
 
 
-    @allure.title("Kick user from meet")
+    @allure.title("Raise hand at meet")
     @allure.severity("Normal")
-    def test_kick_user_from_meet(self, setup_1, setup_2):
+    def test_send_messge_in_meet(self, setup_1, setup_2):
         self.login_page.open()
         self.login_page.enter_login(self.data.LOGIN)
         self.login_page.enter_password(self.data.PASSWORD)
@@ -36,12 +36,11 @@ class TestKickUserFromMeet(BaseTest):
         self.meet_page_2.click_on_enter_without_cheking_button()
         self.meet_page_2.check_enter_meet_push()
         # end second user case
-        self.meet_page.click_on_participans_button()
-        self.meet_page.click_on_more_user_button()
-        self.meet_page.click_on_end_call_user_button()
-        self.meet_page.check_count_of_participants()
-
+        self.meet_page.click_on_chat_button()
+        self.meet_page.enter_message_in_field()
+        self.meet_page.click_on_send_message_button()
         # start second user case
-        self.meet_page_2.check_and_accept_alert()
-        self.connect_to_meeting_page_2.is_opened()
-        self.meet_page_2.make_screenshot("kick_user")
+        self.meet_page_2.check_count_of_unread_messages()
+        self.meet_page_2.click_on_chat_button()
+        self.meet_page_2.check_last_message_in_chat()
+        self.meet_page_2.make_screenshot("message_for_all")

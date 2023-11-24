@@ -1,24 +1,24 @@
 {
-  "uid" : "bc4baac299ff9e27",
+  "uid" : "efaab0d3d4b03f03",
   "name" : "Raise hand at meet",
   "fullName" : "tests.riase_hand_test.TestCreateRoomInMeet#test_raise_hand_at_meet",
   "historyId" : "e149aec2e9b6730d9386063c0fb4ac2a",
   "time" : {
-    "start" : 1700801607999,
-    "stop" : 1700801635235,
-    "duration" : 27236
+    "start" : 1700802693252,
+    "stop" : 1700802719564,
+    "duration" : 26312
   },
   "status" : "broken",
   "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
-  "statusTrace" : "self = <riase_hand_test.TestCreateRoomInMeet object at 0x7f1f9e7240b0>\nsetup_1 = None, setup_2 = None\n\n    @allure.title(\"Raise hand at meet\")\n    @allure.severity(\"Normal\")\n    def test_raise_hand_at_meet(self, setup_1, setup_2):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n        self.login_page.click_submit_button()\n        self.main_page.is_opened()\n        self.connect_to_meeting_page.open()\n        self.connect_to_meeting_page.is_opened()\n        self.connect_to_meeting_page.enter_meet_identificator()\n        self.connect_to_meeting_page.click_enter_button()\n        # self.meet_page.click_on_dismiss_alert_button() #Нужен для локального запуска\n        self.meet_page.click_on_enter_without_cheking_button()\n        # self.meet_page.click_on_dismiss_alert_button() #Нужен для локального запуска\n        self.meet_page.click_on_enter_without_cheking_button()\n        self.meet_page.check_enter_meet_push()\n        # start second user case\n        self.login_page_2.open()\n        self.login_page_2.click_enter_meet_button()\n        self.connect_to_meeting_page_2.is_opened()\n        self.connect_to_meeting_page_2.enter_meet_identificator()\n        self.connect_to_meeting_page_2.enter_user_name()\n        self.connect_to_meeting_page_2.click_enter_button()\n        # self.meet_page_2.click_on_dismiss_alert_button() # Нужен для локального запуска\n        self.meet_page_2.click_on_enter_without_cheking_button()\n        # self.meet_page_2.click_on_dismiss_alert_button() # Нужен для локального запуска\n        self.meet_page_2.click_on_enter_without_cheking_button()\n        self.meet_page_2.check_enter_meet_push()\n        # end second user case\n        self.meet_page.click_on_more_button()\n        self.meet_page.click_on_raise_hand_button()\n>       self.meet_page.check_your_reise_hand_push()\n\ntests/riase_hand_test.py:40: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/user2/meet_page_2.py:135: in check_your_reise_hand_push\n    self.wait.until(EC.visibility_of_element_located(self.PUSH_YOUR_RISE_HAND))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"1640c4cc06dd8dcee24cffd704d7fcfc\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7f1f9da73ec0>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+  "statusTrace" : "self = <riase_hand_test.TestCreateRoomInMeet object at 0x7f56d24e6d20>\nsetup_1 = None, setup_2 = None\n\n    @allure.title(\"Raise hand at meet\")\n    @allure.severity(\"Normal\")\n    def test_raise_hand_at_meet(self, setup_1, setup_2):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n        self.login_page.click_submit_button()\n        self.main_page.is_opened()\n        self.connect_to_meeting_page.open()\n        self.connect_to_meeting_page.is_opened()\n        self.connect_to_meeting_page.enter_meet_identificator()\n        self.connect_to_meeting_page.click_enter_button()\n        # self.meet_page.click_on_dismiss_alert_button() #Нужен для локального запуска\n        self.meet_page.click_on_enter_without_cheking_button()\n        # self.meet_page.click_on_dismiss_alert_button() #Нужен для локального запуска\n        self.meet_page.click_on_enter_without_cheking_button()\n        self.meet_page.check_enter_meet_push()\n        # start second user case\n        self.login_page_2.open()\n        self.login_page_2.click_enter_meet_button()\n        self.connect_to_meeting_page_2.is_opened()\n        self.connect_to_meeting_page_2.enter_meet_identificator()\n        self.connect_to_meeting_page_2.enter_user_name()\n        self.connect_to_meeting_page_2.click_enter_button()\n        # self.meet_page_2.click_on_dismiss_alert_button() # Нужен для локального запуска\n        self.meet_page_2.click_on_enter_without_cheking_button()\n        # self.meet_page_2.click_on_dismiss_alert_button() # Нужен для локального запуска\n        self.meet_page_2.click_on_enter_without_cheking_button()\n        self.meet_page_2.check_enter_meet_push()\n        # end second user case\n        self.meet_page.click_on_more_button()\n        self.meet_page.click_on_raise_hand_button()\n>       self.meet_page.check_your_reise_hand_push()\n\ntests/riase_hand_test.py:40: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/user2/meet_page_2.py:135: in check_your_reise_hand_push\n    self.wait.until(EC.visibility_of_element_located(self.PUSH_YOUR_RISE_HAND))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"577754ab97f5908bbec3062ad36faa7f\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7f56d1843ec0>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "driver_1",
+    "name" : "driver_2",
     "time" : {
-      "start" : 1700801606376,
-      "stop" : 1700801607191,
-      "duration" : 815
+      "start" : 1700802692447,
+      "stop" : 1700802693251,
+      "duration" : 804
     },
     "status" : "passed",
     "steps" : [ ],
@@ -29,11 +29,11 @@
     "stepsCount" : 0,
     "hasContent" : false
   }, {
-    "name" : "setup_1",
+    "name" : "driver_1",
     "time" : {
-      "start" : 1700801607191,
-      "stop" : 1700801607191,
-      "duration" : 0
+      "start" : 1700802691638,
+      "stop" : 1700802692446,
+      "duration" : 808
     },
     "status" : "passed",
     "steps" : [ ],
@@ -46,8 +46,8 @@
   }, {
     "name" : "setup_2",
     "time" : {
-      "start" : 1700801607999,
-      "stop" : 1700801607999,
+      "start" : 1700802693251,
+      "stop" : 1700802693251,
       "duration" : 0
     },
     "status" : "passed",
@@ -59,11 +59,11 @@
     "stepsCount" : 0,
     "hasContent" : false
   }, {
-    "name" : "driver_2",
+    "name" : "setup_1",
     "time" : {
-      "start" : 1700801607191,
-      "stop" : 1700801607999,
-      "duration" : 808
+      "start" : 1700802692446,
+      "stop" : 1700802692446,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -77,13 +77,13 @@
   "testStage" : {
     "status" : "broken",
     "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
-    "statusTrace" : "self = <riase_hand_test.TestCreateRoomInMeet object at 0x7f1f9e7240b0>\nsetup_1 = None, setup_2 = None\n\n    @allure.title(\"Raise hand at meet\")\n    @allure.severity(\"Normal\")\n    def test_raise_hand_at_meet(self, setup_1, setup_2):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n        self.login_page.click_submit_button()\n        self.main_page.is_opened()\n        self.connect_to_meeting_page.open()\n        self.connect_to_meeting_page.is_opened()\n        self.connect_to_meeting_page.enter_meet_identificator()\n        self.connect_to_meeting_page.click_enter_button()\n        # self.meet_page.click_on_dismiss_alert_button() #Нужен для локального запуска\n        self.meet_page.click_on_enter_without_cheking_button()\n        # self.meet_page.click_on_dismiss_alert_button() #Нужен для локального запуска\n        self.meet_page.click_on_enter_without_cheking_button()\n        self.meet_page.check_enter_meet_push()\n        # start second user case\n        self.login_page_2.open()\n        self.login_page_2.click_enter_meet_button()\n        self.connect_to_meeting_page_2.is_opened()\n        self.connect_to_meeting_page_2.enter_meet_identificator()\n        self.connect_to_meeting_page_2.enter_user_name()\n        self.connect_to_meeting_page_2.click_enter_button()\n        # self.meet_page_2.click_on_dismiss_alert_button() # Нужен для локального запуска\n        self.meet_page_2.click_on_enter_without_cheking_button()\n        # self.meet_page_2.click_on_dismiss_alert_button() # Нужен для локального запуска\n        self.meet_page_2.click_on_enter_without_cheking_button()\n        self.meet_page_2.check_enter_meet_push()\n        # end second user case\n        self.meet_page.click_on_more_button()\n        self.meet_page.click_on_raise_hand_button()\n>       self.meet_page.check_your_reise_hand_push()\n\ntests/riase_hand_test.py:40: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/user2/meet_page_2.py:135: in check_your_reise_hand_push\n    self.wait.until(EC.visibility_of_element_located(self.PUSH_YOUR_RISE_HAND))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"1640c4cc06dd8dcee24cffd704d7fcfc\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7f1f9da73ec0>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+    "statusTrace" : "self = <riase_hand_test.TestCreateRoomInMeet object at 0x7f56d24e6d20>\nsetup_1 = None, setup_2 = None\n\n    @allure.title(\"Raise hand at meet\")\n    @allure.severity(\"Normal\")\n    def test_raise_hand_at_meet(self, setup_1, setup_2):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n        self.login_page.click_submit_button()\n        self.main_page.is_opened()\n        self.connect_to_meeting_page.open()\n        self.connect_to_meeting_page.is_opened()\n        self.connect_to_meeting_page.enter_meet_identificator()\n        self.connect_to_meeting_page.click_enter_button()\n        # self.meet_page.click_on_dismiss_alert_button() #Нужен для локального запуска\n        self.meet_page.click_on_enter_without_cheking_button()\n        # self.meet_page.click_on_dismiss_alert_button() #Нужен для локального запуска\n        self.meet_page.click_on_enter_without_cheking_button()\n        self.meet_page.check_enter_meet_push()\n        # start second user case\n        self.login_page_2.open()\n        self.login_page_2.click_enter_meet_button()\n        self.connect_to_meeting_page_2.is_opened()\n        self.connect_to_meeting_page_2.enter_meet_identificator()\n        self.connect_to_meeting_page_2.enter_user_name()\n        self.connect_to_meeting_page_2.click_enter_button()\n        # self.meet_page_2.click_on_dismiss_alert_button() # Нужен для локального запуска\n        self.meet_page_2.click_on_enter_without_cheking_button()\n        # self.meet_page_2.click_on_dismiss_alert_button() # Нужен для локального запуска\n        self.meet_page_2.click_on_enter_without_cheking_button()\n        self.meet_page_2.check_enter_meet_push()\n        # end second user case\n        self.meet_page.click_on_more_button()\n        self.meet_page.click_on_raise_hand_button()\n>       self.meet_page.check_your_reise_hand_push()\n\ntests/riase_hand_test.py:40: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/user2/meet_page_2.py:135: in check_your_reise_hand_push\n    self.wait.until(EC.visibility_of_element_located(self.PUSH_YOUR_RISE_HAND))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"577754ab97f5908bbec3062ad36faa7f\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7f56d1843ec0>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
     "steps" : [ {
       "name" : "Open https://dev.qosyl.kz/login page",
       "time" : {
-        "start" : 1700801607999,
-        "stop" : 1700801609621,
-        "duration" : 1622
+        "start" : 1700802693252,
+        "stop" : 1700802694998,
+        "duration" : 1746
       },
       "status" : "passed",
       "steps" : [ ],
@@ -96,9 +96,9 @@
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1700801609621,
-        "stop" : 1700801609744,
-        "duration" : 123
+        "start" : 1700802694999,
+        "stop" : 1700802695121,
+        "duration" : 122
       },
       "status" : "passed",
       "steps" : [ ],
@@ -111,9 +111,9 @@
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1700801609744,
-        "stop" : 1700801609815,
-        "duration" : 71
+        "start" : 1700802695121,
+        "stop" : 1700802695191,
+        "duration" : 70
       },
       "status" : "passed",
       "steps" : [ ],
@@ -126,9 +126,9 @@
     }, {
       "name" : "Confir login and pass - Click submit button",
       "time" : {
-        "start" : 1700801609815,
-        "stop" : 1700801609875,
-        "duration" : 60
+        "start" : 1700802695191,
+        "stop" : 1700802695253,
+        "duration" : 62
       },
       "status" : "passed",
       "steps" : [ ],
@@ -141,9 +141,9 @@
     }, {
       "name" : "Page https://dev.qosyl.kz/ is opened",
       "time" : {
-        "start" : 1700801609875,
-        "stop" : 1700801611884,
-        "duration" : 2009
+        "start" : 1700802695253,
+        "stop" : 1700802697263,
+        "duration" : 2010
       },
       "status" : "passed",
       "steps" : [ ],
@@ -156,9 +156,9 @@
     }, {
       "name" : "Open https://dev.qosyl.kz/meeting/ page",
       "time" : {
-        "start" : 1700801611884,
-        "stop" : 1700801613350,
-        "duration" : 1466
+        "start" : 1700802697263,
+        "stop" : 1700802699046,
+        "duration" : 1783
       },
       "status" : "passed",
       "steps" : [ ],
@@ -171,8 +171,8 @@
     }, {
       "name" : "Page https://dev.qosyl.kz/meeting/ is opened",
       "time" : {
-        "start" : 1700801613350,
-        "stop" : 1700801613353,
+        "start" : 1700802699046,
+        "stop" : 1700802699049,
         "duration" : 3
       },
       "status" : "passed",
@@ -186,9 +186,9 @@
     }, {
       "name" : "Enter meet identificator",
       "time" : {
-        "start" : 1700801613353,
-        "stop" : 1700801613425,
-        "duration" : 72
+        "start" : 1700802699050,
+        "stop" : 1700802699120,
+        "duration" : 70
       },
       "status" : "passed",
       "steps" : [ ],
@@ -201,9 +201,9 @@
     }, {
       "name" : "Click enter button",
       "time" : {
-        "start" : 1700801613425,
-        "stop" : 1700801613498,
-        "duration" : 73
+        "start" : 1700802699120,
+        "stop" : 1700802699195,
+        "duration" : 75
       },
       "status" : "passed",
       "steps" : [ ],
@@ -216,9 +216,9 @@
     }, {
       "name" : "Enter without cheking",
       "time" : {
-        "start" : 1700801613498,
-        "stop" : 1700801613963,
-        "duration" : 465
+        "start" : 1700802699195,
+        "stop" : 1700802699679,
+        "duration" : 484
       },
       "status" : "passed",
       "steps" : [ ],
@@ -231,9 +231,9 @@
     }, {
       "name" : "Enter without cheking",
       "time" : {
-        "start" : 1700801613964,
-        "stop" : 1700801614282,
-        "duration" : 318
+        "start" : 1700802699679,
+        "stop" : 1700802700004,
+        "duration" : 325
       },
       "status" : "passed",
       "steps" : [ ],
@@ -246,9 +246,9 @@
     }, {
       "name" : "Check push enter meet",
       "time" : {
-        "start" : 1700801614282,
-        "stop" : 1700801616326,
-        "duration" : 2044
+        "start" : 1700802700004,
+        "stop" : 1700802702046,
+        "duration" : 2042
       },
       "status" : "passed",
       "steps" : [ ],
@@ -261,9 +261,9 @@
     }, {
       "name" : "Open https://dev.qosyl.kz/login page",
       "time" : {
-        "start" : 1700801616326,
-        "stop" : 1700801617943,
-        "duration" : 1617
+        "start" : 1700802702046,
+        "stop" : 1700802703784,
+        "duration" : 1738
       },
       "status" : "passed",
       "steps" : [ ],
@@ -276,9 +276,9 @@
     }, {
       "name" : "Click enter meet button",
       "time" : {
-        "start" : 1700801617943,
-        "stop" : 1700801619908,
-        "duration" : 1965
+        "start" : 1700802703785,
+        "stop" : 1700802705208,
+        "duration" : 1423
       },
       "status" : "passed",
       "steps" : [ ],
@@ -291,8 +291,8 @@
     }, {
       "name" : "Page https://dev.qosyl.kz/meeting/ is opened",
       "time" : {
-        "start" : 1700801619908,
-        "stop" : 1700801619912,
+        "start" : 1700802705208,
+        "stop" : 1700802705212,
         "duration" : 4
       },
       "status" : "passed",
@@ -306,9 +306,9 @@
     }, {
       "name" : "Enter meet identificator",
       "time" : {
-        "start" : 1700801619912,
-        "stop" : 1700801619984,
-        "duration" : 72
+        "start" : 1700802705212,
+        "stop" : 1700802705283,
+        "duration" : 71
       },
       "status" : "passed",
       "steps" : [ ],
@@ -321,9 +321,9 @@
     }, {
       "name" : "Enter user name",
       "time" : {
-        "start" : 1700801619984,
-        "stop" : 1700801620112,
-        "duration" : 128
+        "start" : 1700802705283,
+        "stop" : 1700802705406,
+        "duration" : 123
       },
       "status" : "passed",
       "steps" : [ ],
@@ -336,9 +336,9 @@
     }, {
       "name" : "Click enter button",
       "time" : {
-        "start" : 1700801620113,
-        "stop" : 1700801620184,
-        "duration" : 71
+        "start" : 1700802705407,
+        "stop" : 1700802705483,
+        "duration" : 76
       },
       "status" : "passed",
       "steps" : [ ],
@@ -351,9 +351,9 @@
     }, {
       "name" : "Enter without cheking",
       "time" : {
-        "start" : 1700801620184,
-        "stop" : 1700801621643,
-        "duration" : 1459
+        "start" : 1700802705483,
+        "stop" : 1700802705962,
+        "duration" : 479
       },
       "status" : "passed",
       "steps" : [ ],
@@ -366,9 +366,9 @@
     }, {
       "name" : "Enter without cheking",
       "time" : {
-        "start" : 1700801621643,
-        "stop" : 1700801621955,
-        "duration" : 312
+        "start" : 1700802705962,
+        "stop" : 1700802706286,
+        "duration" : 324
       },
       "status" : "passed",
       "steps" : [ ],
@@ -381,9 +381,9 @@
     }, {
       "name" : "Check push enter meet",
       "time" : {
-        "start" : 1700801621956,
-        "stop" : 1700801625008,
-        "duration" : 3052
+        "start" : 1700802706286,
+        "stop" : 1700802709337,
+        "duration" : 3051
       },
       "status" : "passed",
       "steps" : [ ],
@@ -396,8 +396,8 @@
     }, {
       "name" : "Click on More button",
       "time" : {
-        "start" : 1700801625008,
-        "stop" : 1700801625107,
+        "start" : 1700802709337,
+        "stop" : 1700802709436,
         "duration" : 99
       },
       "status" : "passed",
@@ -411,9 +411,9 @@
     }, {
       "name" : "Click on raise hand button",
       "time" : {
-        "start" : 1700801625108,
-        "stop" : 1700801625175,
-        "duration" : 67
+        "start" : 1700802709436,
+        "stop" : 1700802709504,
+        "duration" : 68
       },
       "status" : "passed",
       "steps" : [ ],
@@ -426,8 +426,8 @@
     }, {
       "name" : "Check your rise hand push",
       "time" : {
-        "start" : 1700801625175,
-        "stop" : 1700801635234,
+        "start" : 1700802709504,
+        "stop" : 1700802719563,
         "duration" : 10059
       },
       "status" : "broken",
@@ -449,11 +449,11 @@
     "hasContent" : true
   },
   "afterStages" : [ {
-    "name" : "driver_1::0",
+    "name" : "driver_2::0",
     "time" : {
-      "start" : 1700801635325,
-      "stop" : 1700801635382,
-      "duration" : 57
+      "start" : 1700802719597,
+      "stop" : 1700802719653,
+      "duration" : 56
     },
     "status" : "passed",
     "steps" : [ ],
@@ -464,10 +464,10 @@
     "stepsCount" : 0,
     "hasContent" : false
   }, {
-    "name" : "driver_2::0",
+    "name" : "driver_1::0",
     "time" : {
-      "start" : 1700801635268,
-      "stop" : 1700801635324,
+      "start" : 1700802719654,
+      "stop" : 1700802719710,
       "duration" : 56
     },
     "status" : "passed",
@@ -480,11 +480,11 @@
     "hasContent" : false
   } ],
   "labels" : [ {
-    "name" : "severity",
-    "value" : "Normal"
-  }, {
     "name" : "feature",
     "value" : "Meet Functionality"
+  }, {
+    "name" : "severity",
+    "value" : "Normal"
   }, {
     "name" : "parentSuite",
     "value" : "tests"
@@ -496,7 +496,7 @@
     "value" : "TestCreateRoomInMeet"
   }, {
     "name" : "host",
-    "value" : "4c524d033108"
+    "value" : "0ade1fa598ba"
   }, {
     "name" : "thread",
     "value" : "8-MainThread"
@@ -528,13 +528,22 @@
     "history" : {
       "statistic" : {
         "failed" : 0,
-        "broken" : 1,
+        "broken" : 2,
         "skipped" : 0,
         "passed" : 4,
         "unknown" : 0,
-        "total" : 5
+        "total" : 6
       },
       "items" : [ {
+        "uid" : "bc4baac299ff9e27",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1700801607999,
+          "stop" : 1700801635235,
+          "duration" : 27236
+        }
+      }, {
         "uid" : "544a426d111854ce",
         "status" : "passed",
         "time" : {
@@ -570,6 +579,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "bc4baac299ff9e27.json",
+  "source" : "efaab0d3d4b03f03.json",
   "parameterValues" : [ ]
 }

@@ -128,6 +128,7 @@ class MeetPage(BasePage):
 
     @allure.step("Click on raise hand button")
     def click_on_raise_hand_button(self):
+        self.wait.until(EC.visibility_of_element_located(self.RAISE_HAND_BUTTON))
         self.wait.until(EC.element_to_be_clickable(self.RAISE_HAND_BUTTON)).click()
 
     @allure.step("Check your rise hand push")

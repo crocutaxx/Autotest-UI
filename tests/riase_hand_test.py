@@ -1,10 +1,10 @@
 import allure
 from base.base_test import BaseTest
-
+import pytest
 
 @allure.feature("Meet Functionality")
 class TestCreateRoomInMeet(BaseTest):
-
+    @pytest.mark.debug
     @allure.title("Raise hand at meet")
     @allure.severity("Normal")
     def test_raise_hand_at_meet(self, setup_1, setup_2):

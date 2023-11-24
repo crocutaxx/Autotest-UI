@@ -1,161 +1,161 @@
 [ {
-  "uid" : "f6ac1b4161dc43fc",
-  "name" : "Start new meet",
-  "time" : {
-    "start" : 1700802786822,
-    "stop" : 1700802795977,
-    "duration" : 9155
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f8dfa06075ab285e",
-  "name" : "Search users",
-  "time" : {
-    "start" : 1700802727984,
-    "stop" : 1700802732296,
-    "duration" : 4312
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "cb55434623d311f5",
-  "name" : "Invalid authorization",
-  "time" : {
-    "start" : 1700802609488,
-    "stop" : 1700802613651,
-    "duration" : 4163
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4b0327bc93664999",
-  "name" : "Create schedule",
-  "time" : {
-    "start" : 1700802599529,
-    "stop" : 1700802608584,
-    "duration" : 9055
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "3029b8fe167d1645",
-  "name" : "send message in meet",
-  "time" : {
-    "start" : 1700802733980,
-    "stop" : 1700802751740,
-    "duration" : 17760
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "efaab0d3d4b03f03",
-  "name" : "Raise hand at meet",
-  "time" : {
-    "start" : 1700802693252,
-    "stop" : 1700802719564,
-    "duration" : 26312
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "bb33ea7768d387db",
-  "name" : "send private message in meet",
-  "time" : {
-    "start" : 1700802764926,
-    "stop" : 1700802785890,
-    "duration" : 20964
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a212274c38e900cb",
-  "name" : "Delete schedule",
-  "time" : {
-    "start" : 1700802654356,
-    "stop" : 1700802664232,
-    "duration" : 9876
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4b46bbf329fc2823",
-  "name" : "Search users",
-  "time" : {
-    "start" : 1700802752673,
-    "stop" : 1700802763247,
-    "duration" : 10574
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "14adebf269873fcc",
-  "name" : "Connect to meeting with id and auth user",
-  "time" : {
-    "start" : 1700802626462,
-    "stop" : 1700802634406,
-    "duration" : 7944
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "b0b549acf41272eb",
-  "name" : "Connect to meeting with id and not auth user",
-  "time" : {
-    "start" : 1700802635281,
-    "stop" : 1700802640681,
-    "duration" : 5400
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "4110d250565e0a78",
-  "name" : "Kick user from meet",
-  "time" : {
-    "start" : 1700802665922,
-    "stop" : 1700802685064,
-    "duration" : 19142
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8ddb162cf4ca93a0",
-  "name" : "Log Out",
-  "time" : {
-    "start" : 1700802686002,
-    "stop" : 1700802691581,
-    "duration" : 5579
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "852542de10bb0ff1",
+  "uid" : "d29b941595672f5",
   "name" : "Create room in meet",
   "time" : {
-    "start" : 1700802641547,
-    "stop" : 1700802653483,
-    "duration" : 11936
+    "start" : 1700803188577,
+    "stop" : 1700803202160,
+    "duration" : 13583
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1bfae22688209d4",
-  "name" : "Blok schedule",
+  "uid" : "646a365fb1317efc",
+  "name" : "send private message in meet",
   "time" : {
-    "start" : 1700802614517,
-    "stop" : 1700802625591,
-    "duration" : 11074
+    "start" : 1700803321818,
+    "stop" : 1700803343433,
+    "duration" : 21615
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c8d95bde2fd1570b",
+  "uid" : "a21354b83acb7848",
   "name" : "Create schedule",
   "time" : {
-    "start" : 1700802720522,
-    "stop" : 1700802727113,
-    "duration" : 6591
+    "start" : 1700803271568,
+    "stop" : 1700803278539,
+    "duration" : 6971
   },
   "status" : "passed",
   "severity" : "critical"
+}, {
+  "uid" : "a34b538e83b2a4bf",
+  "name" : "Connect to meeting with id and not auth user",
+  "time" : {
+    "start" : 1700803181498,
+    "stop" : 1700803187707,
+    "duration" : 6209
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "7db104ee3616d0b9",
+  "name" : "Search users",
+  "time" : {
+    "start" : 1700803279415,
+    "stop" : 1700803285123,
+    "duration" : 5708
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90a189a6f74908c4",
+  "name" : "Invalid authorization",
+  "time" : {
+    "start" : 1700803154009,
+    "stop" : 1700803158579,
+    "duration" : 4570
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bbf196057aa7bca4",
+  "name" : "Start new meet",
+  "time" : {
+    "start" : 1700803344364,
+    "stop" : 1700803354804,
+    "duration" : 10440
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "10c8c26efb08536a",
+  "name" : "Raise hand at meet",
+  "time" : {
+    "start" : 1700803246359,
+    "stop" : 1700803270634,
+    "duration" : 24275
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0eec38977abf978",
+  "name" : "Blok schedule",
+  "time" : {
+    "start" : 1700803159446,
+    "stop" : 1700803171973,
+    "duration" : 12527
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2309128cc8a17b5",
+  "name" : "Connect to meeting with id and auth user",
+  "time" : {
+    "start" : 1700803172842,
+    "stop" : 1700803180622,
+    "duration" : 7780
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "8b83666c8db2cedd",
+  "name" : "Search users",
+  "time" : {
+    "start" : 1700803307968,
+    "stop" : 1700803320124,
+    "duration" : 12156
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8c1192f065ba20a5",
+  "name" : "Delete schedule",
+  "time" : {
+    "start" : 1700803203033,
+    "stop" : 1700803213361,
+    "duration" : 10328
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f7bc3805171dbde",
+  "name" : "Log Out",
+  "time" : {
+    "start" : 1700803238620,
+    "stop" : 1700803244675,
+    "duration" : 6055
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b5d7644431085692",
+  "name" : "Create schedule",
+  "time" : {
+    "start" : 1700803143556,
+    "stop" : 1700803153112,
+    "duration" : 9556
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "cae7e79c1a1680c0",
+  "name" : "send message in meet",
+  "time" : {
+    "start" : 1700803286812,
+    "stop" : 1700803307030,
+    "duration" : 20218
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d0045ee3a3a746c7",
+  "name" : "Kick user from meet",
+  "time" : {
+    "start" : 1700803215047,
+    "stop" : 1700803237690,
+    "duration" : 22643
+  },
+  "status" : "passed",
+  "severity" : "normal"
 } ]

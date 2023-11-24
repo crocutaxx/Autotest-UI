@@ -1,19 +1,19 @@
 {
   "total" : 5,
   "items" : [ {
-    "uid" : "0ba43e73eb745172b9cbece956dc8229",
-    "name" : "Meet Functionality",
+    "uid" : "499722a728f81fd5cb772cb7834ea1ae",
+    "name" : "Schedule Functionality",
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 6,
       "unknown" : 0,
       "total" : 6
     }
   }, {
-    "uid" : "499722a728f81fd5cb772cb7834ea1ae",
-    "name" : "Schedule Functionality",
+    "uid" : "0ba43e73eb745172b9cbece956dc8229",
+    "name" : "Meet Functionality",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

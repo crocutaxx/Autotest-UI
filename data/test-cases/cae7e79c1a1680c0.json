@@ -1,12 +1,12 @@
 {
-  "uid" : "3029b8fe167d1645",
+  "uid" : "cae7e79c1a1680c0",
   "name" : "send message in meet",
   "fullName" : "tests.send_message_in_meet_test.TestSendMessageInMeet#test_send_messge_in_meet",
   "historyId" : "685b2105a06a0d4cca444d2472e4dc45",
   "time" : {
-    "start" : 1700802733980,
-    "stop" : 1700802751740,
-    "duration" : 17760
+    "start" : 1700803286812,
+    "stop" : 1700803307030,
+    "duration" : 20218
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,522 +14,522 @@
   "beforeStages" : [ {
     "name" : "setup_2",
     "time" : {
-      "start" : 1700802733979,
-      "stop" : 1700802733980,
-      "duration" : 1
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
-  }, {
-    "name" : "driver_1",
-    "time" : {
-      "start" : 1700802732354,
-      "stop" : 1700802733168,
-      "duration" : 814
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
-  }, {
-    "name" : "setup_1",
-    "time" : {
-      "start" : 1700802733168,
-      "stop" : 1700802733168,
+      "start" : 1700803286812,
+      "stop" : 1700803286812,
       "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   }, {
     "name" : "driver_2",
     "time" : {
-      "start" : 1700802733168,
-      "stop" : 1700802733979,
-      "duration" : 811
+      "start" : 1700803285999,
+      "stop" : 1700803286812,
+      "duration" : 813
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setup_1",
+    "time" : {
+      "start" : 1700803285999,
+      "stop" : 1700803285999,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver_1",
+    "time" : {
+      "start" : 1700803285181,
+      "stop" : 1700803285998,
+      "duration" : 817
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   } ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
       "name" : "Open https://dev.qosyl.kz/login page",
       "time" : {
-        "start" : 1700802733980,
-        "stop" : 1700802735713,
-        "duration" : 1733
+        "start" : 1700803286812,
+        "stop" : 1700803288961,
+        "duration" : 2149
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1700802735713,
-        "stop" : 1700802735836,
-        "duration" : 123
+        "start" : 1700803288962,
+        "stop" : 1700803289096,
+        "duration" : 134
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1700802735837,
-        "stop" : 1700802735908,
-        "duration" : 71
+        "start" : 1700803289096,
+        "stop" : 1700803289165,
+        "duration" : 69
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Confir login and pass - Click submit button",
       "time" : {
-        "start" : 1700802735908,
-        "stop" : 1700802735965,
-        "duration" : 57
+        "start" : 1700803289165,
+        "stop" : 1700803289223,
+        "duration" : 58
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Page https://dev.qosyl.kz/ is opened",
       "time" : {
-        "start" : 1700802735965,
-        "stop" : 1700802737977,
-        "duration" : 2012
+        "start" : 1700803289223,
+        "stop" : 1700803291241,
+        "duration" : 2018
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Open https://dev.qosyl.kz/meeting/ page",
       "time" : {
-        "start" : 1700802737977,
-        "stop" : 1700802739766,
-        "duration" : 1789
+        "start" : 1700803291241,
+        "stop" : 1700803292937,
+        "duration" : 1696
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Page https://dev.qosyl.kz/meeting/ is opened",
       "time" : {
-        "start" : 1700802739766,
-        "stop" : 1700802739769,
+        "start" : 1700803292937,
+        "stop" : 1700803292940,
         "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Enter meet identificator",
       "time" : {
-        "start" : 1700802739769,
-        "stop" : 1700802739839,
-        "duration" : 70
+        "start" : 1700803292940,
+        "stop" : 1700803293016,
+        "duration" : 76
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Click enter button",
       "time" : {
-        "start" : 1700802739840,
-        "stop" : 1700802739910,
-        "duration" : 70
+        "start" : 1700803293016,
+        "stop" : 1700803293091,
+        "duration" : 75
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Enter without cheking",
       "time" : {
-        "start" : 1700802739910,
-        "stop" : 1700802740390,
-        "duration" : 480
+        "start" : 1700803293091,
+        "stop" : 1700803293615,
+        "duration" : 524
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Enter without cheking",
       "time" : {
-        "start" : 1700802740390,
-        "stop" : 1700802740710,
-        "duration" : 320
+        "start" : 1700803293615,
+        "stop" : 1700803293987,
+        "duration" : 372
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Check push enter meet",
       "time" : {
-        "start" : 1700802740710,
-        "stop" : 1700802742754,
-        "duration" : 2044
+        "start" : 1700803293987,
+        "stop" : 1700803297037,
+        "duration" : 3050
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Open https://dev.qosyl.kz/login page",
       "time" : {
-        "start" : 1700802742754,
-        "stop" : 1700802744494,
-        "duration" : 1740
+        "start" : 1700803297037,
+        "stop" : 1700803299168,
+        "duration" : 2131
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Click enter meet button",
       "time" : {
-        "start" : 1700802744494,
-        "stop" : 1700802745928,
-        "duration" : 1434
+        "start" : 1700803299168,
+        "stop" : 1700803301085,
+        "duration" : 1917
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Page https://dev.qosyl.kz/meeting/ is opened",
       "time" : {
-        "start" : 1700802745928,
-        "stop" : 1700802745932,
+        "start" : 1700803301085,
+        "stop" : 1700803301089,
         "duration" : 4
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Enter meet identificator",
       "time" : {
-        "start" : 1700802745932,
-        "stop" : 1700802746018,
+        "start" : 1700803301089,
+        "stop" : 1700803301163,
+        "duration" : 74
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter user name",
+      "time" : {
+        "start" : 1700803301164,
+        "stop" : 1700803301284,
+        "duration" : 120
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click enter button",
+      "time" : {
+        "start" : 1700803301284,
+        "stop" : 1700803301370,
         "duration" : 86
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Enter user name",
-      "time" : {
-        "start" : 1700802746018,
-        "stop" : 1700802746142,
-        "duration" : 124
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
+      "hasContent" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Click enter button",
-      "time" : {
-        "start" : 1700802746143,
-        "stop" : 1700802746222,
-        "duration" : 79
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Enter without cheking",
       "time" : {
-        "start" : 1700802746222,
-        "stop" : 1700802746694,
-        "duration" : 472
+        "start" : 1700803301370,
+        "stop" : 1700803301896,
+        "duration" : 526
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Enter without cheking",
       "time" : {
-        "start" : 1700802746694,
-        "stop" : 1700802747019,
-        "duration" : 325
+        "start" : 1700803301896,
+        "stop" : 1700803302273,
+        "duration" : 377
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Check push enter meet",
       "time" : {
-        "start" : 1700802747019,
-        "stop" : 1700802750072,
-        "duration" : 3053
+        "start" : 1700803302273,
+        "stop" : 1700803305327,
+        "duration" : 3054
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Click on chat button",
       "time" : {
-        "start" : 1700802750072,
-        "stop" : 1700802750174,
-        "duration" : 102
+        "start" : 1700803305327,
+        "stop" : 1700803305441,
+        "duration" : 114
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Enter messge",
       "time" : {
-        "start" : 1700802750175,
-        "stop" : 1700802750336,
-        "duration" : 161
+        "start" : 1700803305441,
+        "stop" : 1700803305611,
+        "duration" : 170
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Click on send message button",
       "time" : {
-        "start" : 1700802750337,
-        "stop" : 1700802750405,
-        "duration" : 68
+        "start" : 1700803305611,
+        "stop" : 1700803305682,
+        "duration" : 71
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Check count unread messages",
       "time" : {
-        "start" : 1700802750405,
-        "stop" : 1700802751444,
-        "duration" : 1039
+        "start" : 1700803305682,
+        "stop" : 1700803306725,
+        "duration" : 1043
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Click on chat button",
       "time" : {
-        "start" : 1700802751444,
-        "stop" : 1700802751541,
-        "duration" : 97
+        "start" : 1700803306725,
+        "stop" : 1700803306821,
+        "duration" : 96
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Check last message in chat",
       "time" : {
-        "start" : 1700802751542,
-        "stop" : 1700802751573,
-        "duration" : 31
+        "start" : 1700803306821,
+        "stop" : 1700803306851,
+        "duration" : 30
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ {
-      "uid" : "ff0b58be1d7fb046",
+      "uid" : "ab1624cf7e5522cd",
       "name" : "message_for_all",
-      "source" : "ff0b58be1d7fb046.png",
+      "source" : "ab1624cf7e5522cd.png",
       "type" : "image/png",
-      "size" : 37620
+      "size" : 37619
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 27,
-    "hasContent" : true
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ {
-    "name" : "driver_1::0",
-    "time" : {
-      "start" : 1700802751798,
-      "stop" : 1700802751855,
-      "duration" : 57
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
-  }, {
     "name" : "driver_2::0",
     "time" : {
-      "start" : 1700802751740,
-      "stop" : 1700802751797,
+      "start" : 1700803307031,
+      "stop" : 1700803307090,
+      "duration" : 59
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver_1::0",
+    "time" : {
+      "start" : 1700803307090,
+      "stop" : 1700803307147,
       "duration" : 57
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   } ],
   "labels" : [ {
-    "name" : "feature",
-    "value" : "Meet Functionality"
-  }, {
     "name" : "severity",
     "value" : "Normal"
+  }, {
+    "name" : "feature",
+    "value" : "Meet Functionality"
   }, {
     "name" : "parentSuite",
     "value" : "tests"
@@ -541,7 +541,7 @@
     "value" : "TestSendMessageInMeet"
   }, {
     "name" : "host",
-    "value" : "0ade1fa598ba"
+    "value" : "62cada2ec202"
   }, {
     "name" : "thread",
     "value" : "8-MainThread"
@@ -571,11 +571,19 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 3,
+        "passed" : 4,
         "unknown" : 0,
-        "total" : 3
+        "total" : 4
       },
       "items" : [ {
+        "uid" : "3029b8fe167d1645",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700802733980,
+          "stop" : 1700802751740,
+          "duration" : 17760
+        }
+      }, {
         "uid" : "62bbac69857fe441",
         "status" : "passed",
         "time" : {
@@ -595,6 +603,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "3029b8fe167d1645.json",
+  "source" : "cae7e79c1a1680c0.json",
   "parameterValues" : [ ]
 }

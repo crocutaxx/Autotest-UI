@@ -26,6 +26,13 @@ class MeetPage(BasePage):
     MESSAGE_FIELD = ("xpath", "//input[@id='outlined-basic']")
     SEND_MESSGE_BUTTON = ("xpath", "//button[@type='button']")
     LAST_MESSAGE_IN_CHAT = ("xpath", "(//div[@class='message'])[last()]/p[@class='message-text']")
+    LAST_PRIVATE_MESSAGE_IN_CHAT = ("xpath", "//p[@class='message-text']")
+    MARK_THAT_MESSAGE_IS_PRIVATE = ("xpath", "//span[text()='(Личное сообщение)']")
+    MARK_FOR_WHO_MESSAGE = ("xpath", "//span[@class='message-name']/span")
+    CHOICE_USER_DIALOG_BUTTON = ("xpath", "//div[text()='Всем']")
+    DIALOG_VIDGET_IS_OPEND = ("xpath", "//ul[@role='listbox']")
+    SELECT_USER_IN_DIALOG_MENU = ("xpath", "//ul[@role='listbox']/li[2]")
+
 
     # Кнопки внутри участников
     PARTICIPANTS_BUTTON = ("xpath", "//div[text()='Участники']")
@@ -205,7 +212,7 @@ class MeetPage(BasePage):
     @allure.step("Enter messge")
     def enter_message_in_field(self):
         message_field = self.wait.until(EC.element_to_be_clickable(self.MESSAGE_FIELD))
-        new_message = "message123"
+        new_message = "message123, hello че кого?"
         message_field.send_keys(new_message)
 
     @allure.step("Click on send message button")
@@ -221,4 +228,22 @@ class MeetPage(BasePage):
     @allure.step("Check last message in chat")
     def check_last_message_in_chat(self):
         self.wait.until(EC.visibility_of_element_located(self.LAST_MESSAGE_IN_CHAT))
-        self.wait.until(EC.text_to_be_present_in_element(self.LAST_MESSAGE_IN_CHAT, "message123"))
+        self.wait.until(EC.text_to_be_present_in_element(self.LAST_MESSAGE_IN_CHAT, "message123, hello че кого?"))
+
+    @allure.step("Click on user dialog button")
+    def click_on_user_dialog_button(self):
+        self.wait.until(EC.visibility_of_element_located(self.CHOICE_USER_DIALOG_BUTTON))
+        self.wait.until(EC.element_to_be_clickable(self.CHOICE_USER_DIALOG_BUTTON)).click()
+        self.wait.until(EC.visibility_of_element_located(self.DIALOG_VIDGET_IS_OPEND))
+
+    @allure.step("Select user in dialog menu")
+    def select_user_in_dialog_menu(self):
+        self.wait.until(EC.visibility_of_element_located(self.SELECT_USER_IN_DIALOG_MENU))
+        self.wait.until(EC.element_to_be_clickable(self.SELECT_USER_IN_DIALOG_MENU)).click()
+
+    @allure.step("Check last message in chat")
+    def check_last_private_message_in_chat(self):
+        self.wait.until(EC.visibility_of_element_located(self.LAST_PRIVATE_MESSAGE_IN_CHAT))
+        self.wait.until(EC.text_to_be_present_in_element(self.MARK_THAT_MESSAGE_IS_PRIVATE, "(Личное сообщение)"))
+        self.wait.until(EC.text_to_be_present_in_element(self.MARK_FOR_WHO_MESSAGE, "кому Test Connect"))
+        self.wait.until(EC.text_to_be_present_in_element(self.LAST_PRIVATE_MESSAGE_IN_CHAT, "message123, hello че кого?"))

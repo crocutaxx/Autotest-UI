@@ -3,12 +3,12 @@ from base.base_test import BaseTest
 import pytest
 
 @allure.feature("Schedule Functionality")
-class TestScheduleBlok(BaseTest):
+class TestScheduleCancel(BaseTest):
 
 
     @allure.title("Blok schedule")
     @allure.severity("Normal")
-    def test_blok_schedule(self, setup_1):
+    def test_cancel_schedule(self, setup_1):
         self.login_page.open()
         self.login_page.enter_login(self.data.LOGIN)
         self.login_page.enter_password(self.data.PASSWORD)

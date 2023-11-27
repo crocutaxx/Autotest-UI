@@ -21,4 +21,9 @@ class TestScheduleFeature(BaseTest):
         self.planning_meet_page.meet_password_is_saved()
         self.planning_meet_page.meet_description_is_saved()
         self.planning_meet_page.make_screenshot("test_create_schedule")
+        self.planning_meet_page.click_on_close_schedule_meeting_button()
+        self.main_page.is_opened()
+        self.main_page.click_on_planned_name_meet()
+        self.main_page.click_on_delete_meet_button()
+        self.main_page.click_on_confirm_action_button()
 

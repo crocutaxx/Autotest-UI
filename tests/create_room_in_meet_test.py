@@ -1,5 +1,6 @@
 import allure
 from base.base_test import BaseTest
+import pytest
 
 @allure.feature("Meet Functionality")
 class TestCreateRoomInMeet(BaseTest):

@@ -44,7 +44,23 @@ class PlanningMeetPage(BasePage):
         schedule_topic_field.send_keys(new_topic)
         self.topic = new_topic
 
+    @allure.step("Add topic name")
+    def add_topic_for_waiting_room(self):
+        schedule_topic_field = self.wait.until(EC.element_to_be_clickable(self.SCHEDULE_TOPIC_FIELD))
+        new_topic = "Waiting room"
+        schedule_topic_field.send_keys(new_topic)
 
+    @allure.step("Add topic name")
+    def add_topic_for_block(self):
+        schedule_topic_field = self.wait.until(EC.element_to_be_clickable(self.SCHEDULE_TOPIC_FIELD))
+        new_topic = "Bloсked meet"
+        schedule_topic_field.send_keys(new_topic)
+
+    @allure.step("Add topic name")
+    def add_topic_for_create_room(self):
+        schedule_topic_field = self.wait.until(EC.element_to_be_clickable(self.SCHEDULE_TOPIC_FIELD))
+        new_topic = "Create room"
+        schedule_topic_field.send_keys(new_topic)
     @allure.step("Change topic name")
     def change_topic(self, change_topic):
         with allure.step(f"Change topic on '{change_topic}'"):

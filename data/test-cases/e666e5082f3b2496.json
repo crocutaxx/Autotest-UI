@@ -1,12 +1,12 @@
 {
-  "uid" : "a34b538e83b2a4bf",
-  "name" : "Connect to meeting with id and not auth user",
-  "fullName" : "tests.connect_with_id_not_auth_test.TestConnectToMeetingWithIDNotAuthUser#test_connect_to_meeting_wtih_id_not_auth_user",
-  "historyId" : "ad52fc71d86738a495c97ebe28a0b43a",
+  "uid" : "e666e5082f3b2496",
+  "name" : "Invalid authorization",
+  "fullName" : "tests.authorization_with_invalid_data_test.TestInvalidAuthorization#test_invalid_authorization",
+  "historyId" : "8d0ec23909e4f597b7be863c42ba397f",
   "time" : {
-    "start" : 1700803181498,
-    "stop" : 1700803187707,
-    "duration" : 6209
+    "start" : 1701073097486,
+    "stop" : 1701073100531,
+    "duration" : 3045
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,9 +14,9 @@
   "beforeStages" : [ {
     "name" : "setup_1",
     "time" : {
-      "start" : 1700803181497,
-      "stop" : 1700803181498,
-      "duration" : 1
+      "start" : 1701073097486,
+      "stop" : 1701073097486,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -29,9 +29,9 @@
   }, {
     "name" : "driver_1",
     "time" : {
-      "start" : 1700803180681,
-      "stop" : 1700803181497,
-      "duration" : 816
+      "start" : 1701073096664,
+      "stop" : 1701073097486,
+      "duration" : 822
     },
     "status" : "passed",
     "steps" : [ ],
@@ -47,9 +47,9 @@
     "steps" : [ {
       "name" : "Open https://dev.qosyl.kz/login page",
       "time" : {
-        "start" : 1700803181498,
-        "stop" : 1700803183636,
-        "duration" : 2138
+        "start" : 1701073097487,
+        "stop" : 1701073099082,
+        "duration" : 1595
       },
       "status" : "passed",
       "steps" : [ ],
@@ -60,11 +60,11 @@
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false
     }, {
-      "name" : "Click enter meet button",
+      "name" : "Enter login",
       "time" : {
-        "start" : 1700803183636,
-        "stop" : 1700803185328,
-        "duration" : 1692
+        "start" : 1701073099082,
+        "stop" : 1701073099193,
+        "duration" : 111
       },
       "status" : "passed",
       "steps" : [ ],
@@ -75,86 +75,56 @@
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false
     }, {
-      "name" : "Page https://dev.qosyl.kz/meeting/ is opened",
+      "name" : "Enter password",
       "time" : {
-        "start" : 1700803185328,
-        "stop" : 1700803185331,
+        "start" : 1701073099193,
+        "stop" : 1701073099280,
+        "duration" : 87
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Confir login and pass - Click submit button",
+      "time" : {
+        "start" : 1701073099280,
+        "stop" : 1701073099339,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Check push incorect data",
+      "time" : {
+        "start" : 1701073099339,
+        "stop" : 1701073100379,
+        "duration" : 1040
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Page https://dev.qosyl.kz/login is opened",
+      "time" : {
+        "start" : 1701073100379,
+        "stop" : 1701073100382,
         "duration" : 3
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "Enter meet identificator",
-      "time" : {
-        "start" : 1700803185331,
-        "stop" : 1700803185403,
-        "duration" : 72
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "Enter user name",
-      "time" : {
-        "start" : 1700803185403,
-        "stop" : 1700803185520,
-        "duration" : 117
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "Click enter button",
-      "time" : {
-        "start" : 1700803185520,
-        "stop" : 1700803185599,
-        "duration" : 79
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "Enter without cheking",
-      "time" : {
-        "start" : 1700803185599,
-        "stop" : 1700803186113,
-        "duration" : 514
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "Enter without cheking",
-      "time" : {
-        "start" : 1700803186113,
-        "stop" : 1700803187518,
-        "duration" : 1405
       },
       "status" : "passed",
       "steps" : [ ],
@@ -166,14 +136,14 @@
       "shouldDisplayMessage" : false
     } ],
     "attachments" : [ {
-      "uid" : "d62dd0a4179375f0",
-      "name" : "connect_to_meet_not_auth",
-      "source" : "d62dd0a4179375f0.png",
+      "uid" : "fce922f7bebe4c9",
+      "name" : "test_invalid_authorization",
+      "source" : "fce922f7bebe4c9.png",
       "type" : "image/png",
-      "size" : 13102
+      "size" : 72497
     } ],
     "parameters" : [ ],
-    "stepsCount" : 8,
+    "stepsCount" : 6,
     "hasContent" : true,
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false
@@ -181,9 +151,9 @@
   "afterStages" : [ {
     "name" : "driver_1::0",
     "time" : {
-      "start" : 1700803187708,
-      "stop" : 1700803187765,
-      "duration" : 57
+      "start" : 1701073100532,
+      "stop" : 1701073100587,
+      "duration" : 55
     },
     "status" : "passed",
     "steps" : [ ],
@@ -195,23 +165,23 @@
     "shouldDisplayMessage" : false
   } ],
   "labels" : [ {
-    "name" : "feature",
-    "value" : "Schedule Functionality"
-  }, {
     "name" : "severity",
-    "value" : "Critical"
+    "value" : "Normal"
+  }, {
+    "name" : "feature",
+    "value" : "Authorization Functionality"
   }, {
     "name" : "parentSuite",
     "value" : "tests"
   }, {
     "name" : "suite",
-    "value" : "connect_with_id_not_auth_test"
+    "value" : "authorization_with_invalid_data_test"
   }, {
     "name" : "subSuite",
-    "value" : "TestConnectToMeetingWithIDNotAuthUser"
+    "value" : "TestInvalidAuthorization"
   }, {
     "name" : "host",
-    "value" : "62cada2ec202"
+    "value" : "139d293279f5"
   }, {
     "name" : "thread",
     "value" : "8-MainThread"
@@ -223,7 +193,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "tests.connect_with_id_not_auth_test"
+    "value" : "tests.authorization_with_invalid_data_test"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -233,7 +203,7 @@
   "hidden" : false,
   "retry" : false,
   "extra" : {
-    "severity" : "critical",
+    "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
     "history" : {
@@ -241,102 +211,110 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 12,
+        "passed" : 13,
         "unknown" : 0,
-        "total" : 12
+        "total" : 13
       },
       "items" : [ {
-        "uid" : "b0b549acf41272eb",
+        "uid" : "90a189a6f74908c4",
         "status" : "passed",
         "time" : {
-          "start" : 1700802635281,
-          "stop" : 1700802640681,
-          "duration" : 5400
+          "start" : 1700803154009,
+          "stop" : 1700803158579,
+          "duration" : 4570
         }
       }, {
-        "uid" : "cddec1dfb9f1238e",
+        "uid" : "cb55434623d311f5",
         "status" : "passed",
         "time" : {
-          "start" : 1700801553810,
-          "stop" : 1700801559267,
-          "duration" : 5457
+          "start" : 1700802609488,
+          "stop" : 1700802613651,
+          "duration" : 4163
         }
       }, {
-        "uid" : "789cd6ceca641d3d",
+        "uid" : "95087ae4797949de",
         "status" : "passed",
         "time" : {
-          "start" : 1700736981959,
-          "stop" : 1700736988454,
-          "duration" : 6495
+          "start" : 1700801530337,
+          "stop" : 1700801533391,
+          "duration" : 3054
         }
       }, {
-        "uid" : "f2b63d544fba3623",
+        "uid" : "483955f310180bcc",
         "status" : "passed",
         "time" : {
-          "start" : 1700462876463,
-          "stop" : 1700462882450,
-          "duration" : 5987
+          "start" : 1700736958370,
+          "stop" : 1700736961432,
+          "duration" : 3062
         }
       }, {
-        "uid" : "b02745b92f476126",
+        "uid" : "3bd551cb7ee59c15",
         "status" : "passed",
         "time" : {
-          "start" : 1700462220386,
-          "stop" : 1700462225236,
-          "duration" : 4850
+          "start" : 1700462849358,
+          "stop" : 1700462853828,
+          "duration" : 4470
         }
       }, {
-        "uid" : "74a3a00a3c771612",
+        "uid" : "80e1191d8ede1b26",
         "status" : "passed",
         "time" : {
-          "start" : 1700117197895,
-          "stop" : 1700117203321,
-          "duration" : 5426
+          "start" : 1700462190674,
+          "stop" : 1700462193711,
+          "duration" : 3037
         }
       }, {
-        "uid" : "e8a36507bb9e9782",
+        "uid" : "ce508e3ca9adfde",
         "status" : "passed",
         "time" : {
-          "start" : 1700047323301,
-          "stop" : 1700047328529,
-          "duration" : 5228
+          "start" : 1700117173858,
+          "stop" : 1700117176892,
+          "duration" : 3034
         }
       }, {
-        "uid" : "51bca70601fb7f45",
+        "uid" : "c54392165846e02",
         "status" : "passed",
         "time" : {
-          "start" : 1700046757447,
-          "stop" : 1700046763984,
-          "duration" : 6537
+          "start" : 1700047297019,
+          "stop" : 1700047300628,
+          "duration" : 3609
         }
       }, {
-        "uid" : "dae1f27d7d236dfd",
+        "uid" : "e1e628d54aa4ed9",
         "status" : "passed",
         "time" : {
-          "start" : 1700044719789,
-          "stop" : 1700044724961,
-          "duration" : 5172
+          "start" : 1700046734365,
+          "stop" : 1700046737420,
+          "duration" : 3055
         }
       }, {
-        "uid" : "68923048d77df39a",
+        "uid" : "290e025f2702b379",
         "status" : "passed",
         "time" : {
-          "start" : 1700041798443,
-          "stop" : 1700041803601,
-          "duration" : 5158
+          "start" : 1700044697266,
+          "stop" : 1700044700361,
+          "duration" : 3095
         }
       }, {
-        "uid" : "d77e038b7e2a9747",
+        "uid" : "18390050a3fca387",
         "status" : "passed",
         "time" : {
-          "start" : 1700035320461,
-          "stop" : 1700035322296,
-          "duration" : 1835
+          "start" : 1700041771368,
+          "stop" : 1700041775976,
+          "duration" : 4608
+        }
+      }, {
+        "uid" : "88b736cd354a3322",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700035303024,
+          "stop" : 1700035304998,
+          "duration" : 1974
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "a34b538e83b2a4bf.json",
+  "source" : "e666e5082f3b2496.json",
   "parameterValues" : [ ]
 }

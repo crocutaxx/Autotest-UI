@@ -1,12 +1,12 @@
 {
-  "uid" : "7db104ee3616d0b9",
-  "name" : "Search users",
-  "fullName" : "tests.search_for_registrate_users_test.TestSearchUsers#test_search_users",
-  "historyId" : "5d77a610ec4602d51e73a3b3b01cb8a0",
+  "uid" : "b653bf2731d33b74",
+  "name" : "Create room in meet",
+  "fullName" : "tests.create_room_in_meet_test.TestCreateRoomInMeet#test_create_room_in_meet",
+  "historyId" : "eb41aab97665ad6c042a0555d2dd2e44",
   "time" : {
-    "start" : 1700803279415,
-    "stop" : 1700803285123,
-    "duration" : 5708
+    "start" : 1701073188868,
+    "stop" : 1701073200755,
+    "duration" : 11887
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,9 +14,9 @@
   "beforeStages" : [ {
     "name" : "driver_1",
     "time" : {
-      "start" : 1700803278596,
-      "stop" : 1700803279414,
-      "duration" : 818
+      "start" : 1701073188046,
+      "stop" : 1701073188867,
+      "duration" : 821
     },
     "status" : "passed",
     "steps" : [ ],
@@ -29,8 +29,8 @@
   }, {
     "name" : "setup_1",
     "time" : {
-      "start" : 1700803279414,
-      "stop" : 1700803279414,
+      "start" : 1701073188867,
+      "stop" : 1701073188867,
       "duration" : 0
     },
     "status" : "passed",
@@ -47,9 +47,9 @@
     "steps" : [ {
       "name" : "Open https://dev.qosyl.kz/login page",
       "time" : {
-        "start" : 1700803279415,
-        "stop" : 1700803281542,
-        "duration" : 2127
+        "start" : 1701073188868,
+        "stop" : 1701073190482,
+        "duration" : 1614
       },
       "status" : "passed",
       "steps" : [ ],
@@ -62,9 +62,9 @@
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1700803281542,
-        "stop" : 1700803281677,
-        "duration" : 135
+        "start" : 1701073190482,
+        "stop" : 1701073190609,
+        "duration" : 127
       },
       "status" : "passed",
       "steps" : [ ],
@@ -77,9 +77,9 @@
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1700803281677,
-        "stop" : 1700803281748,
-        "duration" : 71
+        "start" : 1701073190609,
+        "stop" : 1701073190684,
+        "duration" : 75
       },
       "status" : "passed",
       "steps" : [ ],
@@ -92,9 +92,9 @@
     }, {
       "name" : "Confir login and pass - Click submit button",
       "time" : {
-        "start" : 1700803281748,
-        "stop" : 1700803281812,
-        "duration" : 64
+        "start" : 1701073190684,
+        "stop" : 1701073190741,
+        "duration" : 57
       },
       "status" : "passed",
       "steps" : [ ],
@@ -107,9 +107,9 @@
     }, {
       "name" : "Page https://dev.qosyl.kz/ is opened",
       "time" : {
-        "start" : 1700803281812,
-        "stop" : 1700803283821,
-        "duration" : 2009
+        "start" : 1701073190742,
+        "stop" : 1701073191751,
+        "duration" : 1009
       },
       "status" : "passed",
       "steps" : [ ],
@@ -120,11 +120,11 @@
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false
     }, {
-      "name" : "Click on messages button",
+      "name" : "Click on new meet button",
       "time" : {
-        "start" : 1700803283821,
-        "stop" : 1700803283872,
-        "duration" : 51
+        "start" : 1701073191751,
+        "stop" : 1701073191799,
+        "duration" : 48
       },
       "status" : "passed",
       "steps" : [ ],
@@ -135,11 +135,11 @@
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false
     }, {
-      "name" : "Page https://dev.qosyl.kz/messages is opened",
+      "name" : "Enter without cheking",
       "time" : {
-        "start" : 1700803283872,
-        "stop" : 1700803283875,
-        "duration" : 3
+        "start" : 1701073191799,
+        "stop" : 1701073196774,
+        "duration" : 4975
       },
       "status" : "passed",
       "steps" : [ ],
@@ -150,11 +150,11 @@
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false
     }, {
-      "name" : "Search users by name",
+      "name" : "Check push enter meet",
       "time" : {
-        "start" : 1700803283875,
-        "stop" : 1700803284958,
-        "duration" : 1083
+        "start" : 1701073196774,
+        "stop" : 1701073197810,
+        "duration" : 1036
       },
       "status" : "passed",
       "steps" : [ ],
@@ -165,11 +165,86 @@
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false
     }, {
-      "name" : "Check result of search",
+      "name" : "Click on More button",
       "time" : {
-        "start" : 1700803284958,
-        "stop" : 1700803284985,
-        "duration" : 27
+        "start" : 1701073197810,
+        "stop" : 1701073198909,
+        "duration" : 1099
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on rooms button",
+      "time" : {
+        "start" : 1701073198909,
+        "stop" : 1701073198997,
+        "duration" : 88
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on create room button",
+      "time" : {
+        "start" : 1701073198997,
+        "stop" : 1701073199384,
+        "duration" : 387
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter name room in field",
+      "time" : {
+        "start" : 1701073199384,
+        "stop" : 1701073199485,
+        "duration" : 101
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on modal create room button",
+      "time" : {
+        "start" : 1701073199485,
+        "stop" : 1701073199551,
+        "duration" : 66
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Check created romm",
+      "time" : {
+        "start" : 1701073199551,
+        "stop" : 1701073200589,
+        "duration" : 1038
       },
       "status" : "passed",
       "steps" : [ ],
@@ -181,14 +256,14 @@
       "shouldDisplayMessage" : false
     } ],
     "attachments" : [ {
-      "uid" : "f6ff97e69931d997",
-      "name" : "result_of_search_user",
-      "source" : "f6ff97e69931d997.png",
+      "uid" : "90dbe0c887ef4239",
+      "name" : "created_room",
+      "source" : "90dbe0c887ef4239.png",
       "type" : "image/png",
-      "size" : 45712
+      "size" : 35018
     } ],
     "parameters" : [ ],
-    "stepsCount" : 9,
+    "stepsCount" : 14,
     "hasContent" : true,
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false
@@ -196,9 +271,9 @@
   "afterStages" : [ {
     "name" : "driver_1::0",
     "time" : {
-      "start" : 1700803285123,
-      "stop" : 1700803285180,
-      "duration" : 57
+      "start" : 1701073200755,
+      "stop" : 1701073200813,
+      "duration" : 58
     },
     "status" : "passed",
     "steps" : [ ],
@@ -214,19 +289,19 @@
     "value" : "Normal"
   }, {
     "name" : "feature",
-    "value" : "Messages Functionality"
+    "value" : "Meet Functionality"
   }, {
     "name" : "parentSuite",
     "value" : "tests"
   }, {
     "name" : "suite",
-    "value" : "search_for_registrate_users_test"
+    "value" : "create_room_in_meet_test"
   }, {
     "name" : "subSuite",
-    "value" : "TestSearchUsers"
+    "value" : "TestCreateRoomInMeet"
   }, {
     "name" : "host",
-    "value" : "62cada2ec202"
+    "value" : "139d293279f5"
   }, {
     "name" : "thread",
     "value" : "8-MainThread"
@@ -238,7 +313,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "tests.search_for_registrate_users_test"
+    "value" : "tests.create_room_in_meet_test"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -254,104 +329,73 @@
     "history" : {
       "statistic" : {
         "failed" : 0,
-        "broken" : 0,
+        "broken" : 1,
         "skipped" : 0,
-        "passed" : 12,
+        "passed" : 7,
         "unknown" : 0,
-        "total" : 12
+        "total" : 8
       },
       "items" : [ {
-        "uid" : "f8dfa06075ab285e",
+        "uid" : "d29b941595672f5",
         "status" : "passed",
         "time" : {
-          "start" : 1700802727984,
-          "stop" : 1700802732296,
-          "duration" : 4312
+          "start" : 1700803188577,
+          "stop" : 1700803202160,
+          "duration" : 13583
         }
       }, {
-        "uid" : "203d40edd981bd81",
+        "uid" : "852542de10bb0ff1",
         "status" : "passed",
         "time" : {
-          "start" : 1700801643522,
-          "stop" : 1700801648701,
-          "duration" : 5179
+          "start" : 1700802641547,
+          "stop" : 1700802653483,
+          "duration" : 11936
         }
       }, {
-        "uid" : "437cf08e8811f345",
+        "uid" : "301465c8b29caa0",
         "status" : "passed",
         "time" : {
-          "start" : 1700737065346,
-          "stop" : 1700737069524,
-          "duration" : 4178
+          "start" : 1700801560140,
+          "stop" : 1700801571120,
+          "duration" : 10980
         }
       }, {
-        "uid" : "a28b5cb4ff77edc7",
+        "uid" : "9dd51b3afe61aaa1",
         "status" : "passed",
         "time" : {
-          "start" : 1700462970793,
-          "stop" : 1700462975438,
-          "duration" : 4645
+          "start" : 1700736989324,
+          "stop" : 1700737000345,
+          "duration" : 11021
         }
       }, {
-        "uid" : "809fde5991db1523",
+        "uid" : "6bcde4d69db22ee3",
         "status" : "passed",
         "time" : {
-          "start" : 1700462308959,
-          "stop" : 1700462313120,
-          "duration" : 4161
+          "start" : 1700462883331,
+          "stop" : 1700462896909,
+          "duration" : 13578
         }
       }, {
-        "uid" : "1f4c526abf0b71a7",
-        "status" : "passed",
+        "uid" : "ba68312b884da2bc",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
         "time" : {
-          "start" : 1700117255106,
-          "stop" : 1700117259303,
-          "duration" : 4197
+          "start" : 1700462226113,
+          "stop" : 1700462246648,
+          "duration" : 20535
         }
       }, {
-        "uid" : "bf6ee891fc122a4f",
+        "uid" : "3a5e94ab049e66c6",
         "status" : "passed",
         "time" : {
-          "start" : 1700047355544,
-          "stop" : 1700047361288,
-          "duration" : 5744
-        }
-      }, {
-        "uid" : "e77810eb5f408c07",
-        "status" : "passed",
-        "time" : {
-          "start" : 1700046788219,
-          "stop" : 1700046792399,
-          "duration" : 4180
-        }
-      }, {
-        "uid" : "81800b744ca031d7",
-        "status" : "passed",
-        "time" : {
-          "start" : 1700044747200,
-          "stop" : 1700044751371,
-          "duration" : 4171
-        }
-      }, {
-        "uid" : "4c3faeba51245454",
-        "status" : "passed",
-        "time" : {
-          "start" : 1700041830627,
-          "stop" : 1700041836406,
-          "duration" : 5779
-        }
-      }, {
-        "uid" : "6e6f96707bb12339",
-        "status" : "passed",
-        "time" : {
-          "start" : 1700035341983,
-          "stop" : 1700035344329,
-          "duration" : 2346
+          "start" : 1700117204191,
+          "stop" : 1700117214506,
+          "duration" : 10315
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "7db104ee3616d0b9.json",
+  "source" : "b653bf2731d33b74.json",
   "parameterValues" : [ ]
 }

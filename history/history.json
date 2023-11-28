@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "645b59f4b66c9303",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701170197016,
+        "stop" : 1701170304730,
+        "duration" : 107714
+      }
+    }, {
       "uid" : "8410e1bb1be3677b",
       "status" : "passed",
       "time" : {
@@ -55,11 +63,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "13ce03cff7883062",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701169766242,
+        "stop" : 1701169784222,
+        "duration" : 17980
+      }
+    }, {
       "uid" : "b653bf2731d33b74",
       "status" : "passed",
       "time" : {
@@ -131,11 +147,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 13,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "d73351906e5e0122",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701170305660,
+        "stop" : 1701170324585,
+        "duration" : 18925
+      }
+    }, {
       "uid" : "f2b99191c1ad309a",
       "status" : "passed",
       "time" : {
@@ -246,11 +270,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 13,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "6525990b418c850d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701169757343,
+        "stop" : 1701169765364,
+        "duration" : 8021
+      }
+    }, {
       "uid" : "d9f6c623425a2904",
       "status" : "passed",
       "time" : {
@@ -361,11 +393,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 13,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "ad040d6a2e5d8983",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701170150551,
+        "stop" : 1701170166664,
+        "duration" : 16113
+      }
+    }, {
       "uid" : "4c6fbe3f449b8c1b",
       "status" : "passed",
       "time" : {
@@ -476,11 +516,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "bfbcfc2cce2c1f70",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701169950117,
+        "stop" : 1701170047767,
+        "duration" : 97650
+      }
+    }, {
       "uid" : "c6482178dc81b923",
       "status" : "passed",
       "time" : {
@@ -495,11 +543,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 13,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "e7cd297f211c089e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701169939526,
+        "stop" : 1701169948433,
+        "duration" : 8907
+      }
+    }, {
       "uid" : "7a051f2b0f82ac4c",
       "status" : "passed",
       "time" : {
@@ -610,11 +666,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "4b8946a244c123a6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701169571603,
+        "stop" : 1701169690174,
+        "duration" : 118571
+      }
+    }, {
       "uid" : "cbdad860a6ee6663",
       "status" : "passed",
       "time" : {
@@ -629,11 +693,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 13,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "ae539f471eebc138",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701169785101,
+        "stop" : 1701169823705,
+        "duration" : 38604
+      }
+    }, {
       "uid" : "76763d755fb75476",
       "status" : "passed",
       "time" : {
@@ -744,11 +816,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 13,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "6293af2629500e37",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701170421879,
+        "stop" : 1701170453696,
+        "duration" : 31817
+      }
+    }, {
       "uid" : "5ea81ceefcb010a2",
       "status" : "passed",
       "time" : {
@@ -859,11 +939,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 13,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "1b49e26760c859f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701169504902,
+        "stop" : 1701169537766,
+        "duration" : 32864
+      }
+    }, {
       "uid" : "e666e5082f3b2496",
       "status" : "passed",
       "time" : {
@@ -974,11 +1062,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "3d48d9224570ff2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701170326269,
+        "stop" : 1701170420941,
+        "duration" : 94672
+      }
+    }, {
       "uid" : "8edbc8c2dc087074",
       "status" : "passed",
       "time" : {
@@ -1015,13 +1111,22 @@
   "ddd006ca48c368d64f00224270d5e678" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "8f365eb3321ee226",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1701169691108,
+        "stop" : 1701169716227,
+        "duration" : 25119
+      }
+    }, {
       "uid" : "365c215391a41b2",
       "status" : "passed",
       "time" : {
@@ -1036,11 +1141,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 13,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "115ffe2f9ccdd1ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701170167537,
+        "stop" : 1701170195321,
+        "duration" : 27784
+      }
+    }, {
       "uid" : "db3e95e1f16afd67",
       "status" : "passed",
       "time" : {
@@ -1151,11 +1264,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "1f02bae3b6b04d44",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701169538641,
+        "stop" : 1701169569915,
+        "duration" : 31274
+      }
+    }, {
       "uid" : "cd1f6c72429d59bf",
       "status" : "passed",
       "time" : {
@@ -1168,13 +1289,22 @@
   "2f4a22d21ef918187bf3205fcd07f881" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "f909838bd3e882c4",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <p class=\"Home_planned__IUwj9\">...</p> is not clickable at point (866, 601). Other element would receive the click: <div class=\"ant-tooltip-inner\" role=\"tooltip\">...</div>\n  (Session info: headless chrome=112.0.5615.165)",
+      "time" : {
+        "start" : 1701170049520,
+        "stop" : 1701170083798,
+        "duration" : 34278
+      }
+    }, {
       "uid" : "5df841cd5be967de",
       "status" : "passed",
       "time" : {
@@ -1295,13 +1425,22 @@
   "85443ace7e339cf84fe0b76b443e9c18" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "436b48490edec300",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" data-testid=\"CloseIcon\">...</svg> is not clickable at point (1896, 27). Other element would receive the click: <div aria-hidden=\"true\" class=\"MuiBackdrop-root MuiModal-backdrop css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\"></div>\n  (Session info: headless chrome=112.0.5615.165)",
+      "time" : {
+        "start" : 1701169717949,
+        "stop" : 1701169742595,
+        "duration" : 24646
+      }
+    }, {
       "uid" : "7e6ecf85e07f08ce",
       "status" : "passed",
       "time" : {
@@ -1316,11 +1455,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 7
+      "total" : 8
     },
     "items" : [ {
+      "uid" : "cf28f86ed03c86f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701169825395,
+        "stop" : 1701169938597,
+        "duration" : 113202
+      }
+    }, {
       "uid" : "ca6a1ff08df156bc",
       "status" : "passed",
       "time" : {
@@ -1383,11 +1530,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 13,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "1b3bfc256a7b23c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701169743551,
+        "stop" : 1701169756463,
+        "duration" : 12912
+      }
+    }, {
       "uid" : "40a3df2e9a100d3d",
       "status" : "passed",
       "time" : {
@@ -1498,11 +1653,19 @@
       "failed" : 0,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 7,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "d7ae254bcd9f5405",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701170085560,
+        "stop" : 1701170149616,
+        "duration" : 64056
+      }
+    }, {
       "uid" : "6dce2671744e9b5c",
       "status" : "passed",
       "time" : {
@@ -1575,11 +1738,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 13,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "958721d566baa45c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701169470210,
+        "stop" : 1701169504000,
+        "duration" : 33790
+      }
+    }, {
       "uid" : "783bb68f6d3bb81e",
       "status" : "passed",
       "time" : {

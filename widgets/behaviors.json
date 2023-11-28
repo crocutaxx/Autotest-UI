@@ -5,9 +5,9 @@
     "name" : "Meet Functionality",
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 2,
       "skipped" : 0,
-      "passed" : 10,
+      "passed" : 8,
       "unknown" : 0,
       "total" : 10
     }
@@ -16,9 +16,9 @@
     "name" : "Schedule Functionality",
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 5,
       "unknown" : 0,
       "total" : 6
     }

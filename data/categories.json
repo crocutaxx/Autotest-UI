@@ -1,5 +1,60 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message:",
+      "children" : [ {
+        "name" : "Blok schedule",
+        "uid" : "8f365eb3321ee226",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1701169691108,
+          "stop" : 1701169716227,
+          "duration" : 25119
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" data-testid=\"CloseIcon\">...</svg> is not clickable at point (1896, 27). Other element would receive the click: <div aria-hidden=\"true\" class=\"MuiBackdrop-root MuiModal-backdrop css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\"></div>\n  (Session info: headless chrome=112.0.5615.165)",
+      "children" : [ {
+        "name" : "Connect to room in meet",
+        "uid" : "436b48490edec300",
+        "parentUid" : "ddc02b48757b7e9499c16c408513fd46",
+        "status" : "broken",
+        "time" : {
+          "start" : 1701169717949,
+          "stop" : 1701169742595,
+          "duration" : 24646
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ddc02b48757b7e9499c16c408513fd46"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <p class=\"Home_planned__IUwj9\">...</p> is not clickable at point (866, 601). Other element would receive the click: <div class=\"ant-tooltip-inner\" role=\"tooltip\">...</div>\n  (Session info: headless chrome=112.0.5615.165)",
+      "children" : [ {
+        "name" : "Return in main room in meet",
+        "uid" : "f909838bd3e882c4",
+        "parentUid" : "318575b6bcc0891ffb1eb936c9467622",
+        "status" : "broken",
+        "time" : {
+          "start" : 1701170049520,
+          "stop" : 1701170083798,
+          "duration" : 34278
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "318575b6bcc0891ffb1eb936c9467622"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }

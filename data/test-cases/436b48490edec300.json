@@ -1,0 +1,536 @@
+{
+  "uid" : "436b48490edec300",
+  "name" : "Connect to room in meet",
+  "fullName" : "tests.connect_to_room_in_meet_test.TestConnecToRoomInMeet#test_connect_to_room_in_meet",
+  "historyId" : "85443ace7e339cf84fe0b76b443e9c18",
+  "time" : {
+    "start" : 1701169717949,
+    "stop" : 1701169742595,
+    "duration" : 24646
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" data-testid=\"CloseIcon\">...</svg> is not clickable at point (1896, 27). Other element would receive the click: <div aria-hidden=\"true\" class=\"MuiBackdrop-root MuiModal-backdrop css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\"></div>\n  (Session info: headless chrome=112.0.5615.165)",
+  "statusTrace" : "self = <connect_to_room_in_meet_test.TestConnecToRoomInMeet object at 0x7f849a4a21b0>\nsetup_1 = None, setup_2 = None\n\n    @allure.title(\"Connect to room in meet\")\n    @allure.severity(\"Normal\")\n    def test_connect_to_room_in_meet(self, setup_1, setup_2):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n        self.login_page.click_submit_button()\n        self.main_page.is_opened()\n        self.main_page.click_on_planning_meet_button()\n        self.planning_meet_page.is_opened()\n        self.planning_meet_page.add_topic_for_create_room()\n        self.planning_meet_page.click_user_tab_button()\n        self.planning_meet_page.select_user()\n        self.planning_meet_page.save_schedule()\n        self.planning_meet_page.click_on_close_schedule_meeting_button()\n        self.main_page.is_opened()\n        self.main_page.click_on_meet_for_create_room_button()\n        self.main_page.click_on_connect_to_meet_button()\n        # self.meet_page.is_opened() Разобраться с идентификатором комант\n        # self.meet_page.click_on_dismiss_alert_button() # Нужен для локального запуска\n        self.meet_page.click_on_enter_without_cheking_button()\n        self.meet_page.check_enter_meet_push()\n        self.meet_page.click_on_more_button()\n        self.meet_page.click_on_rooms_button()\n        self.meet_page.click_on_create_room_button()\n        self.meet_page.enter_room_name()\n        self.meet_page.click_on_modal_create_room_button()\n>       self.meet_page.close_room_vidget()\n\ntests/connect_to_room_in_meet_test.py:37: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/user2/meet_page_2.py:205: in close_room_vidget\n    self.wait.until(EC.element_to_be_clickable(self.CLOSE_ROOM_VIDGET)).click()\n../local/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py:93: in click\n    self._execute(Command.CLICK_ELEMENT)\n../local/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py:394: in _execute\n    return self._parent.execute(command, params)\n../local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:344: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7f849a0449e0>\nresponse = {'status': 400, 'value': '{\"value\":{\"error\":\"element click intercepted\",\"message\":\"element click intercepted: Element ...bic-bezier(0.4, 0, 0.2, 1) 0ms;\\\\\">\\\\u003C/div>\\\\n  (Session info: headless chrome=112.0.5615.165)\",\"stacktrace\":\"\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get(\"status\", None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\"value\", None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\"value\"]\n                    status = value.get(\"error\", None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\"message\")\n                    else:\n                        message = value.get(\"message\", None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\"__\")]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\"value\"]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and \"message\" in value:\n            message = value[\"message\"]\n    \n        screen = None  # type: ignore[assignment]\n        if \"screen\" in value:\n            screen = value[\"screen\"]\n    \n        stacktrace = None\n        st_value = value.get(\"stackTrace\") or value.get(\"stacktrace\")\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\"\\n\")\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\"lineNumber\", \"\")\n                        file = frame.get(\"fileName\", \"<anonymous>\")\n                        if line:\n                            file = f\"{file}:{line}\"\n                        meth = frame.get(\"methodName\", \"<anonymous>\")\n                        if \"className\" in frame:\n                            meth = f\"{frame['className']}.{meth}\"\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \"data\" in value:\n                alert_text = value[\"data\"].get(\"text\")\n            elif \"alert\" in value:\n                alert_text = value[\"alert\"].get(\"text\")\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" data-testid=\"CloseIcon\">...</svg> is not clickable at point (1896, 27). Other element would receive the click: <div aria-hidden=\"true\" class=\"MuiBackdrop-root MuiModal-backdrop css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\"></div>\nE         (Session info: headless chrome=112.0.5615.165)\n\n../local/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py:229: ElementClickInterceptedException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver_2",
+    "time" : {
+      "start" : 1701169717135,
+      "stop" : 1701169717949,
+      "duration" : 814
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setup_2",
+    "time" : {
+      "start" : 1701169717949,
+      "stop" : 1701169717949,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setup_1",
+    "time" : {
+      "start" : 1701169717135,
+      "stop" : 1701169717135,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver_1",
+    "time" : {
+      "start" : 1701169716315,
+      "stop" : 1701169717134,
+      "duration" : 819
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" data-testid=\"CloseIcon\">...</svg> is not clickable at point (1896, 27). Other element would receive the click: <div aria-hidden=\"true\" class=\"MuiBackdrop-root MuiModal-backdrop css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\"></div>\n  (Session info: headless chrome=112.0.5615.165)",
+    "statusTrace" : "self = <connect_to_room_in_meet_test.TestConnecToRoomInMeet object at 0x7f849a4a21b0>\nsetup_1 = None, setup_2 = None\n\n    @allure.title(\"Connect to room in meet\")\n    @allure.severity(\"Normal\")\n    def test_connect_to_room_in_meet(self, setup_1, setup_2):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n        self.login_page.click_submit_button()\n        self.main_page.is_opened()\n        self.main_page.click_on_planning_meet_button()\n        self.planning_meet_page.is_opened()\n        self.planning_meet_page.add_topic_for_create_room()\n        self.planning_meet_page.click_user_tab_button()\n        self.planning_meet_page.select_user()\n        self.planning_meet_page.save_schedule()\n        self.planning_meet_page.click_on_close_schedule_meeting_button()\n        self.main_page.is_opened()\n        self.main_page.click_on_meet_for_create_room_button()\n        self.main_page.click_on_connect_to_meet_button()\n        # self.meet_page.is_opened() Разобраться с идентификатором комант\n        # self.meet_page.click_on_dismiss_alert_button() # Нужен для локального запуска\n        self.meet_page.click_on_enter_without_cheking_button()\n        self.meet_page.check_enter_meet_push()\n        self.meet_page.click_on_more_button()\n        self.meet_page.click_on_rooms_button()\n        self.meet_page.click_on_create_room_button()\n        self.meet_page.enter_room_name()\n        self.meet_page.click_on_modal_create_room_button()\n>       self.meet_page.close_room_vidget()\n\ntests/connect_to_room_in_meet_test.py:37: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/user2/meet_page_2.py:205: in close_room_vidget\n    self.wait.until(EC.element_to_be_clickable(self.CLOSE_ROOM_VIDGET)).click()\n../local/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py:93: in click\n    self._execute(Command.CLICK_ELEMENT)\n../local/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py:394: in _execute\n    return self._parent.execute(command, params)\n../local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:344: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7f849a0449e0>\nresponse = {'status': 400, 'value': '{\"value\":{\"error\":\"element click intercepted\",\"message\":\"element click intercepted: Element ...bic-bezier(0.4, 0, 0.2, 1) 0ms;\\\\\">\\\\u003C/div>\\\\n  (Session info: headless chrome=112.0.5615.165)\",\"stacktrace\":\"\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get(\"status\", None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\"value\", None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\"value\"]\n                    status = value.get(\"error\", None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\"message\")\n                    else:\n                        message = value.get(\"message\", None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\"__\")]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\"value\"]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and \"message\" in value:\n            message = value[\"message\"]\n    \n        screen = None  # type: ignore[assignment]\n        if \"screen\" in value:\n            screen = value[\"screen\"]\n    \n        stacktrace = None\n        st_value = value.get(\"stackTrace\") or value.get(\"stacktrace\")\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\"\\n\")\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\"lineNumber\", \"\")\n                        file = frame.get(\"fileName\", \"<anonymous>\")\n                        if line:\n                            file = f\"{file}:{line}\"\n                        meth = frame.get(\"methodName\", \"<anonymous>\")\n                        if \"className\" in frame:\n                            meth = f\"{frame['className']}.{meth}\"\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \"data\" in value:\n                alert_text = value[\"data\"].get(\"text\")\n            elif \"alert\" in value:\n                alert_text = value[\"alert\"].get(\"text\")\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" data-testid=\"CloseIcon\">...</svg> is not clickable at point (1896, 27). Other element would receive the click: <div aria-hidden=\"true\" class=\"MuiBackdrop-root MuiModal-backdrop css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\"></div>\nE         (Session info: headless chrome=112.0.5615.165)\n\n../local/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py:229: ElementClickInterceptedException",
+    "steps" : [ {
+      "name" : "Open https://dev.qosyl.kz/login page",
+      "time" : {
+        "start" : 1701169717950,
+        "stop" : 1701169722925,
+        "duration" : 4975
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter login",
+      "time" : {
+        "start" : 1701169722925,
+        "stop" : 1701169723071,
+        "duration" : 146
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter password",
+      "time" : {
+        "start" : 1701169723071,
+        "stop" : 1701169723146,
+        "duration" : 75
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Confir login and pass - Click submit button",
+      "time" : {
+        "start" : 1701169723147,
+        "stop" : 1701169723211,
+        "duration" : 64
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Page https://dev.qosyl.kz/ is opened",
+      "time" : {
+        "start" : 1701169723211,
+        "stop" : 1701169726223,
+        "duration" : 3012
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on planning meet button",
+      "time" : {
+        "start" : 1701169726223,
+        "stop" : 1701169726270,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Page https://dev.qosyl.kz/schedule is opened",
+      "time" : {
+        "start" : 1701169726270,
+        "stop" : 1701169726272,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Add topic name",
+      "time" : {
+        "start" : 1701169726272,
+        "stop" : 1701169728376,
+        "duration" : 2104
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click user tab button",
+      "time" : {
+        "start" : 1701169728376,
+        "stop" : 1701169728446,
+        "duration" : 70
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Select user",
+      "time" : {
+        "start" : 1701169728447,
+        "stop" : 1701169729512,
+        "duration" : 1065
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Save schedule",
+      "time" : {
+        "start" : 1701169729512,
+        "stop" : 1701169729569,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on schedule meeting close button",
+      "time" : {
+        "start" : 1701169729569,
+        "stop" : 1701169730631,
+        "duration" : 1062
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Page https://dev.qosyl.kz/ is opened",
+      "time" : {
+        "start" : 1701169730632,
+        "stop" : 1701169730634,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on meet name button",
+      "time" : {
+        "start" : 1701169730634,
+        "stop" : 1701169731696,
+        "duration" : 1062
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on connect to meet button",
+      "time" : {
+        "start" : 1701169731696,
+        "stop" : 1701169736156,
+        "duration" : 4460
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter without cheking",
+      "time" : {
+        "start" : 1701169736156,
+        "stop" : 1701169736678,
+        "duration" : 522
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Check push enter meet",
+      "time" : {
+        "start" : 1701169736678,
+        "stop" : 1701169739729,
+        "duration" : 3051
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on More button",
+      "time" : {
+        "start" : 1701169739729,
+        "stop" : 1701169740831,
+        "duration" : 1102
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on rooms button",
+      "time" : {
+        "start" : 1701169740831,
+        "stop" : 1701169740918,
+        "duration" : 87
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on create room button",
+      "time" : {
+        "start" : 1701169740918,
+        "stop" : 1701169741305,
+        "duration" : 387
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter name room in field",
+      "time" : {
+        "start" : 1701169741305,
+        "stop" : 1701169741406,
+        "duration" : 101
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on modal create room button",
+      "time" : {
+        "start" : 1701169741407,
+        "stop" : 1701169741481,
+        "duration" : 74
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Close room vidget",
+      "time" : {
+        "start" : 1701169741481,
+        "stop" : 1701169742593,
+        "duration" : 1112
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" data-testid=\"CloseIcon\">...</svg> is not clickable at point (1896, 27). Other element would receive the click: <div aria-hidden=\"true\" class=\"MuiBackdrop-root MuiModal-backdrop css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\"></div>\n  (Session info: headless chrome=112.0.5615.165)\n\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/user2/meet_page_2.py\", line 205, in close_room_vidget\n    self.wait.until(EC.element_to_be_clickable(self.CLOSE_ROOM_VIDGET)).click()\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py\", line 93, in click\n    self._execute(Command.CLICK_ELEMENT)\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py\", line 394, in _execute\n    return self._parent.execute(command, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py\", line 344, in execute\n    self.error_handler.check_response(response)\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 23,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver_2::0",
+    "time" : {
+      "start" : 1701169742623,
+      "stop" : 1701169742678,
+      "duration" : 55
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver_1::0",
+    "time" : {
+      "start" : 1701169742678,
+      "stop" : 1701169742735,
+      "duration" : 57
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "Normal"
+  }, {
+    "name" : "feature",
+    "value" : "Meet Functionality"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "connect_to_room_in_meet_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestConnecToRoomInMeet"
+  }, {
+    "name" : "host",
+    "value" : "76dd715fb46f"
+  }, {
+    "name" : "thread",
+    "value" : "8-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.connect_to_room_in_meet_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "7e6ecf85e07f08ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1701073142308,
+          "stop" : 1701073175291,
+          "duration" : 32983
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "436b48490edec300.json",
+  "parameterValues" : [ ]
+}

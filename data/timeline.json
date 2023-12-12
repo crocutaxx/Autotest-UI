@@ -1,351 +1,351 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "283c81275c4a",
+    "name" : "1e905f0adcfb",
     "children" : [ {
       "name" : "8-MainThread",
       "children" : [ {
+        "name" : "The test of opening the calendar page",
+        "uid" : "392d99119e23958",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702372656460,
+          "stop" : 1702372659940,
+          "duration" : 3480
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
         "name" : "Starting new meeting",
-        "uid" : "297e1edf949381b3",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
-        "time" : {
-          "start" : 1702372023666,
-          "stop" : 1702372035607,
-          "duration" : 11941
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Kick user from meet",
-        "uid" : "1f32502a9cd70c1f",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
-        "time" : {
-          "start" : 1702372219434,
-          "stop" : 1702372231366,
-          "duration" : 11932
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Logout",
-        "uid" : "5db1c2389af0e237",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
-        "time" : {
-          "start" : 1702372126241,
-          "stop" : 1702372138163,
-          "duration" : 11922
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "End call on meet",
-        "uid" : "b195aa68d441ab9",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
-        "time" : {
-          "start" : 1702372205738,
-          "stop" : 1702372217669,
-          "duration" : 11931
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Invalid authorization",
-        "uid" : "e230649aa7eb373c",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
+        "uid" : "85b089f7d7d691e",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
         "status" : "passed",
         "time" : {
-          "start" : 1702371988328,
-          "stop" : 1702371991671,
-          "duration" : 3343
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Raise hand at meet",
-        "uid" : "6816985dbc1769c0",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
-        "time" : {
-          "start" : 1702372260547,
-          "stop" : 1702372272487,
-          "duration" : 11940
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "The test of opening the meeting planning page",
-        "uid" : "d06e0b61bdbd8c7",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
-        "time" : {
-          "start" : 1702372036493,
-          "stop" : 1702372048422,
-          "duration" : 11929
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Connecting to a meeting via the meeting ID as an unauthorized user",
-        "uid" : "3a45264bd4960dd2",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "passed",
-        "time" : {
-          "start" : 1702372005421,
-          "stop" : 1702372009975,
-          "duration" : 4554
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Canceling meeting",
-        "uid" : "94e308929b9a0e61",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
-        "time" : {
-          "start" : 1702372151871,
-          "stop" : 1702372163812,
-          "duration" : 11941
+          "start" : 1702372639629,
+          "stop" : 1702372650206,
+          "duration" : 10577
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Valid authorization",
-        "uid" : "f601b4131523e429",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
+        "uid" : "f7d35cacfdffe70d",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
         "time" : {
-          "start" : 1702371992586,
-          "stop" : 1702372004510,
-          "duration" : 11924
+          "start" : 1702372621086,
+          "stop" : 1702372624526,
+          "duration" : 3440
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Create room in meet",
-        "uid" : "c027a40fa3e57bb6",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
+        "name" : "The test of opening the meeting planning page",
+        "uid" : "f28382ecb75aaffd",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
         "time" : {
-          "start" : 1702372192087,
-          "stop" : 1702372204026,
-          "duration" : 11939
+          "start" : 1702372651078,
+          "stop" : 1702372655590,
+          "duration" : 4512
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Connect to room in meet",
-        "uid" : "abc70440be3420de",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
+        "uid" : "712839b9800bfe72",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
         "status" : "broken",
         "time" : {
-          "start" : 1702372179219,
-          "stop" : 1702372191143,
-          "duration" : 11924
+          "start" : 1702372776769,
+          "stop" : 1702372792288,
+          "duration" : 15519
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Send messages",
-        "uid" : "10089847452d4be",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
+        "name" : "Canceling meeting",
+        "uid" : "d3581055c8beb190",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
         "status" : "broken",
         "time" : {
-          "start" : 1702372087766,
-          "stop" : 1702372099704,
-          "duration" : 11938
+          "start" : 1702372737680,
+          "stop" : 1702372757812,
+          "duration" : 20132
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "On wating room",
-        "uid" : "1adedcd511fdc1dc",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
+        "name" : "End call on meet",
+        "uid" : "16eb2b2588247351",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
         "time" : {
-          "start" : 1702372233130,
-          "stop" : 1702372245064,
-          "duration" : 11934
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Blocked room",
-        "uid" : "a62296be7402f00",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
-        "time" : {
-          "start" : 1702372165520,
-          "stop" : 1702372177456,
-          "duration" : 11936
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "The test of opening the calendar page",
-        "uid" : "b2ab32a584b434e",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
-        "time" : {
-          "start" : 1702372049307,
-          "stop" : 1702372061242,
-          "duration" : 11935
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Adding users in planning meeting",
-        "uid" : "8ec5a495e3d529f8",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
-        "time" : {
-          "start" : 1702372113419,
-          "stop" : 1702372125352,
-          "duration" : 11933
+          "start" : 1702372808538,
+          "stop" : 1702372829578,
+          "duration" : 21040
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Search users",
-        "uid" : "e8bd1c291afe6396",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
+        "uid" : "714793570bd77b12",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
         "time" : {
-          "start" : 1702372074943,
-          "stop" : 1702372086879,
-          "duration" : 11936
+          "start" : 1702372665162,
+          "stop" : 1702372669757,
+          "duration" : 4595
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Return in main room in meet",
-        "uid" : "28ac204438357aa5",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
+        "name" : "Send messages",
+        "uid" : "4590e414484a8800",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
         "time" : {
-          "start" : 1702372246836,
-          "stop" : 1702372258780,
-          "duration" : 11944
+          "start" : 1702372670633,
+          "stop" : 1702372682558,
+          "duration" : 11925
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Status camera adn microphone in meet",
-        "uid" : "6dea0950404cb86d",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
+        "name" : "Logout",
+        "uid" : "ffe8622ee698f2cf",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
         "time" : {
-          "start" : 1702372301662,
-          "stop" : 1702372313602,
-          "duration" : 11940
+          "start" : 1702372709802,
+          "stop" : 1702372715707,
+          "duration" : 5905
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "send message in meet",
-        "uid" : "3c692613f2d221e3",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
+        "name" : "Connecting to a meeting via the meeting ID as an unauthorized user",
+        "uid" : "ce0a76a8958fd621",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
         "time" : {
-          "start" : 1702372274252,
-          "stop" : 1702372286200,
-          "duration" : 11948
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Switching to messages from main page",
-        "uid" : "89dc16e4f94fbffe",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
-        "time" : {
-          "start" : 1702372062127,
-          "stop" : 1702372074054,
-          "duration" : 11927
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Deleting meeting",
-        "uid" : "1165a7187b85a39f",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
-        "time" : {
-          "start" : 1702372139062,
-          "stop" : 1702372150988,
-          "duration" : 11926
+          "start" : 1702372625396,
+          "stop" : 1702372630345,
+          "duration" : 4949
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Connecting to a meeting via the meeting ID as an authorized user",
-        "uid" : "906e099ee401c8e2",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
-        "status" : "broken",
+        "uid" : "e8a9d09ceabdc8ec",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
         "time" : {
-          "start" : 1702372010859,
-          "stop" : 1702372022776,
-          "duration" : 11917
+          "start" : 1702372631217,
+          "stop" : 1702372638759,
+          "duration" : 7542
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "send private message in meet",
-        "uid" : "bab89b8f71f572e3",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
+        "uid" : "b258cac6a14311a1",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702372943532,
+          "stop" : 1702372965039,
+          "duration" : 21507
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "send message in meet",
+        "uid" : "a976d7c80dbe01d4",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702372920555,
+          "stop" : 1702372941787,
+          "duration" : 21232
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create room in meet",
+        "uid" : "c294b4d55b97f190",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702372793228,
+          "stop" : 1702372806852,
+          "duration" : 13624
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Raise hand at meet",
+        "uid" : "41c54fbea23025d0",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
         "status" : "broken",
         "time" : {
-          "start" : 1702372287967,
-          "stop" : 1702372299896,
-          "duration" : 11929
+          "start" : 1702372890339,
+          "stop" : 1702372918800,
+          "duration" : 28461
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Return in main room in meet",
+        "uid" : "572073a83a5f475b",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1702372873072,
+          "stop" : 1702372888592,
+          "duration" : 15520
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Switching to messages from main page",
+        "uid" : "4cf4859b94950b7a",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702372660811,
+          "stop" : 1702372664291,
+          "duration" : 3480
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Kick user from meet",
+        "uid" : "5752635e6c9cba51",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702372831326,
+          "stop" : 1702372854051,
+          "duration" : 22725
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Deleting meeting",
+        "uid" : "2ca3f0d1b887714c",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1702372716580,
+          "stop" : 1702372736799,
+          "duration" : 20219
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "On wating room",
+        "uid" : "5633f107b8b658d8",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1702372855802,
+          "stop" : 1702372871329,
+          "duration" : 15527
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Creating meeting",
-        "uid" : "77faaf204e03aa5b",
-        "parentUid" : "86fbfcba524a666f4210afa6f4ff7e21",
+        "uid" : "10d356900604a8a0",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702372683429,
+          "stop" : 1702372693508,
+          "duration" : 10079
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Blocked room",
+        "uid" : "ab083f59b1038b87",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
         "status" : "broken",
         "time" : {
-          "start" : 1702372100587,
-          "stop" : 1702372112531,
-          "duration" : 11944
+          "start" : 1702372759514,
+          "stop" : 1702372775026,
+          "duration" : 15512
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Adding users in planning meeting",
+        "uid" : "c115b830db117164",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1702372694382,
+          "stop" : 1702372708894,
+          "duration" : 14512
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid authorization",
+        "uid" : "e7ab7f953459bc1f",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702372616699,
+          "stop" : 1702372620181,
+          "duration" : 3482
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Status camera adn microphone in meet",
+        "uid" : "7db590367963be87",
+        "parentUid" : "0c39c666940be8321e793b45921907f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702372966781,
+          "stop" : 1702372988983,
+          "duration" : 22202
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "86fbfcba524a666f4210afa6f4ff7e21"
+      "uid" : "0c39c666940be8321e793b45921907f7"
     } ],
-    "uid" : "68765cb58a5dabfda7517791defe7009"
+    "uid" : "67d59ad77bcc26c0eb222f246b070124"
   } ],
   "name" : "timeline"
 }

@@ -1,48 +1,92 @@
 {
-  "total" : 4,
+  "total" : 8,
   "items" : [ {
     "uid" : "0ba43e73eb745172b9cbece956dc8229",
     "name" : "Meet Functionality",
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 11,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 10
+      "total" : 11
     }
   }, {
-    "uid" : "499722a728f81fd5cb772cb7834ea1ae",
-    "name" : "Schedule Functionality",
+    "uid" : "1fe8ecc11521c5a57c40cc6f002feaf4",
+    "name" : "Main page functionality",
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 4,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 6
-    }
-  }, {
-    "uid" : "2d2f2f61e84d3164c3270f559ecdc52e",
-    "name" : "Authorization Functionality",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 3,
-      "unknown" : 0,
-      "total" : 3
+      "total" : 4
     }
   }, {
     "uid" : "1ac03779b4c547165fd957204b489374",
     "name" : "Messages Functionality",
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 2,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 2
+    }
+  }, {
+    "uid" : "cde67bf7c05fb620816b4bffbbd55beb",
+    "name" : "Planning meeting functionality",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "2cd3e2449fdfc8c5f73559fbc0353cda",
+    "name" : "Viewing a scheduled meeting Functionality",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "6ad0aab910b68719e99e393cb503c5d6",
+    "name" : "Authorization functionality",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "f9aec1b0059179acba021620d51835f7",
+    "name" : "Connect to meeting Functionality",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "033ad84165f80a8c8ddc3fb3aff67c51",
+    "name" : "Setting functionality",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
     }
   } ]
 }

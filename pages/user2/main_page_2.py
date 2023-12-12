@@ -1,3 +1,5 @@
+import time
+
 import allure
 from base.base_page import BasePage
 from config.links import Links
@@ -14,20 +16,20 @@ class MainPage(BasePage):
     MESSAGES_BUTTON = ("xpath", "//div[text()='Сообщения']")
     # Главное окно доп кнопки
     LIST_TODAY_MEETS = ("xpath", "//div[contains(@class, 'Home_content')]")
-    CANNCELED_MEET_NAME_BUTTON = ("xpath", "//p[contains(@class, 'Home_canceled')]")
+    CANCELED_MEET_NAME_BUTTON = ("xpath", "//p[contains(@class, 'Home_canceled')]")
     PLANNED_MEET_NAME_BUTTON = ("xpath", "//p[contains(@class, 'Home_planned') and contains(text(), 'Test ')]")
     WAITING_ROOM_MEET_NAME_BUTTON = ("xpath", "//p[contains(@class, 'Home_planned') and contains(text(), 'Waiting')]")
-    BLOСKED_ROOM_MEET_NAME_BUTTON = ("xpath", "//p[text()='Bloсked meet']")
+    BLOСKED_ROOM_MEET_NAME_BUTTON = ("xpath", "//p[text()='Blocked meet']")
     CREATE_ROOM_MEET_NAME_BUTTON = ("xpath", "//p[text()='Create room']")
     # Взаимодействие с запланированными конференциями
     CONNECT_TO_MEET_BUTTON = ("xpath", "//span[text()='Присоединиться']")
-    COPY_INVATE_BUTTON = ("xpath", "//span[text()='Скопировать приглашение']")
+    COPY_INVITE_BUTTON = ("xpath", "//span[text()='Скопировать приглашение']")
     EDIT_MEET_BUTTON = ("xpath", "//span[text()='Изменить']")
-    CANCELL_MEET_BUTTON = ("xpath", "//span[text()='Отменить']")
+    CANCEL_MEET_BUTTON = ("xpath", "//span[text()='Отменить']")
     DELETE_MEET_BUTTON = ("xpath", "//span[text()='Удалить']")
     STATUS_MEET_FIELD = ("xpath", "//span[contains(@class, 'ViewSchedule_canceled')]")
     STATUS_BLOCKED_FIELD = ("xpath", "//p[contains(@class, 'ViewSchedule_form')][last()]/span[2]")
-
+    MEET_FOR_DELETE = ("xpath", "//p[text()='Delete room']")
     @allure.step("Click on planning meet button")
     def click_on_planning_meet_button(self):
         self.wait.until(EC.element_to_be_clickable(self.PLANNING_MEET_BUTTON)).click()
@@ -64,9 +66,13 @@ class MainPage(BasePage):
     def click_on_meet_for_create_room_button(self):
         self.wait.until(EC.element_to_be_clickable(self.CREATE_ROOM_MEET_NAME_BUTTON)).click()
 
+    @allure.step("Click on meet name button")
+    def click_on_meet_for_delete_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.MEET_FOR_DELETE)).click()
+
     @allure.step("Click on canceled name meet")
     def click_on_canceled_name_meet(self):
-        self.wait.until(EC.visibility_of_element_located(self.CANNCELED_MEET_NAME_BUTTON)).click()
+        self.wait.until(EC.visibility_of_element_located(self.CANCELED_MEET_NAME_BUTTON)).click()
 
     @allure.step("Click on delete meet button")
     def click_on_delete_meet_button(self):
@@ -74,15 +80,15 @@ class MainPage(BasePage):
 
     @allure.step("Click on cancell meet button")
     def click_on_cancell_meet_button(self):
-        self.wait.until(EC.element_to_be_clickable(self.CANCELL_MEET_BUTTON)).click()
+        self.wait.until(EC.element_to_be_clickable(self.CANCEL_MEET_BUTTON)).click()
 
     @allure.step("Click on edit meet button")
     def click_on_edit_meet_button(self):
         self.wait.until(EC.element_to_be_clickable(self.EDIT_MEET_BUTTON)).click()
 
-    @allure.step("Click on copy invate meet button")
+    @allure.step("Click on copy invite meet button")
     def click_on_copy_in_meet_button(self):
-        self.wait.until(EC.element_to_be_clickable(self.COPY_INVATE_BUTTON)).click()
+        self.wait.until(EC.element_to_be_clickable(self.COPY_INVITE_BUTTON)).click()
 
     @allure.step("Click is canceled")
     def meet_is_canceled(self):
@@ -93,6 +99,16 @@ class MainPage(BasePage):
     def meet_is_blocked(self):
         self.wait.until(EC.visibility_of_element_located(self.STATUS_BLOCKED_FIELD))
         self.wait.until(EC.text_to_be_present_in_element(self.STATUS_BLOCKED_FIELD, "blocked"))
+
+    @allure.step("Meet is deleted")
+    def meet_is_deleted(self):
+        self.wait.until(EC.invisibility_of_element_located(self.MEET_FOR_DELETE))
+
+
+    # def save_cookie(self):
+    #     time.sleep(5)
+    #     cookies = self.driver.execute_cdp_cmd("Network.getAllCookies", {})
+    #     print(cookies)
 
     # @allure.step("clear today meets")
     # def clear_today_meets(self):

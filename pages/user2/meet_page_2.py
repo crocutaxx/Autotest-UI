@@ -11,8 +11,8 @@ class MeetPage(BasePage):
 
     PAGE_URL = Links.MEET_PAGE
     # Вход в конференцию
-    ENTER_WITHOUT_CHEKING = ("xpath", "//button[text()='Войти без проверки']")
-    ENTER_WITH_CHEKING = ("xpath", "//button[text()='Проверить устройства']")
+    ENTER_WITHOUT_CHECKING = ("xpath", "//button[text()='Войти без проверки']")
+    ENTER_WITH_CHECKING = ("xpath", "//button[text()='Проверить устройства']")
 
     # Кнопки внутри конференции
     MICROPHONE_BUTTON = ("xpath", "//div[text()='Микрофон']")
@@ -22,24 +22,30 @@ class MeetPage(BasePage):
     # Чат и внутри чата
     CHAT_BUTTON = ("xpath", "//div[text()='Чат']")
     COUNT_UNREAD_MESSAGES = ("xpath", "//div[text()='Чат']//span/span")
-    CHAT_VIDGET = ("xpath", "//div[@class='chat-container']")
+    CHAT_WIDGET = ("xpath", "//div[@class='chat-container']")
     MESSAGE_FIELD = ("xpath", "//input[@id='outlined-basic']")
-    SEND_MESSGE_BUTTON = ("xpath", "//button[@type='button']")
+    SEND_MESSAGE_BUTTON = ("xpath", "//button[@type='button']")
     LAST_MESSAGE_IN_CHAT = ("xpath", "(//div[@class='message'])[last()]/p[@class='message-text']")
     LAST_PRIVATE_MESSAGE_IN_CHAT = ("xpath", "//p[@class='message-text']")
     MARK_THAT_MESSAGE_IS_PRIVATE = ("xpath", "//span[text()='(Личное сообщение)']")
     MARK_FOR_WHO_MESSAGE = ("xpath", "//span[@class='message-name']/span")
     CHOICE_USER_DIALOG_BUTTON = ("xpath", "//div[text()='Всем']")
-    DIALOG_VIDGET_IS_OPEND = ("xpath", "//ul[@role='listbox']")
+    DIALOG_WIDGET_IS_OPENED = ("xpath", "//ul[@role='listbox']")
     SELECT_USER_IN_DIALOG_MENU = ("xpath", "//ul[@role='listbox']/li[2]")
 
 
     # Кнопки внутри участников
     PARTICIPANTS_BUTTON = ("xpath", "//div[text()='Участники']")
+    PARTICIPANTS_WIDGET = ("xpath", "//div[@class='call-container']")
     COUNT_PARTICIPANTS_ON_MEET = ("xpath", "//p[contains(text(), 'Участники')]")
-    ICON_RISE_HAND_IN_USERS = ("xpath", "//p[text()='Тестирование']/*[@class='raise']")
+    ICON_RAISED_HAND_IN_USERS = ("xpath", "//p[text()='" + BasePage.user_name + "']/*[@class='raise']")
     MORE_USER_BUTTON = ("xpath", "(//div[@class='button more'])[2]")
     END_USER_CALL_BUTTON = ("xpath", "//li[text()='Завершить звонок']")
+    USERS_MICROPHONE_IS_OFF = ("xpath", "//p[text()='Test Connect']/following-sibling::div/div[@class='button mic off']")
+    USERS_MICROPHONE_IS_ON = ("xpath", "//p[text()='Test Connect']/following-sibling::div/div[@class='button mic on']")
+    USERS_CAMERA_IS_OFF = ("xpath", "//p[text()='Test Connect']/following-sibling::div/div[@class='button webcam off']")
+    USERS_CAMERA_IS_ON = ("xpath", "//p[text()='Test Connect']/following-sibling::div/div[@class='button webcam on']")
+
 
     VIEW_BUTTON = ("xpath", "//div[text()='Вид']")
     RECORD_BUTTON = ("xpath", "//div[text()='Запись']")
@@ -47,7 +53,7 @@ class MeetPage(BasePage):
     END_BUTTON = ("xpath", "//div[text()='Завершить']")
 
     # Кнопки внутри "ЕЩЕ"
-    FULL_SCREAN_MODE_BUTTON = ("xpath", "//li[text()='Полноэкранный режим']")
+    FULL_SCREEN_MODE_BUTTON = ("xpath", "//li[text()='Полноэкранный режим']")
     RAISE_HAND_BUTTON = ("xpath", "//li[text()='Поднять руку']")
 
     ROOMS_BUTTON = ("xpath", "//li[text()='Комнаты']")
@@ -57,14 +63,14 @@ class MeetPage(BasePage):
     CREATED_ROOM = ("xpath", "//p[text()='auto room']")
     CONNECT_TO_ROOM_BUTTON = ("xpath", "(//*[@class='btns'])[2]")
     RETURN_IN_MAIN_ROOM = ("xpath", "//button[text()='Вернуться в основную комнату']")
-    CLOSE_ROOM_VIDGET =("xpath", "(//*[@data-testid='CloseIcon'])[2]")
+    CLOSE_ROOM_WIDGET = ("xpath", "(//*[@data-testid='CloseIcon'])[2]")
 
     INFORMATION_BUTTON = ("xpath", "//li[text()='Информация']")
     # Кнопки внутри управления встречей
     MEETING_MANAGEMENT_BUTTON = ("xpath", "//li[text()='Управление встречей']")
-    MEETING_MANAGEMENT_VIDGET = ("xpath", "//div[@class='call-container']")
+    MEETING_MANAGEMENT_WIDGET = ("xpath", "//div[@class='call-container']")
     WAITING_ROOM_SWITCH = ("xpath", "//span[text()='Зал ожидания']")
-    BLOСK_ROOM_SWITCH = ("xpath", "//span[text()='Заблокировать сеанс']")
+    BLOCK_ROOM_SWITCH = ("xpath", "//span[text()='Заблокировать сеанс']")
     VISUAL_EFFECTS_BUTTON = ("xpath", "//li[text()='Визуальные эффекты']")
     INVITATION_LINK_BUTTON = ("xpath", "//li[text()='Ссылка для приглашения']")
     SETTINGS_BUTTON = ("xpath", "//li[text()='Настройки']")
@@ -73,23 +79,26 @@ class MeetPage(BasePage):
 
     # Всплывающие уведмоления
     PUSH_ENTER_MEET = ("xpath", "//p[text()='Вы вошли в комнату!']")
-    PUSH_YOUR_RISE_HAND = ("xpath", "//p[text()='Вы подняли руку']")
-    PUSH_SOMEONE_RISE_HAND = ("xpath", "//p[@class='text']")
+    PUSH_YOUR_RAISED_HAND = ("xpath", "//p[text()='Вы подняли руку']")
+    PUSH_SOMEONE_RAISED_HAND = ("xpath", "//p[@class='text']")
     PUSH_LOWERED_HAND = ("xpath", "//p[text()='Вы опустили руку']")
     PUSH_WAITING_ROOM_SWITCH_STATUS_ON = ("xpath", "//div[text()='Зал ожидания успешно включен']")
-    PUSH_BLOСK_ROOM_SWITCH = ("xpath", "//div[text()='Сеанс успешно заблокирован']")
+    PUSH_BLOCK_ROOM_SWITCH = ("xpath", "//div[text()='Сеанс успешно заблокирован']")
     PUSH_BLOCKED_ROOM = ("xpath", "//p[text()='Встреча заблокирована организатором!']")
-    PUSH_AUTOTEST_JOINED_TO_ROOM = ("xpath", "//p[text()='Автотест присоединился к встрече']")
+    PUSH_USER2_JOINED_TO_ROOM = ("xpath", "//p[text()='" + BasePage.user_name2 + " присоединился к встрече']")
 
-    ICON_RISE_HAND = ("xpath", "//*[@class='icon raise-hand']")
-    COPY_IDENTIFICATOR_BUTTON = ("xpath", "//button[text()='Скопировать идентификатор встречи']")
-    CLOSE_INFORMATIOM_MODAL_WINDOW_BUTTON = ("xpath", "//div[@class='devices-settings']/*[name()='svg'] ")
+    ICON_RAISED_HAND = ("xpath", "//*[@class='icon raise-hand']")
+    COPY_IDENTIFIER_BUTTON = ("xpath", "//button[text()='Скопировать идентификатор встречи']")
+    CLOSE_IDENTIFIER_MODAL_WINDOW_BUTTON = ("xpath", "//div[@class='devices-settings']/*[name()='svg'] ")
     MORE_MENU_ITEM = ("xpath", "//ul[@role='menu']")
-    ROOMS_VIDGET = ("xpath", "//div[@class='call-container']")
+    ROOMS_WIDGET = ("xpath", "//div[@class='call-container']")
     TEXT_IN_WAITING_ROOM = ("xpath", "//p[@class='hall-text']")
+    CONFIRM_END_CALL_BUTTON = ("xpath", "//button[text()='Да']")
+    MICROPHONE_OFF_ICON =("xpath", "//div[@class='icon mic-off']")
+    CAMERA_OFF_ICON = ("xpath", "//div[@class='icon webcam-off']")
     @allure.step("Enter without cheking")
-    def click_on_enter_without_cheking_button(self):
-        self.wait.until(EC.element_to_be_clickable(self.ENTER_WITHOUT_CHEKING)).click()
+    def click_on_enter_without_checking_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.ENTER_WITHOUT_CHECKING)).click()
 
     @allure.step("Check push enter meet")
     def check_enter_meet_push(self):
@@ -104,7 +113,42 @@ class MeetPage(BasePage):
         time.sleep(2)
         keyboard.press('enter')
 
+    @allure.step("Click on microphone button")
+    def click_on_microphone_button(self):
+        self.wait.until(EC.visibility_of_element_located(self.MICROPHONE_BUTTON))
+        self.wait.until(EC.element_to_be_clickable(self.MICROPHONE_BUTTON)).click()
 
+    @allure.step("Click off microphone button")
+    def click_off_microphone_button(self):
+        self.wait.until(EC.visibility_of_element_located(self.MICROPHONE_BUTTON))
+        self.wait.until(EC.element_to_be_clickable(self.MICROPHONE_BUTTON)).click()
+        self.wait.until(EC.visibility_of_element_located(self.MICROPHONE_OFF_ICON))
+    @allure.step("User's Microphone is off")
+    def users_microphone_is_off(self):
+        self.wait.until(EC.visibility_of_element_located(self.USERS_MICROPHONE_IS_OFF))
+
+    @allure.step("User's Microphone is on")
+    def users_microphone_is_on(self):
+        self.wait.until(EC.visibility_of_element_located(self.USERS_MICROPHONE_IS_ON))
+    @allure.step("Click on camera button")
+    def click_on_camera_button(self):
+        self.wait.until(EC.visibility_of_element_located(self.CAMERA_BUTTON))
+        self.wait.until(EC.element_to_be_clickable(self.CAMERA_BUTTON)).click()
+
+
+    @allure.step("Click off camera button")
+    def click_off_camera_button(self):
+        self.wait.until(EC.visibility_of_element_located(self.CAMERA_BUTTON))
+        self.wait.until(EC.element_to_be_clickable(self.CAMERA_BUTTON)).click()
+        self.wait.until(EC.visibility_of_element_located(self.CAMERA_OFF_ICON))
+
+    @allure.step("Camera is off")
+    def users_camera_is_off(self):
+        self.wait.until(EC.visibility_of_element_located(self.USERS_CAMERA_IS_OFF))
+
+    @allure.step("Camera is on")
+    def users_camera_is_on(self):
+        self.wait.until(EC.visibility_of_element_located(self.USERS_CAMERA_IS_ON))
 
     @allure.step("Click on More button")
     def click_on_more_button(self):
@@ -116,7 +160,7 @@ class MeetPage(BasePage):
     def click_on_rooms_button(self):
         self.wait.until(EC.visibility_of_element_located(self.MORE_BUTTON))
         self.wait.until(EC.element_to_be_clickable(self.ROOMS_BUTTON)).click()
-        self.wait.until(EC.visibility_of_element_located(self.ROOMS_VIDGET))
+        self.wait.until(EC.visibility_of_element_located(self.ROOMS_WIDGET))
 
     @allure.step("Click on create room button")
     def click_on_create_room_button(self):
@@ -130,7 +174,7 @@ class MeetPage(BasePage):
     def click_on_modal_create_room_button(self):
         self.wait.until(EC.element_to_be_clickable(self.CREATE_ROOM_MODAL_BUTTON)).click()
 
-    @allure.step("Check created romm")
+    @allure.step("Check created room")
     def check_created_room(self):
         self.wait.until(EC.visibility_of_element_located(self.CREATED_ROOM))
         self.wait.until(EC.text_to_be_present_in_element(self.CREATED_ROOM, "auto room"))
@@ -141,26 +185,26 @@ class MeetPage(BasePage):
         self.wait.until(EC.element_to_be_clickable(self.RAISE_HAND_BUTTON)).click()
 
     @allure.step("Check your rise hand push")
-    def check_your_reise_hand_push(self):
-        self.wait.until(EC.visibility_of_element_located(self.PUSH_YOUR_RISE_HAND))
-        self.wait.until(EC.text_to_be_present_in_element(self.PUSH_YOUR_RISE_HAND, "Вы подняли руку"))
+    def check_your_raised_hand_push(self):
+        self.wait.until(EC.visibility_of_element_located(self.PUSH_YOUR_RAISED_HAND))
+        self.wait.until(EC.text_to_be_present_in_element(self.PUSH_YOUR_RAISED_HAND, "Вы подняли руку"))
 
     @allure.step("Check someone rise hand push")
-    def check_someone_reise_hand_push(self):
-        self.wait.until(EC.visibility_of_element_located(self.PUSH_SOMEONE_RISE_HAND))
-        self.wait.until(EC.text_to_be_present_in_element(self.PUSH_SOMEONE_RISE_HAND, "Тестирование поднял руку"))
+    def check_someone_raised_hand_push(self):
+        self.wait.until(EC.visibility_of_element_located(self.PUSH_SOMEONE_RAISED_HAND))
+        self.wait.until(EC.text_to_be_present_in_element(self.PUSH_SOMEONE_RAISED_HAND, f"{BasePage.user_name} поднял руку"))
 
     @allure.step("Check rise hand icon")
-    def check_reise_hand_icon(self):
-        self.wait.until(EC.visibility_of_element_located(self.ICON_RISE_HAND))
+    def check_raised_hand_icon(self):
+        self.wait.until(EC.visibility_of_element_located(self.ICON_RAISED_HAND))
 
-    @allure.step("Click on participans button")
-    def click_on_participans_button(self):
+    @allure.step("Click on participants button")
+    def click_on_participants_button(self):
         self.wait.until(EC.element_to_be_clickable(self.PARTICIPANTS_BUTTON)).click()
-
+        self.wait.until(EC.visibility_of_element_located(self.PARTICIPANTS_WIDGET))
     @allure.step("Check rise hand icon in users")
-    def check_reise_hand_icon_in_users(self):
-        self.wait.until(EC.visibility_of_element_located(self.ICON_RISE_HAND_IN_USERS))
+    def check_raised_hand_icon_in_users(self):
+        self.wait.until(EC.visibility_of_element_located(self.ICON_RAISED_HAND_IN_USERS))
 
     @allure.step("Click on connect to room button")
     def click_on_connect_to_room_button(self):
@@ -190,19 +234,19 @@ class MeetPage(BasePage):
         self.wait.until(EC.visibility_of_element_located(self.INFORMATION_BUTTON))
         self.wait.until(EC.element_to_be_clickable(self.INFORMATION_BUTTON)).click()
 
-    @allure.step("Click on copy identificator button")
-    def click_on_copy_identificator_button(self):
-        self.wait.until(EC.visibility_of_element_located(self.COPY_IDENTIFICATOR_BUTTON))
-        self.wait.until(EC.element_to_be_clickable(self.COPY_IDENTIFICATOR_BUTTON)).click()
+    @allure.step("Click on copy identifier button")
+    def click_on_copy_identifier_button(self):
+        self.wait.until(EC.visibility_of_element_located(self.COPY_IDENTIFIER_BUTTON))
+        self.wait.until(EC.element_to_be_clickable(self.COPY_IDENTIFIER_BUTTON)).click()
 
-    @allure.step("Click close inwormation window button")
+    @allure.step("Click close information window button")
     def click_close_information_window_button(self):
-        self.wait.until(EC.visibility_of_element_located(self.CLOSE_INFORMATIOM_MODAL_WINDOW_BUTTON))
-        self.wait.until(EC.element_to_be_clickable(self.CLOSE_INFORMATIOM_MODAL_WINDOW_BUTTON)).click()
+        self.wait.until(EC.visibility_of_element_located(self.CLOSE_IDENTIFIER_MODAL_WINDOW_BUTTON))
+        self.wait.until(EC.element_to_be_clickable(self.CLOSE_IDENTIFIER_MODAL_WINDOW_BUTTON)).click()
 
-    @allure.step("Close room vidget")
-    def close_room_vidget(self):
-        self.wait.until(EC.element_to_be_clickable(self.CLOSE_ROOM_VIDGET)).click()
+    @allure.step("Close room widget")
+    def close_room_widget(self):
+        self.wait.until(EC.element_to_be_clickable(self.CLOSE_ROOM_WIDGET)).click()
 
     @allure.step("Click on more user button")
     def click_on_more_user_button(self):
@@ -215,16 +259,16 @@ class MeetPage(BasePage):
     @allure.step("Accept alert kick")
     def check_and_accept_alert(self):
         alert = self.wait.until(EC.alert_is_present())
-        if  alert.text == "Вас исключили из встречи":
+        if alert.text == "Вас исключили из встречи":
             alert.accept()
 
     @allure.step("Click on chat button")
     def click_on_chat_button(self):
         self.wait.until(EC.visibility_of_element_located(self.CHAT_BUTTON))
         self.wait.until(EC.element_to_be_clickable(self.CHAT_BUTTON)).click()
-        self.wait.until(EC.visibility_of_element_located(self.CHAT_VIDGET))
+        self.wait.until(EC.visibility_of_element_located(self.CHAT_WIDGET))
 
-    @allure.step("Enter messge")
+    @allure.step("Enter message")
     def enter_message_in_field(self):
         message_field = self.wait.until(EC.element_to_be_clickable(self.MESSAGE_FIELD))
         new_message = "message123, hello че кого?"
@@ -232,8 +276,8 @@ class MeetPage(BasePage):
 
     @allure.step("Click on send message button")
     def click_on_send_message_button(self):
-        self.wait.until(EC.visibility_of_element_located(self.SEND_MESSGE_BUTTON))
-        self.wait.until(EC.element_to_be_clickable(self.SEND_MESSGE_BUTTON)).click()
+        self.wait.until(EC.visibility_of_element_located(self.SEND_MESSAGE_BUTTON))
+        self.wait.until(EC.element_to_be_clickable(self.SEND_MESSAGE_BUTTON)).click()
 
     @allure.step("Check count unread messages")
     def check_count_of_unread_messages(self):
@@ -249,7 +293,7 @@ class MeetPage(BasePage):
     def click_on_user_dialog_button(self):
         self.wait.until(EC.visibility_of_element_located(self.CHOICE_USER_DIALOG_BUTTON))
         self.wait.until(EC.element_to_be_clickable(self.CHOICE_USER_DIALOG_BUTTON)).click()
-        self.wait.until(EC.visibility_of_element_located(self.DIALOG_VIDGET_IS_OPEND))
+        self.wait.until(EC.visibility_of_element_located(self.DIALOG_WIDGET_IS_OPENED))
 
     @allure.step("Select user in dialog menu")
     def select_user_in_dialog_menu(self):
@@ -263,11 +307,11 @@ class MeetPage(BasePage):
         self.wait.until(EC.text_to_be_present_in_element(self.MARK_FOR_WHO_MESSAGE, "кому Test Connect"))
         self.wait.until(EC.text_to_be_present_in_element(self.LAST_PRIVATE_MESSAGE_IN_CHAT, "message123, hello че кого?"))
 
-    @allure.step("Click on managment button")
-    def click_on_managment_button(self):
+    @allure.step("Click on management button")
+    def click_on_management_button(self):
         self.wait.until(EC.visibility_of_element_located(self.MEETING_MANAGEMENT_BUTTON))
         self.wait.until(EC.element_to_be_clickable(self.MEETING_MANAGEMENT_BUTTON)).click()
-        self.wait.until(EC.visibility_of_element_located(self.MEETING_MANAGEMENT_VIDGET))
+        self.wait.until(EC.visibility_of_element_located(self.MEETING_MANAGEMENT_WIDGET))
 
     @allure.step("On switch waiting room")
     def switch_waiting_room_on(self):
@@ -282,8 +326,8 @@ class MeetPage(BasePage):
 
     @allure.step("On switch for block room")
     def switch_blocking_room_on(self):
-        self.wait.until(EC.element_to_be_clickable(self.BLOСK_ROOM_SWITCH)).click()
-        self.wait.until(EC.visibility_of_element_located(self.PUSH_BLOСK_ROOM_SWITCH))
+        self.wait.until(EC.element_to_be_clickable(self.BLOCK_ROOM_SWITCH)).click()
+        self.wait.until(EC.visibility_of_element_located(self.PUSH_BLOCK_ROOM_SWITCH))
 
     @allure.step("Check push in blocked room")
     def check_push_in_blocked_room(self):
@@ -291,8 +335,17 @@ class MeetPage(BasePage):
         self.wait.until(EC.text_to_be_present_in_element(self.PUSH_BLOCKED_ROOM,
                                                          "Встреча заблокирована организатором!"))
 
-    @allure.step("Check push autotest joined to room")
-    def check_push_autotest_joined_to_room(self):
-        self.wait.until(EC.visibility_of_element_located(self.PUSH_AUTOTEST_JOINED_TO_ROOM))
-        self.wait.until(EC.text_to_be_present_in_element(self.PUSH_AUTOTEST_JOINED_TO_ROOM,
-                                                         "Автотест присоединился к встрече"))
+    @allure.step("Check push user joined to room")
+    def check_push_user_joined_to_room(self):
+        self.wait.until(EC.visibility_of_element_located(self.PUSH_USER2_JOINED_TO_ROOM))
+        self.wait.until(EC.text_to_be_present_in_element(self.PUSH_USER2_JOINED_TO_ROOM,
+                                                         "" + BasePage.user_name2 + " присоединился к встрече"))
+    @allure.step("Click on end call button")
+    def click_on_end_call_button(self):
+        self.wait.until(EC.visibility_of_element_located(self.END_BUTTON))
+        self.wait.until(EC.element_to_be_clickable(self.END_BUTTON)).click()
+
+    @allure.step("Click on confirm end call button")
+    def click_on_confirm_end_call_button(self):
+        self.wait.until(EC.visibility_of_element_located(self.CONFIRM_END_CALL_BUTTON))
+        self.wait.until(EC.element_to_be_clickable(self.CONFIRM_END_CALL_BUTTON)).click()

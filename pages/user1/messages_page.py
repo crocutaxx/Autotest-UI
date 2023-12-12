@@ -13,7 +13,7 @@ class MessagesPage(BasePage):
     SEARCH_USER_FIELD = ("xpath", "//input[@class='ant-input']")
     THREE_POINT_BUTTON = ("xpath", "//*[starts-with(@class, 'ant-dropdown-trigger Search')]")
     MESSAGE_FIELD = ("xpath", "//*[@id='editor-area']")
-    SEND_MESSAGE_BUTTON =  ("xpath", "//div[@class='send-button']")
+    SEND_MESSAGE_BUTTON = ("xpath", "//div[@class='send-button']")
     USER_DIALOG = ("xpath", "//div[contains(@class, 'Dialog_dialog')][1]")
     RESULT_OF_SEARCH = ("xpath", "//p[contains(@class, 'Dialog_name')][1]")
     USER_CHAT = ("xpath", "//div[@class='user-name']")
@@ -23,10 +23,10 @@ class MessagesPage(BasePage):
     @allure.step("Search users by name")
     def enter_user_name_in_field(self):
         search_user_field = self.wait.until(EC.element_to_be_clickable(self.SEARCH_USER_FIELD))
-        name_user = f"Автотест"
+        name_user = BasePage.user_name2
         search_user_field.send_keys(name_user)
         search_user_field.send_keys(Keys.ENTER)
-        self.name = name_user + " Второй"
+        self.name = name_user + " Цой"
 
     @allure.step("Click on dialog")
     def click_on_user_dialog(self):
@@ -44,8 +44,8 @@ class MessagesPage(BasePage):
     def send_message(self):
         self.wait.until(EC.element_to_be_clickable(self.SEND_MESSAGE_BUTTON)).click()
 
-    @allure.step("User chat is opend")
-    def user_chat_is_opdend(self):
+    @allure.step("User chat is opened")
+    def user_chat_is_opened(self):
         self.wait.until(EC.visibility_of_element_located(self.USER_CHAT))
         self.wait.until(EC.text_to_be_present_in_element(self.USER_CHAT, self.name))
 

@@ -41,7 +41,7 @@ class BaseTest:
     connect_to_meeting_page_2: ConnectToMeetingPage
 
     @pytest.fixture()
-    def setup_1(self, request, driver_1):
+    def user_1(self, request, driver_1):
         request.cls.driver = driver_1
         request.cls.data = Data()
 
@@ -55,7 +55,7 @@ class BaseTest:
         request.cls.connect_to_meeting_page = ConnectToMeetingPage(driver_1)
 
     @pytest.fixture()
-    def setup_2(self, request, driver_2):
+    def user_2(self, request, driver_2):
         request.cls.driver = driver_2
         request.cls.data = Data()
 

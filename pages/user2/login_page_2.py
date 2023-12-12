@@ -13,7 +13,7 @@ class LoginPage(BasePage):
     SUBMIT_BUTTON = ("xpath", "//button[@type='submit']")
     ENTER_MEET_BUTTON = ("xpath", "//button[@type='button']")
     # Push notification
-    INCORECT_DATA = ("xpath", "//div[contains(@class, 'ant-notification-notice-closable')]")
+    INCORRECT_DATA = ("xpath", "//div[contains(@class, 'ant-notification-notice-closable')]")
 
     @pytest.mark.parametrize("login", [("login")])
     def enter_login(self, login):
@@ -25,7 +25,7 @@ class LoginPage(BasePage):
         with allure.step("Enter password"):
             self.wait.until(EC.element_to_be_clickable(self.PASSWORD_FIELD)).send_keys(password)
 
-    @allure.step("Confir login and pass - Click submit button")
+    @allure.step("Confirm login and pass - Click submit button")
     def click_submit_button(self):
         self.wait.until(EC.element_to_be_clickable(self.SUBMIT_BUTTON)).click()
 
@@ -33,10 +33,10 @@ class LoginPage(BasePage):
     def click_enter_meet_button(self):
         self.wait.until(EC.element_to_be_clickable(self.ENTER_MEET_BUTTON)).click()
 
-    @allure.step("Check push incorect data")
-    def check_push_incorect_data(self):
-        self.wait.until(EC.visibility_of_element_located(self.INCORECT_DATA))
-        self.wait.until(EC.text_to_be_present_in_element(self.INCORECT_DATA, "EMAIL_OR_PASSWORD_INCORRECT"))
+    @allure.step("Check push incorrect data")
+    def check_push_incorrect_data(self):
+        self.wait.until(EC.visibility_of_element_located(self.INCORRECT_DATA))
+        self.wait.until(EC.text_to_be_present_in_element(self.INCORRECT_DATA, "EMAIL_OR_PASSWORD_INCORRECT"))
 
     @allure.step("Clear login")
     def clear_login(self):

@@ -15,11 +15,16 @@ class BasePage:
 
     # Base button
     USER_AVATAR_BUTTON = ("xpath", "//div[@class='user-image avatar-dropdown']")
-    LOG_OUT_BUTTON = ("xpath", "//span[text()='Выход']")
+    LOGOUT_BUTTON = ("xpath", "//span[text()='Выход']")
+    # Users name
+    user_name = 'pytest'
+    user_name2 = 'pytest2'
 
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(driver, 10, poll_frequency=1)
+        # self.user_name = user_name
+        # self.user_name2 = 'pytest2'
 
     def open(self):
         with allure.step(f"Open {self.PAGE_URL} page"):
@@ -58,6 +63,6 @@ class BasePage:
     def click_on_user_avatar_button(self):
         self.wait.until(EC.element_to_be_clickable(self.USER_AVATAR_BUTTON)).click()
 
-    @allure.step("Click on log out button")
-    def click_on_log_out_button(self):
-        self.wait.until(EC.element_to_be_clickable(self.LOG_OUT_BUTTON)).click()
+    @allure.step("Click on logout button")
+    def click_on_logout_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.LOGOUT_BUTTON)).click()

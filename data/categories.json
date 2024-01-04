@@ -6,78 +6,39 @@
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
         "name" : "Adding users in planning meeting",
-        "uid" : "86b3c70b0257154b",
+        "uid" : "800bd0de902c8df9",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1704345272614,
-          "stop" : 1704345286758,
-          "duration" : 14144
+          "start" : 1704362630123,
+          "stop" : 1704362644290,
+          "duration" : 14167
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Deleting meeting",
-        "uid" : "919922f035f1e94e",
+        "uid" : "20aa4d2a9bad9e37",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1704345293020,
-          "stop" : 1704345311795,
-          "duration" : 18775
+          "start" : 1704362650596,
+          "stop" : 1704362665121,
+          "duration" : 14525
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Blocked room",
-        "uid" : "fe36ceab18d2742c",
+        "name" : "Canceling meeting",
+        "uid" : "c28f1964e1542c09",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1704345338164,
-          "stop" : 1704345352303,
-          "duration" : 14139
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Connect to room in meet",
-        "uid" : "9ff6a6ba6a537c97",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704345354053,
-          "stop" : 1704345368172,
-          "duration" : 14119
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "On wating room",
-        "uid" : "82d6fcd403803ced",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704345418556,
-          "stop" : 1704345432698,
-          "duration" : 14142
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Return in main room in meet",
-        "uid" : "28ea7b5ad4b2b146",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704345434447,
-          "stop" : 1704345448571,
-          "duration" : 14124
+          "start" : 1704362666004,
+          "stop" : 1704362684768,
+          "duration" : 18764
         },
         "flaky" : false,
         "newFailed" : false,

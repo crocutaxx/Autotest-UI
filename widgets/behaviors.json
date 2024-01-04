@@ -1,24 +1,13 @@
 {
   "total" : 8,
   "items" : [ {
-    "uid" : "0ba43e73eb745172b9cbece956dc8229",
-    "name" : "Meet Functionality",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 4,
-      "skipped" : 0,
-      "passed" : 7,
-      "unknown" : 0,
-      "total" : 11
-    }
-  }, {
     "uid" : "2cd3e2449fdfc8c5f73559fbc0353cda",
     "name" : "Viewing a scheduled meeting Functionality",
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 3
     }
@@ -32,6 +21,17 @@
       "passed" : 1,
       "unknown" : 0,
       "total" : 2
+    }
+  }, {
+    "uid" : "0ba43e73eb745172b9cbece956dc8229",
+    "name" : "Meet Functionality",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 11
     }
   }, {
     "uid" : "1fe8ecc11521c5a57c40cc6f002feaf4",

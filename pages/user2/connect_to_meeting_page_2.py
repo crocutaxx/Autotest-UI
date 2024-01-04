@@ -1,4 +1,5 @@
 import allure
+import json
 from base.base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
@@ -22,6 +23,15 @@ class ConnectToMeetingPage(BasePage):
     def enter_meet_identifier(self):
         identifier_field = self.wait.until(EC.element_to_be_clickable(self.IDENTIFIER_FIELD))
         identifier_field.send_keys("777")
+
+    @allure.step("Enter meet identifier")
+    def enter_meet_identifier_from_json(self):
+        with open("data/tests_data.json", "r") as json_file:
+            data = json.load(json_file)
+            meeting_id = data["meeting_id"]
+
+        identifier_field = self.wait.until(EC.element_to_be_clickable(self.IDENTIFIER_FIELD))
+        identifier_field.send_keys(meeting_id)
 
     @allure.step("Enter user name")
     def enter_user_name(self):

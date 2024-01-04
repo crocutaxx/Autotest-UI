@@ -1,9 +1,11 @@
 import random
 import allure
+import json
 from base.base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import Keys
+
 
 
 class PlanningMeetPage(BasePage):
@@ -136,7 +138,11 @@ class PlanningMeetPage(BasePage):
     @allure.step("Get meet identificator")
     def get_meet_identifier(self):
         meeting_id_text = self.wait.until(EC.visibility_of_element_located(self.IDENTIFIER_MEET_FIELD)).text
-        meeting_id = meeting_id_text[22:]
+        meeting_id = meeting_id_text[23:]
+        data = {"meeting_id": meeting_id}
+
+        with open("data/tests_data.json", "w") as json_file:
+            json.dump(data, json_file)
 
     @allure.step("Click on schedule meeting close button")
     def click_on_close_schedule_meeting_button(self):

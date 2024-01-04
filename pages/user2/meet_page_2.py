@@ -1,6 +1,7 @@
 import allure
 import time
 import keyboard
+import json
 import random
 from base.base_page import BasePage
 from config.links import Links
@@ -66,6 +67,7 @@ class MeetPage(BasePage):
     CLOSE_ROOM_WIDGET = ("xpath", "(//*[@data-testid='CloseIcon'])[2]")
 
     INFORMATION_BUTTON = ("xpath", "//li[text()='Информация']")
+    IDENTIFIER = ("xpath", "//div[contains(@style, 'margin-top')]/p[2]")
     # Кнопки внутри управления встречей
     MEETING_MANAGEMENT_BUTTON = ("xpath", "//li[text()='Управление встречей']")
     MEETING_MANAGEMENT_WIDGET = ("xpath", "//div[@class='call-container']")
@@ -85,7 +87,7 @@ class MeetPage(BasePage):
     PUSH_WAITING_ROOM_SWITCH_STATUS_ON = ("xpath", "//div[text()='Зал ожидания успешно включен']")
     PUSH_BLOCK_ROOM_SWITCH = ("xpath", "//div[text()='Сеанс успешно заблокирован']")
     PUSH_BLOCKED_ROOM = ("xpath", "//p[text()='Встреча заблокирована организатором!']")
-    PUSH_USER2_JOINED_TO_ROOM = ("xpath", "//p[text()='" + BasePage.user_name2 + " присоединился к встрече']")
+    PUSH_USER2_JOINED_TO_ROOM = ("xpath", "//p[text()='Test Connect присоединился к встрече']")
 
     ICON_RAISED_HAND = ("xpath", "//*[@class='icon raise-hand']")
     COPY_IDENTIFIER_BUTTON = ("xpath", "//button[text()='Скопировать идентификатор встречи']")
@@ -158,7 +160,7 @@ class MeetPage(BasePage):
 
     @allure.step("Click on rooms button")
     def click_on_rooms_button(self):
-        self.wait.until(EC.visibility_of_element_located(self.MORE_BUTTON))
+        self.wait.until(EC.visibility_of_element_located(self.MORE_MENU_ITEM))
         self.wait.until(EC.element_to_be_clickable(self.ROOMS_BUTTON)).click()
         self.wait.until(EC.visibility_of_element_located(self.ROOMS_WIDGET))
 
@@ -235,9 +237,13 @@ class MeetPage(BasePage):
         self.wait.until(EC.element_to_be_clickable(self.INFORMATION_BUTTON)).click()
 
     @allure.step("Click on copy identifier button")
-    def click_on_copy_identifier_button(self):
-        self.wait.until(EC.visibility_of_element_located(self.COPY_IDENTIFIER_BUTTON))
-        self.wait.until(EC.element_to_be_clickable(self.COPY_IDENTIFIER_BUTTON)).click()
+    def get_identifier_from_information_window(self):
+        meeting_id_text = self.wait.until(EC.visibility_of_element_located(self.IDENTIFIER)).text
+        meeting_id = meeting_id_text
+        data = {"meeting_id": meeting_id}
+
+        with open("data/tests_data.json", "w") as json_file:
+            json.dump(data, json_file)
 
     @allure.step("Click close information window button")
     def click_close_information_window_button(self):
@@ -339,7 +345,7 @@ class MeetPage(BasePage):
     def check_push_user_joined_to_room(self):
         self.wait.until(EC.visibility_of_element_located(self.PUSH_USER2_JOINED_TO_ROOM))
         self.wait.until(EC.text_to_be_present_in_element(self.PUSH_USER2_JOINED_TO_ROOM,
-                                                         "" + BasePage.user_name2 + " присоединился к встрече"))
+                                                         "Test Connect присоединился к встрече"))
     @allure.step("Click on end call button")
     def click_on_end_call_button(self):
         self.wait.until(EC.visibility_of_element_located(self.END_BUTTON))

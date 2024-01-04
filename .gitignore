@@ -1,5 +1,6 @@
 .pytest_cache
 .idea
+venv
 *.iml
 .env
 Debug.py
@@ -7,4 +8,3 @@ report
 allure-results
 allure-report
 pyvenv.cfg
-venv

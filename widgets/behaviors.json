@@ -12,19 +12,19 @@
       "total" : 11
     }
   }, {
-    "uid" : "cde67bf7c05fb620816b4bffbbd55beb",
-    "name" : "Planning meeting functionality",
+    "uid" : "2cd3e2449fdfc8c5f73559fbc0353cda",
+    "name" : "Viewing a scheduled meeting Functionality",
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 2
     }
   }, {
-    "uid" : "2cd3e2449fdfc8c5f73559fbc0353cda",
-    "name" : "Viewing a scheduled meeting Functionality",
+    "uid" : "cde67bf7c05fb620816b4bffbbd55beb",
+    "name" : "Planning meeting functionality",
     "statistic" : {
       "failed" : 0,
       "broken" : 1,

@@ -1,5 +1,9 @@
 [ {
   "data" : {
+    "Test defects" : 7
+  }
+}, {
+  "data" : {
     "Test defects" : 6
   }
 }, {
@@ -42,8 +46,6 @@
   "data" : {
     "Test defects" : 2
   }
-}, {
-  "data" : { }
 }, {
   "data" : { }
 }, {

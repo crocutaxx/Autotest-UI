@@ -16,11 +16,11 @@
     "name" : "Viewing a scheduled meeting Functionality",
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     }
   }, {
     "uid" : "cde67bf7c05fb620816b4bffbbd55beb",

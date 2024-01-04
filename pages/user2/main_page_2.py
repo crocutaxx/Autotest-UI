@@ -22,6 +22,7 @@ class MainPage(BasePage):
     BLOСKED_ROOM_MEET_NAME_BUTTON = ("xpath", "//p[text()='Blocked meet']")
     CREATE_ROOM_MEET_NAME_BUTTON = ("xpath", "//p[text()='Create room']")
     # Взаимодействие с запланированными конференциями
+    VIEWING_WINDOW_WIDGET = ("xpath", "//div[@class = 'ant-modal-content']")
     CONNECT_TO_MEET_BUTTON = ("xpath", "//span[text()='Присоединиться']")
     COPY_INVITE_BUTTON = ("xpath", "//span[text()='Скопировать приглашение']")
     EDIT_MEET_BUTTON = ("xpath", "//span[text()='Изменить']")
@@ -53,7 +54,7 @@ class MainPage(BasePage):
     @allure.step("Click on planned name meet")
     def click_on_planned_name_meet(self):
         self.wait.until(EC.visibility_of_element_located(self.PLANNED_MEET_NAME_BUTTON)).click()
-
+        self.wait.until(EC.visibility_of_element_located(self.VIEWING_WINDOW_WIDGET))
     @allure.step("Click on meet name button")
     def click_on_waiting_meet_button(self):
         self.wait.until(EC.element_to_be_clickable(self.WAITING_ROOM_MEET_NAME_BUTTON)).click()

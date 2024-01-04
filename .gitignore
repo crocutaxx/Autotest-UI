@@ -6,4 +6,5 @@ Debug.py
 report
 allure-results
 allure-report
-conftest.py
+pyvenv.cfg
+venv

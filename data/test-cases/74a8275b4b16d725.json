@@ -1,0 +1,428 @@
+{
+  "uid" : "74a8275b4b16d725",
+  "name" : "Status camera adn microphone in meet",
+  "fullName" : "tests.meeting.status_of_camera_and_microphone_test.TestStatusCameraAndMicrophone#test_status_camera_and_microphone",
+  "historyId" : "8850c4caa0767d81506443cc74cc43e1",
+  "time" : {
+    "start" : 1704631027350,
+    "stop" : 1704631043931,
+    "duration" : 16581
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+  "statusTrace" : "self = <status_of_camera_and_microphone_test.TestStatusCameraAndMicrophone object at 0x7ff947d4c920>\nuser_1 = None, user_2 = None\n\n    @allure.title(\"Status camera adn microphone in meet\")\n    @allure.severity(\"Normal\")\n    def test_status_camera_and_microphone(self, user_1, user_2):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n        self.login_page.click_submit_button()\n        self.main_page.is_opened()\n        self.connect_to_meeting_page.open()\n        self.connect_to_meeting_page.is_opened()\n        self.connect_to_meeting_page.enter_meet_identifier()\n        self.connect_to_meeting_page.click_enter_button()\n        self.meet_page.click_on_enter_without_checking_button()\n        # self.meet_page.click_on_dismiss_alert_button() #Нужен для локального запуска\n        self.meet_page.click_on_enter_without_checking_button()\n>       self.meet_page.check_enter_meet_push()\n\ntests/meeting/status_of_camera_and_microphone_test.py:25: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/user2/meet_page_2.py:107: in check_enter_meet_push\n    self.wait.until(EC.visibility_of_element_located(self.PUSH_ENTER_MEET))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"57968604847b8d87c889d033f3b54199\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7ff9470e4ae0>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "user_1",
+    "time" : {
+      "start" : 1704631026528,
+      "stop" : 1704631026529,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "driver_2",
+    "time" : {
+      "start" : 1704631026529,
+      "stop" : 1704631027350,
+      "duration" : 821
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "driver_1",
+    "time" : {
+      "start" : 1704631025709,
+      "stop" : 1704631026528,
+      "duration" : 819
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "user_2",
+    "time" : {
+      "start" : 1704631027350,
+      "stop" : 1704631027350,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+    "statusTrace" : "self = <status_of_camera_and_microphone_test.TestStatusCameraAndMicrophone object at 0x7ff947d4c920>\nuser_1 = None, user_2 = None\n\n    @allure.title(\"Status camera adn microphone in meet\")\n    @allure.severity(\"Normal\")\n    def test_status_camera_and_microphone(self, user_1, user_2):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n        self.login_page.click_submit_button()\n        self.main_page.is_opened()\n        self.connect_to_meeting_page.open()\n        self.connect_to_meeting_page.is_opened()\n        self.connect_to_meeting_page.enter_meet_identifier()\n        self.connect_to_meeting_page.click_enter_button()\n        self.meet_page.click_on_enter_without_checking_button()\n        # self.meet_page.click_on_dismiss_alert_button() #Нужен для локального запуска\n        self.meet_page.click_on_enter_without_checking_button()\n>       self.meet_page.check_enter_meet_push()\n\ntests/meeting/status_of_camera_and_microphone_test.py:25: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/user2/meet_page_2.py:107: in check_enter_meet_push\n    self.wait.until(EC.visibility_of_element_located(self.PUSH_ENTER_MEET))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"57968604847b8d87c889d033f3b54199\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7ff9470e4ae0>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+    "steps" : [ {
+      "name" : "Open https://dev.qosyl.kz/login page",
+      "time" : {
+        "start" : 1704631027350,
+        "stop" : 1704631028966,
+        "duration" : 1616
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter login",
+      "time" : {
+        "start" : 1704631028966,
+        "stop" : 1704631029109,
+        "duration" : 143
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter password",
+      "time" : {
+        "start" : 1704631029109,
+        "stop" : 1704631029209,
+        "duration" : 100
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Confirm login and pass - Click submit button",
+      "time" : {
+        "start" : 1704631029209,
+        "stop" : 1704631029274,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Page https://dev.qosyl.kz/ is opened",
+      "time" : {
+        "start" : 1704631029274,
+        "stop" : 1704631030279,
+        "duration" : 1005
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Open https://dev.qosyl.kz/meeting/ page",
+      "time" : {
+        "start" : 1704631030279,
+        "stop" : 1704631031875,
+        "duration" : 1596
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Page https://dev.qosyl.kz/meeting/ is opened",
+      "time" : {
+        "start" : 1704631031875,
+        "stop" : 1704631031879,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter meet identifier",
+      "time" : {
+        "start" : 1704631031879,
+        "stop" : 1704631031952,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Click enter button",
+      "time" : {
+        "start" : 1704631031952,
+        "stop" : 1704631032032,
+        "duration" : 80
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter without cheking",
+      "time" : {
+        "start" : 1704631032032,
+        "stop" : 1704631032504,
+        "duration" : 472
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter without cheking",
+      "time" : {
+        "start" : 1704631032504,
+        "stop" : 1704631033864,
+        "duration" : 1360
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Check push enter meet",
+      "time" : {
+        "start" : 1704631033864,
+        "stop" : 1704631043930,
+        "duration" : 10066
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/user2/meet_page_2.py\", line 107, in check_enter_meet_push\n    self.wait.until(EC.visibility_of_element_located(self.PUSH_ENTER_MEET))\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 95, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 12
+  },
+  "afterStages" : [ {
+    "name" : "driver_2::0",
+    "time" : {
+      "start" : 1704631043942,
+      "stop" : 1704631043996,
+      "duration" : 54
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "driver_1::0",
+    "time" : {
+      "start" : 1704631043997,
+      "stop" : 1704631044055,
+      "duration" : 58
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Meet Functionality"
+  }, {
+    "name" : "severity",
+    "value" : "Normal"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.meeting"
+  }, {
+    "name" : "suite",
+    "value" : "status_of_camera_and_microphone_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestStatusCameraAndMicrophone"
+  }, {
+    "name" : "host",
+    "value" : "39ed90d5fca4"
+  }, {
+    "name" : "thread",
+    "value" : "8-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.meeting.status_of_camera_and_microphone_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "16ee15ecfbaa5225",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704362901519,
+          "stop" : 1704362919780,
+          "duration" : 18261
+        }
+      }, {
+        "uid" : "389901d924e53ce7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704345506111,
+          "stop" : 1704345524322,
+          "duration" : 18211
+        }
+      }, {
+        "uid" : "f8649d5bbf0c0eb5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704345090531,
+          "stop" : 1704345108891,
+          "duration" : 18360
+        }
+      }, {
+        "uid" : "21a1134beee34e72",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703135347419,
+          "stop" : 1703135366093,
+          "duration" : 18674
+        }
+      }, {
+        "uid" : "437a13337577df96",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703131338854,
+          "stop" : 1703131361395,
+          "duration" : 22541
+        }
+      }, {
+        "uid" : "9c1911dbdbc1a8e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702532626520,
+          "stop" : 1702532644221,
+          "duration" : 17701
+        }
+      }, {
+        "uid" : "7db590367963be87",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702372966781,
+          "stop" : 1702372988983,
+          "duration" : 22202
+        }
+      }, {
+        "uid" : "6dea0950404cb86d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1702372301662,
+          "stop" : 1702372313602,
+          "duration" : 11940
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "74a8275b4b16d725.json",
+  "parameterValues" : [ ]
+}

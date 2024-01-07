@@ -1,0 +1,323 @@
+{
+  "uid" : "b2a7b82dffc6b787",
+  "name" : "Starting new meeting",
+  "fullName" : "tests.main_page_test.TestMainPage#test_starting_new_meeting",
+  "historyId" : "84e8d2fbdefa1c62116fcb09462b3d4c",
+  "time" : {
+    "start" : 1704630702483,
+    "stop" : 1704630719891,
+    "duration" : 17408
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+  "statusTrace" : "self = <main_page_test.TestMainPage object at 0x7ff948120ce0>, user_1 = None\n\n    @allure.title(\"Starting new meeting\")\n    @allure.severity(\"Critical\")\n    def test_starting_new_meeting(self, user_1):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n        self.login_page.click_submit_button()\n        self.main_page.is_opened()\n        self.main_page.click_on_new_meet_button()\n        # self.meet_page.is_opened() Разобраться с идентификатором комант\n        # self.meet_page.click_on_dismiss_alert_button() # Нужен для локального запуска\n        self.meet_page.click_on_enter_without_checking_button()\n>       self.meet_page.check_enter_meet_push()\n\ntests/main_page_test.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/user2/meet_page_2.py:107: in check_enter_meet_push\n    self.wait.until(EC.visibility_of_element_located(self.PUSH_ENTER_MEET))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"20cfff682435879ee15503dedfcb5517\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7ff947075580>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "user_1",
+    "time" : {
+      "start" : 1704630702482,
+      "stop" : 1704630702482,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "driver_1",
+    "time" : {
+      "start" : 1704630701662,
+      "stop" : 1704630702482,
+      "duration" : 820
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+    "statusTrace" : "self = <main_page_test.TestMainPage object at 0x7ff948120ce0>, user_1 = None\n\n    @allure.title(\"Starting new meeting\")\n    @allure.severity(\"Critical\")\n    def test_starting_new_meeting(self, user_1):\n        self.login_page.open()\n        self.login_page.enter_login(self.data.LOGIN)\n        self.login_page.enter_password(self.data.PASSWORD)\n        self.login_page.click_submit_button()\n        self.main_page.is_opened()\n        self.main_page.click_on_new_meet_button()\n        # self.meet_page.is_opened() Разобраться с идентификатором комант\n        # self.meet_page.click_on_dismiss_alert_button() # Нужен для локального запуска\n        self.meet_page.click_on_enter_without_checking_button()\n>       self.meet_page.check_enter_meet_push()\n\ntests/main_page_test.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/user2/meet_page_2.py:107: in check_enter_meet_push\n    self.wait.until(EC.visibility_of_element_located(self.PUSH_ENTER_MEET))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"20cfff682435879ee15503dedfcb5517\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x7ff947075580>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:95: TimeoutException",
+    "steps" : [ {
+      "name" : "Open https://dev.qosyl.kz/login page",
+      "time" : {
+        "start" : 1704630702483,
+        "stop" : 1704630704093,
+        "duration" : 1610
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter login",
+      "time" : {
+        "start" : 1704630704093,
+        "stop" : 1704630704240,
+        "duration" : 147
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter password",
+      "time" : {
+        "start" : 1704630704240,
+        "stop" : 1704630704343,
+        "duration" : 103
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Confirm login and pass - Click submit button",
+      "time" : {
+        "start" : 1704630704343,
+        "stop" : 1704630704408,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Page https://dev.qosyl.kz/ is opened",
+      "time" : {
+        "start" : 1704630704408,
+        "stop" : 1704630705414,
+        "duration" : 1006
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Click on new meet button",
+      "time" : {
+        "start" : 1704630705414,
+        "stop" : 1704630705457,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter without cheking",
+      "time" : {
+        "start" : 1704630705457,
+        "stop" : 1704630709825,
+        "duration" : 4368
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Check push enter meet",
+      "time" : {
+        "start" : 1704630709825,
+        "stop" : 1704630719890,
+        "duration" : 10065
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/user2/meet_page_2.py\", line 107, in check_enter_meet_push\n    self.wait.until(EC.visibility_of_element_located(self.PUSH_ENTER_MEET))\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 95, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 8
+  },
+  "afterStages" : [ {
+    "name" : "driver_1::0",
+    "time" : {
+      "start" : 1704630719927,
+      "stop" : 1704630719985,
+      "duration" : 58
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "feature",
+    "value" : "Main page functionality"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "main_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMainPage"
+  }, {
+    "name" : "host",
+    "value" : "39ed90d5fca4"
+  }, {
+    "name" : "thread",
+    "value" : "8-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.main_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "158fb109af9f3402",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704362583167,
+          "stop" : 1704362591023,
+          "duration" : 7856
+        }
+      }, {
+        "uid" : "3d6515cf8d0e2a76",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704345225219,
+          "stop" : 1704345233631,
+          "duration" : 8412
+        }
+      }, {
+        "uid" : "75c896cb896a14c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704344809245,
+          "stop" : 1704344817097,
+          "duration" : 7852
+        }
+      }, {
+        "uid" : "763f24df613324f5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703135076509,
+          "stop" : 1703135085236,
+          "duration" : 8727
+        }
+      }, {
+        "uid" : "aa36a2f864c61cec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703131010321,
+          "stop" : 1703131020854,
+          "duration" : 10533
+        }
+      }, {
+        "uid" : "ccc675c54c5f7c30",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702532343978,
+          "stop" : 1702532352845,
+          "duration" : 8867
+        }
+      }, {
+        "uid" : "85b089f7d7d691e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702372639629,
+          "stop" : 1702372650206,
+          "duration" : 10577
+        }
+      }, {
+        "uid" : "297e1edf949381b3",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1702372023666,
+          "stop" : 1702372035607,
+          "duration" : 11941
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b2a7b82dffc6b787.json",
+  "parameterValues" : [ ]
+}

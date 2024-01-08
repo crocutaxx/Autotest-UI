@@ -1,0 +1,312 @@
+{
+  "uid" : "798189e95f3f0456",
+  "name" : "The test of opening the meeting planning page",
+  "fullName" : "tests.main_page_test.TestMainPage#test_switching_to_meeting_planning",
+  "historyId" : "9508b3e10e9769895a367525eae81888",
+  "time" : {
+    "start" : 1704691228234,
+    "stop" : 1704691232875,
+    "duration" : 4641
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "user_1",
+    "time" : {
+      "start" : 1704691228233,
+      "stop" : 1704691228234,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_1",
+    "time" : {
+      "start" : 1704691227417,
+      "stop" : 1704691228233,
+      "duration" : 816
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open https://dev.qosyl.kz/login page",
+      "time" : {
+        "start" : 1704691228234,
+        "stop" : 1704691230371,
+        "duration" : 2137
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter login",
+      "time" : {
+        "start" : 1704691230371,
+        "stop" : 1704691230517,
+        "duration" : 146
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter password",
+      "time" : {
+        "start" : 1704691230517,
+        "stop" : 1704691230612,
+        "duration" : 95
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Confirm login and pass - Click submit button",
+      "time" : {
+        "start" : 1704691230612,
+        "stop" : 1704691230667,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://dev.qosyl.kz/ is opened",
+      "time" : {
+        "start" : 1704691230667,
+        "stop" : 1704691232676,
+        "duration" : 2009
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click on planning meet button",
+      "time" : {
+        "start" : 1704691232676,
+        "stop" : 1704691232723,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://dev.qosyl.kz/schedule is opened",
+      "time" : {
+        "start" : 1704691232723,
+        "stop" : 1704691232725,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "d4c7e4a277fece42",
+      "name" : "The planning meet page is opend",
+      "source" : "d4c7e4a277fece42.png",
+      "type" : "image/png",
+      "size" : 35322
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver_1::0",
+    "time" : {
+      "start" : 1704691232875,
+      "stop" : 1704691232931,
+      "duration" : 56
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "Normal"
+  }, {
+    "name" : "feature",
+    "value" : "Main page functionality"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "main_page_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMainPage"
+  }, {
+    "name" : "host",
+    "value" : "7b3dc9a8652d"
+  }, {
+    "name" : "thread",
+    "value" : "8-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.main_page_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 9,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "4dc4b48f1a3c2fe9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704630720802,
+          "stop" : 1704630723916,
+          "duration" : 3114
+        }
+      }, {
+        "uid" : "1c8aceb0194bc819",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704362591895,
+          "stop" : 1704362595057,
+          "duration" : 3162
+        }
+      }, {
+        "uid" : "4988f47df77a0ba0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704345234509,
+          "stop" : 1704345237599,
+          "duration" : 3090
+        }
+      }, {
+        "uid" : "cd14b9052180b461",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704344817969,
+          "stop" : 1704344821100,
+          "duration" : 3131
+        }
+      }, {
+        "uid" : "dedd768db026d162",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703135086110,
+          "stop" : 1703135089266,
+          "duration" : 3156
+        }
+      }, {
+        "uid" : "6f0291ae9ef46d4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703131021730,
+          "stop" : 1703131026372,
+          "duration" : 4642
+        }
+      }, {
+        "uid" : "47f6b8ebad22a343",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702532353718,
+          "stop" : 1702532356831,
+          "duration" : 3113
+        }
+      }, {
+        "uid" : "f28382ecb75aaffd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702372651078,
+          "stop" : 1702372655590,
+          "duration" : 4512
+        }
+      }, {
+        "uid" : "d06e0b61bdbd8c7",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1702372036493,
+          "stop" : 1702372048422,
+          "duration" : 11929
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "798189e95f3f0456.json",
+  "parameterValues" : [ ]
+}

@@ -5,215 +5,89 @@
     "children" : [ {
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
-        "name" : "Starting new meeting",
-        "uid" : "b2a7b82dffc6b787",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704630702483,
-          "stop" : 1704630719891,
-          "duration" : 17408
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "Send messages",
-        "uid" : "31b2c30859a119f1",
+        "uid" : "ec909348d4b77aff",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1704630737989,
-          "stop" : 1704630757348,
-          "duration" : 19359
+          "start" : 1704691251464,
+          "stop" : 1704691272434,
+          "duration" : 20970
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Adding users in planning meeting",
-        "uid" : "9f0563c526224399",
+        "uid" : "2a7619bcb79ee7e",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1704630767889,
-          "stop" : 1704630782048,
-          "duration" : 14159
+          "start" : 1704691284511,
+          "stop" : 1704691300196,
+          "duration" : 15685
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Deleting meeting",
-        "uid" : "6de611ba978e06d2",
+        "uid" : "3f9d73df79792be6",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1704630788557,
-          "stop" : 1704630807387,
-          "duration" : 18830
+          "start" : 1704691308076,
+          "stop" : 1704691328466,
+          "duration" : 20390
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Canceling meeting",
-        "uid" : "e0f5e08d0c5c1b58",
+        "uid" : "a2d8a133253054d5",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1704630808271,
-          "stop" : 1704630827052,
-          "duration" : 18781
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Blocked room",
-        "uid" : "28bd36ef436a0c70",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704630841404,
-          "stop" : 1704630859474,
-          "duration" : 18070
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Connect to room in meet",
-        "uid" : "e29d01460e355622",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704630861239,
-          "stop" : 1704630879029,
-          "duration" : 17790
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Create room in meet",
-        "uid" : "f8555a68184cb8fc",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704630879971,
-          "stop" : 1704630896763,
-          "duration" : 16792
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "End call on meet",
-        "uid" : "47289a7e9d955d36",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704630898470,
-          "stop" : 1704630914750,
-          "duration" : 16280
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Kick user from meet",
-        "uid" : "e72cc152e7914aab",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704630916511,
-          "stop" : 1704630933308,
-          "duration" : 16797
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "On wating room",
-        "uid" : "e7756688784c593a",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704630935075,
-          "stop" : 1704630951818,
-          "duration" : 16743
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Return in main room in meet",
-        "uid" : "57d3c0d1e57d6b30",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704630953589,
-          "stop" : 1704630970862,
-          "duration" : 17273
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Raise hand at meet",
-        "uid" : "a1564e4584538ceb",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704630972630,
-          "stop" : 1704630989453,
-          "duration" : 16823
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "send message in meet",
-        "uid" : "270a467730a6cf0c",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704630991217,
-          "stop" : 1704631008050,
-          "duration" : 16833
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "send private message in meet",
-        "uid" : "94899f7a1cc45479",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704631009815,
-          "stop" : 1704631025584,
-          "duration" : 15769
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Status camera adn microphone in meet",
-        "uid" : "74a8275b4b16d725",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1704631027350,
-          "stop" : 1704631043931,
-          "duration" : 16581
+          "start" : 1704691329343,
+          "stop" : 1704691349729,
+          "duration" : 20386
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
       "uid" : "31bb78a6a95ede3f78b260ed048910d8"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" data-testid=\"CloseIcon\">...</svg> is not clickable at point (1896, 27). Other element would receive the click: <div aria-hidden=\"true\" class=\"MuiBackdrop-root MuiModal-backdrop css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\"></div>\n  (Session info: headless chrome=112.0.5615.165)",
+      "children" : [ {
+        "name" : "Connect to room in meet",
+        "uid" : "b341807509209d39",
+        "parentUid" : "ddc02b48757b7e9499c16c408513fd46",
+        "status" : "broken",
+        "time" : {
+          "start" : 1704691392427,
+          "stop" : 1704691407673,
+          "duration" : 15246
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Return in main room in meet",
+        "uid" : "b48ecf30249a8662",
+        "parentUid" : "ddc02b48757b7e9499c16c408513fd46",
+        "status" : "broken",
+        "time" : {
+          "start" : 1704691496800,
+          "stop" : 1704691512818,
+          "duration" : 16018
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ddc02b48757b7e9499c16c408513fd46"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],

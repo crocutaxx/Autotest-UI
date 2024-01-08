@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 8,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "c154667b04350dc4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691473436,
+        "stop" : 1704691495062,
+        "duration" : 21626
+      }
+    }, {
       "uid" : "e7756688784c593a",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -95,11 +103,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "de04da3d259980b6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691233746,
+        "stop" : 1704691238424,
+        "duration" : 4678
+      }
+    }, {
       "uid" : "2eea54f486738258",
       "status" : "passed",
       "time" : {
@@ -548,11 +564,19 @@
       "failed" : 0,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "f80f6988b1ce531b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691563503,
+        "stop" : 1704691585488,
+        "duration" : 21985
+      }
+    }, {
       "uid" : "94899f7a1cc45479",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -633,11 +657,19 @@
       "failed" : 0,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "6d8f88890eb7c00",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691539696,
+        "stop" : 1704691561756,
+        "duration" : 22060
+      }
+    }, {
       "uid" : "270a467730a6cf0c",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -841,11 +873,19 @@
       "failed" : 0,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "5696449ffc33a9c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691425037,
+        "stop" : 1704691447660,
+        "duration" : 22623
+      }
+    }, {
       "uid" : "47289a7e9d955d36",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -924,13 +964,22 @@
   "c535f240dadba6e196911074fb6a1da2" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 7,
+      "broken" : 8,
       "skipped" : 0,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "a2d8a133253054d5",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1704691329343,
+        "stop" : 1704691349729,
+        "duration" : 20386
+      }
+    }, {
       "uid" : "e0f5e08d0c5c1b58",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -1139,11 +1188,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "c68e822894cbf299",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691301073,
+        "stop" : 1704691307206,
+        "duration" : 6133
+      }
+    }, {
       "uid" : "d89b0e54dafa94b0",
       "status" : "passed",
       "time" : {
@@ -1250,11 +1307,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "f3b94b7270e75801",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691273332,
+        "stop" : 1704691283635,
+        "duration" : 10303
+      }
+    }, {
       "uid" : "6307172b45326f58",
       "status" : "passed",
       "time" : {
@@ -1334,11 +1399,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 9,
+      "passed" : 10,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "9b6cec8c70f01975",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691189135,
+        "stop" : 1704691193895,
+        "duration" : 4760
+      }
+    }, {
       "uid" : "6fc842d0405576d8",
       "status" : "passed",
       "time" : {
@@ -1415,13 +1488,22 @@
   "0a6ded86891282d45f8dae63e5ee7935" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 8,
+      "broken" : 9,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "b48ecf30249a8662",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" data-testid=\"CloseIcon\">...</svg> is not clickable at point (1896, 27). Other element would receive the click: <div aria-hidden=\"true\" class=\"MuiBackdrop-root MuiModal-backdrop css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\"></div>\n  (Session info: headless chrome=112.0.5615.165)",
+      "time" : {
+        "start" : 1704691496800,
+        "stop" : 1704691512818,
+        "duration" : 16018
+      }
+    }, {
       "uid" : "57d3c0d1e57d6b30",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -1631,11 +1713,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "d71962d00bd81241",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691244813,
+        "stop" : 1704691250592,
+        "duration" : 5779
+      }
+    }, {
       "uid" : "c60fa10fbe73cd9a",
       "status" : "passed",
       "time" : {
@@ -1742,11 +1832,19 @@
       "failed" : 0,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "891f6e37b4c534e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691217082,
+        "stop" : 1704691227358,
+        "duration" : 10276
+      }
+    }, {
       "uid" : "b2a7b82dffc6b787",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -1827,11 +1925,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "70b6e4db42cdf6c6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691350610,
+        "stop" : 1704691365457,
+        "duration" : 14847
+      }
+    }, {
       "uid" : "5ea14aab4184ea56",
       "status" : "passed",
       "time" : {
@@ -1860,13 +1966,22 @@
   "76c95029456c622c9327345420e969f7" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 8,
+      "broken" : 9,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "b341807509209d39",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" data-testid=\"CloseIcon\">...</svg> is not clickable at point (1896, 27). Other element would receive the click: <div aria-hidden=\"true\" class=\"MuiBackdrop-root MuiModal-backdrop css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop\" style=\"opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\"></div>\n  (Session info: headless chrome=112.0.5615.165)",
+      "time" : {
+        "start" : 1704691392427,
+        "stop" : 1704691407673,
+        "duration" : 15246
+      }
+    }, {
       "uid" : "e29d01460e355622",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -2004,11 +2119,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "798189e95f3f0456",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691228234,
+        "stop" : 1704691232875,
+        "duration" : 4641
+      }
+    }, {
       "uid" : "4dc4b48f1a3c2fe9",
       "status" : "passed",
       "time" : {
@@ -2086,13 +2209,22 @@
   "ec160676ddf7f4f9d19b12e135c1f348" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 7,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "ec909348d4b77aff",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1704691251464,
+        "stop" : 1704691272434,
+        "duration" : 20970
+      }
+    }, {
       "uid" : "31b2c30859a119f1",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -2337,11 +2469,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "b6483cfb54af29d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691194793,
+        "stop" : 1704691199393,
+        "duration" : 4600
+      }
+    }, {
       "uid" : "694c1d7f56250c7b",
       "status" : "passed",
       "time" : {
@@ -2506,11 +2646,19 @@
       "failed" : 0,
       "broken" : 3,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 7,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "fb6a5b2c9b56a7ec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691514582,
+        "stop" : 1704691537953,
+        "duration" : 23371
+      }
+    }, {
       "uid" : "a1564e4584538ceb",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -2651,11 +2799,19 @@
       "failed" : 0,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "4cc08a3d6772518e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691587230,
+        "stop" : 1704691608130,
+        "duration" : 20900
+      }
+    }, {
       "uid" : "74a8275b4b16d725",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -2734,13 +2890,22 @@
   "e3ed9a8bc74229a18c94e77aa1e9fc59" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 9,
+      "broken" : 10,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "3f9d73df79792be6",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1704691308076,
+        "stop" : 1704691328466,
+        "duration" : 20390
+      }
+    }, {
       "uid" : "6de611ba978e06d2",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -2978,11 +3143,19 @@
       "failed" : 0,
       "broken" : 8,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "54751030ffe805df",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691367139,
+        "stop" : 1704691390685,
+        "duration" : 23546
+      }
+    }, {
       "uid" : "28bd36ef436a0c70",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -3067,13 +3240,22 @@
   "6c28a82b05f2d6cf92126b01da33d886" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 9,
+      "broken" : 10,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "2a7619bcb79ee7e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1704691284511,
+        "stop" : 1704691300196,
+        "duration" : 15685
+      }
+    }, {
       "uid" : "9f0563c526224399",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -3284,11 +3466,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "7e2d5648384ab8bf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691207333,
+        "stop" : 1704691216213,
+        "duration" : 8880
+      }
+    }, {
       "uid" : "1b75737b549793ab",
       "status" : "passed",
       "time" : {
@@ -3452,11 +3642,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 9,
+      "passed" : 10,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "f864d3932ad18422",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691200262,
+        "stop" : 1704691206465,
+        "duration" : 6203
+      }
+    }, {
       "uid" : "7a5258f55b04e7bb",
       "status" : "passed",
       "time" : {
@@ -3535,11 +3733,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "2d998bceae87a26e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691239297,
+        "stop" : 1704691243941,
+        "duration" : 4644
+      }
+    }, {
       "uid" : "2ae16b35f2032185",
       "status" : "passed",
       "time" : {
@@ -3619,11 +3825,19 @@
       "failed" : 0,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "f9818a939997fc06",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691408630,
+        "stop" : 1704691423351,
+        "duration" : 14721
+      }
+    }, {
       "uid" : "f8555a68184cb8fc",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -3855,11 +4069,19 @@
       "failed" : 0,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "d76ddf0f09baac46",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704691449404,
+        "stop" : 1704691471700,
+        "duration" : 22296
+      }
+    }, {
       "uid" : "e72cc152e7914aab",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",

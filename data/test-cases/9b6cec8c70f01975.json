@@ -1,0 +1,296 @@
+{
+  "uid" : "9b6cec8c70f01975",
+  "name" : "Invalid authorization",
+  "fullName" : "tests.authorization_test.TestAuthorization#test_invalid_authorization",
+  "historyId" : "c2e60886227b93e61e5ded5936584a37",
+  "time" : {
+    "start" : 1704691189135,
+    "stop" : 1704691193895,
+    "duration" : 4760
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "user_1",
+    "time" : {
+      "start" : 1704691189135,
+      "stop" : 1704691189135,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_1",
+    "time" : {
+      "start" : 1704691188199,
+      "stop" : 1704691189134,
+      "duration" : 935
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open https://dev.qosyl.kz/login page",
+      "time" : {
+        "start" : 1704691189135,
+        "stop" : 1704691191436,
+        "duration" : 2301
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter login",
+      "time" : {
+        "start" : 1704691191436,
+        "stop" : 1704691191566,
+        "duration" : 130
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter password",
+      "time" : {
+        "start" : 1704691191566,
+        "stop" : 1704691191647,
+        "duration" : 81
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Confirm login and pass - Click submit button",
+      "time" : {
+        "start" : 1704691191647,
+        "stop" : 1704691191713,
+        "duration" : 66
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check push incorrect data",
+      "time" : {
+        "start" : 1704691191713,
+        "stop" : 1704691193759,
+        "duration" : 2046
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://dev.qosyl.kz/login is opened",
+      "time" : {
+        "start" : 1704691193759,
+        "stop" : 1704691193761,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "fdff7c0abae0fead",
+      "name" : "The user is not logged in",
+      "source" : "fdff7c0abae0fead.png",
+      "type" : "image/png",
+      "size" : 73003
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver_1::0",
+    "time" : {
+      "start" : 1704691193896,
+      "stop" : 1704691193980,
+      "duration" : 84
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Authorization functionality"
+  }, {
+    "name" : "severity",
+    "value" : "Normal"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "authorization_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAuthorization"
+  }, {
+    "name" : "host",
+    "value" : "7b3dc9a8652d"
+  }, {
+    "name" : "thread",
+    "value" : "8-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.authorization_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "6fc842d0405576d8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704630680275,
+          "stop" : 1704630683553,
+          "duration" : 3278
+        }
+      }, {
+        "uid" : "5f4cfb49a8234c1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704362561954,
+          "stop" : 1704362565193,
+          "duration" : 3239
+        }
+      }, {
+        "uid" : "8f06313c3d501527",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704345204154,
+          "stop" : 1704345207535,
+          "duration" : 3381
+        }
+      }, {
+        "uid" : "c6deff59ca55e8de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704344788265,
+          "stop" : 1704344791521,
+          "duration" : 3256
+        }
+      }, {
+        "uid" : "1d071203ec119e86",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703135055888,
+          "stop" : 1703135059055,
+          "duration" : 3167
+        }
+      }, {
+        "uid" : "fb2f5d1bdfbbaead",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703130983753,
+          "stop" : 1703130988541,
+          "duration" : 4788
+        }
+      }, {
+        "uid" : "36d8342e3edbb104",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702532322415,
+          "stop" : 1702532325500,
+          "duration" : 3085
+        }
+      }, {
+        "uid" : "e7ab7f953459bc1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702372616699,
+          "stop" : 1702372620181,
+          "duration" : 3482
+        }
+      }, {
+        "uid" : "e230649aa7eb373c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702371988328,
+          "stop" : 1702371991671,
+          "duration" : 3343
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9b6cec8c70f01975.json",
+  "parameterValues" : [ ]
+}

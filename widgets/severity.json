@@ -1,271 +1,271 @@
 [ {
-  "uid" : "270a467730a6cf0c",
-  "name" : "send message in meet",
-  "time" : {
-    "start" : 1704630991217,
-    "stop" : 1704631008050,
-    "duration" : 16833
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "a1564e4584538ceb",
-  "name" : "Raise hand at meet",
-  "time" : {
-    "start" : 1704630972630,
-    "stop" : 1704630989453,
-    "duration" : 16823
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "47289a7e9d955d36",
-  "name" : "End call on meet",
-  "time" : {
-    "start" : 1704630898470,
-    "stop" : 1704630914750,
-    "duration" : 16280
-  },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "e29d01460e355622",
-  "name" : "Connect to room in meet",
-  "time" : {
-    "start" : 1704630861239,
-    "stop" : 1704630879029,
-    "duration" : 17790
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "7a5258f55b04e7bb",
-  "name" : "Connecting to a meeting via the meeting ID as an unauthorized user",
-  "time" : {
-    "start" : 1704630688427,
-    "stop" : 1704630694326,
-    "duration" : 5899
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "6de611ba978e06d2",
-  "name" : "Deleting meeting",
-  "time" : {
-    "start" : 1704630788557,
-    "stop" : 1704630807387,
-    "duration" : 18830
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "e0f5e08d0c5c1b58",
-  "name" : "Canceling meeting",
-  "time" : {
-    "start" : 1704630808271,
-    "stop" : 1704630827052,
-    "duration" : 18781
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "28bd36ef436a0c70",
-  "name" : "Blocked room",
-  "time" : {
-    "start" : 1704630841404,
-    "stop" : 1704630859474,
-    "duration" : 18070
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "694c1d7f56250c7b",
-  "name" : "Valid authorization",
-  "time" : {
-    "start" : 1704630684458,
-    "stop" : 1704630687550,
-    "duration" : 3092
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "31b2c30859a119f1",
-  "name" : "Send messages",
-  "time" : {
-    "start" : 1704630737989,
-    "stop" : 1704630757348,
-    "duration" : 19359
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "6fc842d0405576d8",
-  "name" : "Invalid authorization",
-  "time" : {
-    "start" : 1704630680275,
-    "stop" : 1704630683553,
-    "duration" : 3278
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1b75737b549793ab",
-  "name" : "Connecting to a meeting via the meeting ID as an authorized user",
-  "time" : {
-    "start" : 1704630695227,
-    "stop" : 1704630701600,
-    "duration" : 6373
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "4dc4b48f1a3c2fe9",
-  "name" : "The test of opening the meeting planning page",
-  "time" : {
-    "start" : 1704630720802,
-    "stop" : 1704630723916,
-    "duration" : 3114
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "94899f7a1cc45479",
-  "name" : "send private message in meet",
-  "time" : {
-    "start" : 1704631009815,
-    "stop" : 1704631025584,
-    "duration" : 15769
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "f8555a68184cb8fc",
-  "name" : "Create room in meet",
-  "time" : {
-    "start" : 1704630879971,
-    "stop" : 1704630896763,
-    "duration" : 16792
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "2ae16b35f2032185",
-  "name" : "Switching to messages from main page",
-  "time" : {
-    "start" : 1704630728825,
-    "stop" : 1704630731967,
-    "duration" : 3142
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e72cc152e7914aab",
-  "name" : "Kick user from meet",
-  "time" : {
-    "start" : 1704630916511,
-    "stop" : 1704630933308,
-    "duration" : 16797
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "b2a7b82dffc6b787",
-  "name" : "Starting new meeting",
-  "time" : {
-    "start" : 1704630702483,
-    "stop" : 1704630719891,
-    "duration" : 17408
-  },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "c60fa10fbe73cd9a",
-  "name" : "Search users",
-  "time" : {
-    "start" : 1704630732847,
-    "stop" : 1704630737114,
-    "duration" : 4267
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2eea54f486738258",
-  "name" : "The test of opening the calendar page",
-  "time" : {
-    "start" : 1704630724790,
-    "stop" : 1704630727949,
-    "duration" : 3159
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9f0563c526224399",
+  "uid" : "2a7619bcb79ee7e",
   "name" : "Adding users in planning meeting",
   "time" : {
-    "start" : 1704630767889,
-    "stop" : 1704630782048,
-    "duration" : 14159
+    "start" : 1704691284511,
+    "stop" : 1704691300196,
+    "duration" : 15685
   },
   "status" : "broken",
   "severity" : "critical"
 }, {
-  "uid" : "74a8275b4b16d725",
-  "name" : "Status camera adn microphone in meet",
+  "uid" : "798189e95f3f0456",
+  "name" : "The test of opening the meeting planning page",
   "time" : {
-    "start" : 1704631027350,
-    "stop" : 1704631043931,
-    "duration" : 16581
+    "start" : 1704691228234,
+    "stop" : 1704691232875,
+    "duration" : 4641
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "57d3c0d1e57d6b30",
-  "name" : "Return in main room in meet",
-  "time" : {
-    "start" : 1704630953589,
-    "stop" : 1704630970862,
-    "duration" : 17273
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "5ea14aab4184ea56",
+  "uid" : "70b6e4db42cdf6c6",
   "name" : "Click on 'Connect' button",
   "time" : {
-    "start" : 1704630827932,
-    "stop" : 1704630839710,
-    "duration" : 11778
+    "start" : 1704691350610,
+    "stop" : 1704691365457,
+    "duration" : 14847
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d89b0e54dafa94b0",
-  "name" : "Logout",
+  "uid" : "3f9d73df79792be6",
+  "name" : "Deleting meeting",
   "time" : {
-    "start" : 1704630782951,
-    "stop" : 1704630787678,
-    "duration" : 4727
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e7756688784c593a",
-  "name" : "On wating room",
-  "time" : {
-    "start" : 1704630935075,
-    "stop" : 1704630951818,
-    "duration" : 16743
+    "start" : 1704691308076,
+    "stop" : 1704691328466,
+    "duration" : 20390
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "6307172b45326f58",
-  "name" : "Creating meeting",
+  "uid" : "de04da3d259980b6",
+  "name" : "The test of opening the calendar page",
   "time" : {
-    "start" : 1704630758230,
-    "stop" : 1704630767007,
-    "duration" : 8777
+    "start" : 1704691233746,
+    "stop" : 1704691238424,
+    "duration" : 4678
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d76ddf0f09baac46",
+  "name" : "Kick user from meet",
+  "time" : {
+    "start" : 1704691449404,
+    "stop" : 1704691471700,
+    "duration" : 22296
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e2d5648384ab8bf",
+  "name" : "Connecting to a meeting via the meeting ID as an authorized user",
+  "time" : {
+    "start" : 1704691207333,
+    "stop" : 1704691216213,
+    "duration" : 8880
   },
   "status" : "passed",
   "severity" : "critical"
+}, {
+  "uid" : "d71962d00bd81241",
+  "name" : "Search users",
+  "time" : {
+    "start" : 1704691244813,
+    "stop" : 1704691250592,
+    "duration" : 5779
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d998bceae87a26e",
+  "name" : "Switching to messages from main page",
+  "time" : {
+    "start" : 1704691239297,
+    "stop" : 1704691243941,
+    "duration" : 4644
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f864d3932ad18422",
+  "name" : "Connecting to a meeting via the meeting ID as an unauthorized user",
+  "time" : {
+    "start" : 1704691200262,
+    "stop" : 1704691206465,
+    "duration" : 6203
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "a2d8a133253054d5",
+  "name" : "Canceling meeting",
+  "time" : {
+    "start" : 1704691329343,
+    "stop" : 1704691349729,
+    "duration" : 20386
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f80f6988b1ce531b",
+  "name" : "send private message in meet",
+  "time" : {
+    "start" : 1704691563503,
+    "stop" : 1704691585488,
+    "duration" : 21985
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f9818a939997fc06",
+  "name" : "Create room in meet",
+  "time" : {
+    "start" : 1704691408630,
+    "stop" : 1704691423351,
+    "duration" : 14721
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ec909348d4b77aff",
+  "name" : "Send messages",
+  "time" : {
+    "start" : 1704691251464,
+    "stop" : 1704691272434,
+    "duration" : 20970
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c154667b04350dc4",
+  "name" : "On wating room",
+  "time" : {
+    "start" : 1704691473436,
+    "stop" : 1704691495062,
+    "duration" : 21626
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f3b94b7270e75801",
+  "name" : "Creating meeting",
+  "time" : {
+    "start" : 1704691273332,
+    "stop" : 1704691283635,
+    "duration" : 10303
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "b341807509209d39",
+  "name" : "Connect to room in meet",
+  "time" : {
+    "start" : 1704691392427,
+    "stop" : 1704691407673,
+    "duration" : 15246
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b6483cfb54af29d2",
+  "name" : "Valid authorization",
+  "time" : {
+    "start" : 1704691194793,
+    "stop" : 1704691199393,
+    "duration" : 4600
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "5696449ffc33a9c9",
+  "name" : "End call on meet",
+  "time" : {
+    "start" : 1704691425037,
+    "stop" : 1704691447660,
+    "duration" : 22623
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "891f6e37b4c534e3",
+  "name" : "Starting new meeting",
+  "time" : {
+    "start" : 1704691217082,
+    "stop" : 1704691227358,
+    "duration" : 10276
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "b48ecf30249a8662",
+  "name" : "Return in main room in meet",
+  "time" : {
+    "start" : 1704691496800,
+    "stop" : 1704691512818,
+    "duration" : 16018
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4cc08a3d6772518e",
+  "name" : "Status camera adn microphone in meet",
+  "time" : {
+    "start" : 1704691587230,
+    "stop" : 1704691608130,
+    "duration" : 20900
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9b6cec8c70f01975",
+  "name" : "Invalid authorization",
+  "time" : {
+    "start" : 1704691189135,
+    "stop" : 1704691193895,
+    "duration" : 4760
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c68e822894cbf299",
+  "name" : "Logout",
+  "time" : {
+    "start" : 1704691301073,
+    "stop" : 1704691307206,
+    "duration" : 6133
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6d8f88890eb7c00",
+  "name" : "send message in meet",
+  "time" : {
+    "start" : 1704691539696,
+    "stop" : 1704691561756,
+    "duration" : 22060
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "54751030ffe805df",
+  "name" : "Blocked room",
+  "time" : {
+    "start" : 1704691367139,
+    "stop" : 1704691390685,
+    "duration" : 23546
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb6a5b2c9b56a7ec",
+  "name" : "Raise hand at meet",
+  "time" : {
+    "start" : 1704691514582,
+    "stop" : 1704691537953,
+    "duration" : 23371
+  },
+  "status" : "passed",
+  "severity" : "normal"
 } ]

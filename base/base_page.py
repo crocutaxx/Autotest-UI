@@ -23,8 +23,6 @@ class BasePage:
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(driver, 10, poll_frequency=1)
-        # self.user_name = user_name
-        # self.user_name2 = 'pytest2'
 
     def open(self):
         with allure.step(f"Open {self.PAGE_URL} page"):

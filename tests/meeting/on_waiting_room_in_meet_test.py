@@ -14,7 +14,6 @@ class TestOnWaitingRoomInMeet(BaseTest):
         self.login_page.click_submit_button()
         self.main_page.is_opened()
         self.main_page.click_on_new_meet_button()
-        # self.meet_page.is_opened() Разобраться с идентификатором комант
         # self.meet_page.click_on_dismiss_alert_button() # Нужен для локального запуска
         self.meet_page.click_on_enter_without_checking_button()
         self.meet_page.check_enter_meet_push()

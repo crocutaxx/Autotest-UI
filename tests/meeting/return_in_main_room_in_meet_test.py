@@ -6,7 +6,7 @@ import pytest
 @allure.feature("Meet Functionality")
 class TestReturnInManiRoom(BaseTest):
 
-    @pytest.mark.debug
+
     @allure.title("Return in main room in meet")
     @allure.severity("Normal")
     def test_retur_in_main_room_in_meet(self, user_1, user_2):
